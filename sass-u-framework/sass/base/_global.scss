@@ -1,0 +1,162 @@
+//body
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &::before, &::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $color-3;
+  background-color: $color-f;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $color-3;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-default;
+    //text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    outline-offset: 0;
+    color: $color-default;
+    //text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: all .3s ease;
+}
+
+.readmore-box {
+  overflow: hidden;
+}
+
+//header-bar
+
+.header-bar {
+}
+
+//header
+
+header {
+}
+
+//breadcrumb
+
+.breadcrumb {
+  position: relative;
+}
+
+//author
+
+.author {
+  > span {
+    margin-right: 15px;
+
+    &::before {
+      font-family: "Font Awesome 5 Pro";
+      padding-right: 5px;
+    }
+  }
+
+  .user::before {
+    content: "\f007";
+  }
+
+  .date::before {
+    content: "\f073";
+  }
+
+  .tags {
+    &::before {
+      content: "\f02c";
+    }
+
+    > a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .comment::before {
+    content: "\f27b";
+  }
+}
+
+//other
+
+#scrollUp {
+  background-image: image-url('top.png');
+  bottom: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+}
+
+//footer
+
+footer {
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

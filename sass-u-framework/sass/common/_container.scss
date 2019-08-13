@@ -1,0 +1,86 @@
+//global
+
+.#{$container} {
+  max-width: 1200px;
+}
+
+.#{$container-fluid} {
+  width: 100%;
+}
+
+.#{$container},
+.#{$container-fluid} {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.#{$layout},
+.#{$row} {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.#{$wrapper},
+.#{$package} {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$container} {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$container} {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$container} {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$container} {
+    max-width: inherit;
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -1,0 +1,161 @@
+//width-percent
+
+[class^="col_"] {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//width-percent
+
+.#{$column} {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+
+  &_auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+
+  @each $key, $value in $column-width-series {
+    &_#{$key} {
+      @include column-flex-variant($value);
+    }
+  }
+}
+
+//offset
+
+.#{$column-offset} {
+  &_0 {
+    margin-left: 0;
+  }
+
+  @each $key, $value in $column-flex-series {
+    &_#{$key} {
+      @include column-flex-offset-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$column} {
+    @each $key, $value in $column-width-series {
+      &_#{$key}-lg {
+        @include column-flex-variant($value);
+      }
+    }
+  }
+
+  .#{$column-offset} {
+    &_0-lg {
+      margin-left: 0;
+    }
+
+    @each $key, $value in $column-flex-series {
+      &_#{$key}-lg {
+        @include column-flex-offset-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$column} {
+    @each $key, $value in $column-width-series {
+      &_#{$key}-md {
+        @include column-flex-variant($value);
+      }
+    }
+  }
+
+  .#{$column-offset} {
+    &_0-md {
+      margin-left: 0;
+    }
+
+    @each $key, $value in $column-flex-series {
+      &_#{$key}-md {
+        @include column-flex-offset-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$column} {
+    @each $key, $value in $column-width-series {
+      &_#{$key}-sm {
+        @include column-flex-variant($value);
+      }
+    }
+  }
+
+  .#{$column-offset} {
+    &_0-sm {
+      margin-left: 0;
+    }
+
+    @each $key, $value in $column-flex-series {
+      &_#{$key}-sm {
+        @include column-flex-offset-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$column} {
+    @each $key, $value in $column-width-series {
+      &_#{$key}-xs {
+        @include column-flex-variant($value);
+      }
+    }
+  }
+
+  .#{$column-offset} {
+    &_0-xs {
+      margin-left: 0;
+    }
+
+    @each $key, $value in $column-flex-series {
+      &_#{$key}-xs {
+        @include column-flex-offset-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

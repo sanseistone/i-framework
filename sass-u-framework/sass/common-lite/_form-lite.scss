@@ -1,0 +1,105 @@
+//form
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /*chrome浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  /*Firefox浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -moz-appearance: textfield;
+}
+
+:focus {
+  outline: none;
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $color-default;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .form-control {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .form-control {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .form-control {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .form-control {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -1,0 +1,59 @@
+//pseudo-class
+
+[class*="#{$container}"]:before,
+[class*="#{$container}"]:after,
+[class*="#{$column}-"]:before,
+[class*="#{$column}-"]:after,
+[class*="#{$width}-"]:before,
+[class*="#{$width}-"]:after,
+[class*="#{$space}-"]:before,
+[class*="#{$space}-"]:after,
+[class*="#{$clear-fix}_"]:before,
+[class*="#{$clear-fix}_"]:after {
+  display: table;
+  content: " ";
+}
+
+[class*="#{$container}"]:after,
+[class*="#{$column}_"]:after,
+[class*="#{$width}_"]:after,
+[class*="#{$space}_"]:after,
+[class*="#{$clear-fix}_"]:after {
+  clear: both;
+}
+
+.#{$layout}:before,
+.#{$layout}:after,
+.#{$row}:before,
+.#{$row}:after {
+  display: table;
+  content: "";
+}
+
+.#{$layout}:after,
+.#{$row}:after {
+  clear: both;
+}
+
+.#{$wrapper}:before,
+.#{$wrapper}:after,
+.#{$package}:before,
+.#{$package}:after {
+  display: table;
+  content: "";
+}
+
+.#{$wrapper}:after,
+.#{$package}:after {
+  clear: both;
+}
+
+.#{$average}:before,
+.#{$average}:after {
+  display: table;
+  content: "";
+}
+
+.#{$average}:after {
+  clear: both;
+}

@@ -1,0 +1,166 @@
+//sub-page
+
+//left
+.page-left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 56px;
+  height: calc(100vh - 56px);
+  border-right: 1px solid $color-d;
+
+  & .aside-search {
+    display: flex;
+    align-items: center;
+
+    & .search {
+      display: flex;
+      flex: 1;
+
+      & .form-control {
+        width: 100%;
+      }
+    }
+
+    & .aside-toggler {
+      display: none;
+    }
+  }
+
+  & .aside-menu {
+    display: block;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+
+    & .item {
+
+      & .item-title {
+        color: $color-3;
+        font-weight: bold;
+      }
+
+      & .item-list {
+        display: none;
+      }
+
+      &.active .item-list {
+        display: block;
+      }
+
+      & .item-list {
+        display: none;
+
+        > li {
+          width: 100%;
+
+          > a {
+            color: $color-8;
+            font-size: .875rem;
+            //font-weight: lighter;
+            padding: .35rem 0;
+          }
+
+          &.active > a {
+            color: $color-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+//right
+.page-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 55px;
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+
+  & .section-nav {
+    border-left: 1px solid $color-d;
+  }
+}
+
+//middle
+.page-middle {
+  //position: -webkit-sticky;
+  //position: sticky;
+  //top: 56px;
+  //height: calc(100vh - 56px);
+
+  & [id*="block"] {
+    pointer-events: auto;
+
+    &:before {
+      display: block;
+      height: 6rem;
+      margin-top: -6rem;
+      content: "";
+    }
+  }
+
+  & .content {
+    & .title {
+      margin-bottom: 1rem;
+
+      > span {
+        display: inline-block;
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+//responsive-pc
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .page-left {
+    position: relative;
+    top: inherit;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid $color-d;
+
+    & .aside-search {
+      display: flex;
+      align-items: center;
+
+      & .search {
+        display: inline-block;
+        flex: 1;
+
+        & .form-control {
+          width: 100%;
+        }
+      }
+
+      & .aside-toggler {
+        display: inline-block;
+        flex: none;
+        cursor: pointer;
+      }
+    }
+
+    & .aside-menu:not(.show) {
+      display: none;
+    }
+
+    & .aside-menu {
+      display: block;
+      height: auto;
+      overflow-y: auto;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}

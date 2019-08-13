@@ -1,0 +1,105 @@
+//owl-theme
+
+.owl-carousel .owl-nav {
+  button.owl-next, button.owl-prev {
+    color: inherit;
+    padding: 2px 12px !important;
+    border: 1px solid $color-d;
+    background-color: $color-f;
+  }
+}
+
+.owl-nav-float .owl-nav {
+  position: absolute;
+  top: -50px;
+  right: -5px;
+  margin-top: 0;
+}
+
+.owl-theme {
+  & .owl-nav [class*=owl-]:hover {
+    color: $color-f;
+    border: 1px solid $color-default;
+    background: $color-default;
+    transition: all .3s ease;
+  }
+
+  & .owl-dots .owl-dot {
+    .active span, &:hover span {
+      background: $color-default;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include owl-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .owl-theme {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include owl-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .owl-theme {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include owl-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .owl-theme {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include owl-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .owl-theme {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include owl-variant($value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

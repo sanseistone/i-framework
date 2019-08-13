@@ -1,0 +1,258 @@
+//nav-tabs
+
+.nav-tabs {
+  border-bottom: 1px solid $color-default;
+
+  > li {
+    > a {
+      border-radius: 0;
+
+      &:focus, &:hover {
+        color: $color-f;
+        cursor: default;
+        border: 1px solid $color-default;
+        border-bottom-color: transparent;
+        background-color: $color-default;
+      }
+    }
+
+    & > a.active, & > a.active:focus, & > a.active:hover {
+      color: $color-f;
+      cursor: default;
+      border: 1px solid $color-default;
+      border-bottom-color: transparent;
+      background-color: $color-default;
+    }
+  }
+
+
+
+  &.empty {
+    border-bottom: 1px solid $color-d;
+
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-3;
+      border: 1px solid transparent;
+      border-bottom: 3px solid $color-3;
+      background-color: transparent;
+    }
+  }
+
+  &.white {
+    border-bottom: 1px solid $color-f;
+
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-3;
+      border: 1px solid $color-f;
+      background-color: $color-f;
+    }
+  }
+
+  &.black {
+    border-bottom: 1px solid $color-3;
+
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-f;
+      border: 1px solid $color-3;
+      background-color: $color-3;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include nav-tabs-variant($value, $value, $value);
+    }
+  }
+
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .nav-tabs {
+    &.empty-lg {
+      border-bottom: 1px solid $color-d;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid transparent;
+        border-bottom: 3px solid $color-3;
+        background-color: transparent;
+      }
+    }
+
+    &.white-lg {
+      border-bottom: 1px solid $color-f;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
+      }
+    }
+
+    &.black-lg {
+      border-bottom: 1px solid $color-3;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include nav-tabs-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .nav-tabs {
+    &.empty-md {
+      border-bottom: 1px solid $color-d;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid transparent;
+        border-bottom: 3px solid $color-3;
+        background-color: transparent;
+      }
+    }
+
+    &.white-md {
+      border-bottom: 1px solid $color-f;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
+      }
+    }
+
+    &.black-md {
+      border-bottom: 1px solid $color-3;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include nav-tabs-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .nav-tabs {
+    &.empty-sm {
+      border-bottom: 1px solid $color-d;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid transparent;
+        border-bottom: 3px solid $color-3;
+        background-color: transparent;
+      }
+    }
+
+    &.white-sm {
+      border-bottom: 1px solid $color-f;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
+      }
+    }
+
+    &.black-sm {
+      border-bottom: 1px solid $color-3;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include nav-tabs-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .nav-tabs {
+    &.empty-xs {
+      border-bottom: 1px solid $color-d;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid transparent;
+        border-bottom: 3px solid $color-3;
+        background-color: transparent;
+      }
+    }
+
+    &.white-xs {
+      border-bottom: 1px solid $color-f;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
+      }
+    }
+
+    &.black-xs {
+      border-bottom: 1px solid $color-3;
+
+      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include nav-tabs-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

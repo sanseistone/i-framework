@@ -1,0 +1,717 @@
+//text-align
+
+.#{$text} {
+  &_#{$left},
+  &_#{$left} > * {
+    text-align: left;
+  }
+
+  &_#{$center},
+  &_#{$center} > * {
+    text-align: center;
+  }
+
+  &_#{$right},
+  &_#{$right} > * {
+    text-align: right;
+  }
+
+  &_#{$justify},
+  &_#{$justify} > * {
+    text-align: justify;
+  }
+}
+
+//vertical-align
+
+.#{$align} {
+  &_#{$base} {
+    vertical-align: baseline;
+  }
+
+  &_#{$top} {
+    vertical-align: top;
+  }
+
+  &_#{$middle} {
+    vertical-align: middle;
+  }
+
+  &_#{$bottom} {
+    vertical-align: bottom;
+  }
+
+  &_t_#{$top} {
+    vertical-align: text-top;
+  }
+
+  &_t_#{$bottom} {
+    vertical-align: text-bottom;
+  }
+}
+
+//white-space
+
+.#{$white-space} {
+  &_#{$normal} {
+    white-space: normal;
+  }
+
+  &_nowrap {
+    white-space: nowrap;
+  }
+
+  &_pre {
+    white-space: pre;
+  }
+
+  &_pre_line {
+    white-space: pre-line;
+  }
+
+  &_pre_wrap {
+    white-space: pre-wrap;
+  }
+}
+
+//word-wrap
+
+.#{$break} {
+  &_words {
+    word-wrap: break-word;
+  }
+
+  &_normal {
+    word-wrap: normal;
+  }
+}
+
+//multiple-lines
+
+.#{$single-lines} {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.#{$multiple-lines} {
+  width: 100%;
+  display: -webkit-box;
+  /*float: left;*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r075} {
+      height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r0875} {
+      height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number} {
+      height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r125} {
+      height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r150} {
+      height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$text} {
+    &_#{$left}-lg,
+    &_#{$left}-lg > * {
+      text-align: left;
+    }
+
+    &_#{$center}-lg,
+    &_#{$center}-lg > * {
+      text-align: center;
+    }
+
+    &_#{$right}-lg,
+    &_#{$right}-lg > * {
+      text-align: right;
+    }
+
+    &_#{$justify}-lg,
+    &_#{$justify}-lg > * {
+      text-align: justify;
+    }
+  }
+
+  .#{$align} {
+    &_#{$base}-lg {
+      vertical-align: baseline;
+    }
+
+    &_#{$top}-lg {
+      vertical-align: top;
+    }
+
+    &_#{$middle}-lg {
+      vertical-align: middle;
+    }
+
+    &_#{$bottom}-lg {
+      vertical-align: bottom;
+    }
+
+    &_t_#{$top}-lg {
+      vertical-align: text-top;
+    }
+
+    &_t_#{$bottom}-lg {
+      vertical-align: text-bottom;
+    }
+  }
+
+  .#{$white-space} {
+    &_#{$normal}-lg {
+      white-space: normal;
+    }
+
+    &_nowrap-lg {
+      white-space: nowrap;
+    }
+
+    &_pre_lg {
+      white-space: pre;
+    }
+
+    &_pre_line-lg {
+      white-space: pre-line;
+    }
+
+    &_pre_wrap-lg {
+      white-space: pre-wrap;
+    }
+  }
+
+  .#{$break} {
+    &_words-lg {
+      word-wrap: break-word;
+    }
+
+    &_normal-lg {
+      word-wrap: normal;
+    }
+  }
+
+  .#{$single-lines}-lg {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$text} {
+    &_#{$left}-md,
+    &_#{$left}-md > * {
+      text-align: left;
+    }
+
+    &_#{$center}-md,
+    &_#{$center}-md > * {
+      text-align: center;
+    }
+
+    &_#{$right}-md,
+    &_#{$right}-md > * {
+      text-align: right;
+    }
+
+    &_#{$justify}-md,
+    &_#{$justify}-md > * {
+      text-align: justify;
+    }
+  }
+
+  .#{$align} {
+    &_#{$base}-md {
+      vertical-align: baseline;
+    }
+
+    &_#{$top}-md {
+      vertical-align: top;
+    }
+
+    &_#{$middle}-md {
+      vertical-align: middle;
+    }
+
+    &_#{$bottom}-md {
+      vertical-align: bottom;
+    }
+
+    &_t_#{$top}-md {
+      vertical-align: text-top;
+    }
+
+    &_t_#{$bottom}-md {
+      vertical-align: text-bottom;
+    }
+  }
+
+  .#{$white-space} {
+    &_#{$normal}-md {
+      white-space: normal;
+    }
+
+    &_nowrap-md {
+      white-space: nowrap;
+    }
+
+    &_pre_md {
+      white-space: pre;
+    }
+
+    &_pre_line-md {
+      white-space: pre-line;
+    }
+
+    &_pre_wrap-md {
+      white-space: pre-wrap;
+    }
+  }
+
+  .#{$break} {
+    &_words-md {
+      word-wrap: break-word;
+    }
+
+    &_normal-md {
+      word-wrap: normal;
+    }
+  }
+
+  .#{$single-lines}-md {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$text} {
+    &_#{$left}-sm,
+    &_#{$left}-sm > * {
+      text-align: left;
+    }
+
+    &_#{$center}-sm,
+    &_#{$center}-sm > * {
+      text-align: center;
+    }
+
+    &_#{$right}-sm,
+    &_#{$right}-sm > * {
+      text-align: right;
+    }
+
+    &_#{$justify}-sm,
+    &_#{$justify}-sm > * {
+      text-align: justify;
+    }
+  }
+
+  .#{$align} {
+    &_#{$base}-sm {
+      vertical-align: baseline;
+    }
+
+    &_#{$top}-sm {
+      vertical-align: top;
+    }
+
+    &_#{$middle}-sm {
+      vertical-align: middle;
+    }
+
+    &_#{$bottom}-sm {
+      vertical-align: bottom;
+    }
+
+    &_t_#{$top}-sm {
+      vertical-align: text-top;
+    }
+
+    &_t_#{$bottom}-sm {
+      vertical-align: text-bottom;
+    }
+  }
+
+  .#{$white-space} {
+    &_#{$normal}-sm {
+      white-space: normal;
+    }
+
+    &_nowrap-sm {
+      white-space: nowrap;
+    }
+
+    &_pre_sm {
+      white-space: pre;
+    }
+
+    &_pre_line-sm {
+      white-space: pre-line;
+    }
+
+    &_pre_wrap-sm {
+      white-space: pre-wrap;
+    }
+  }
+
+  .#{$break} {
+    &_words-sm {
+      word-wrap: break-word;
+    }
+
+    &_normal-sm {
+      word-wrap: normal;
+    }
+  }
+
+  .#{$single-lines}-sm {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$text} {
+    &_#{$left}-xs,
+    &_#{$left}-xs > * {
+      text-align: left;
+    }
+
+    &_#{$center}-xs,
+    &_#{$center}-xs > * {
+      text-align: center;
+    }
+
+    &_#{$right}-xs,
+    &_#{$right}-xs > * {
+      text-align: right;
+    }
+
+    &_#{$justify}-xs,
+    &_#{$justify}-xs > * {
+      text-align: justify;
+    }
+  }
+
+  .#{$align} {
+    &_#{$base}-xs {
+      vertical-align: baseline;
+    }
+
+    &_#{$top}-xs {
+      vertical-align: top;
+    }
+
+    &_#{$middle}-xs {
+      vertical-align: middle;
+    }
+
+    &_#{$bottom}-xs {
+      vertical-align: bottom;
+    }
+
+    &_t_#{$top}-xs {
+      vertical-align: text-top;
+    }
+
+    &_t_#{$bottom}-xs {
+      vertical-align: text-bottom;
+    }
+  }
+
+  .#{$white-space} {
+    &_#{$normal}-xs {
+      white-space: normal;
+    }
+
+    &_nowrap-xs {
+      white-space: nowrap;
+    }
+
+    &_pre_xs {
+      white-space: pre;
+    }
+
+    &_pre_line-xs {
+      white-space: pre-line;
+    }
+
+    &_pre_wrap-xs {
+      white-space: pre-wrap;
+    }
+  }
+
+  .#{$break} {
+    &_words-xs {
+      word-wrap: break-word;
+    }
+
+    &_normal-xs {
+      word-wrap: normal;
+    }
+  }
+
+  .#{$single-lines}-xs {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait ph#{$one}s, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

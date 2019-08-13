@@ -1,0 +1,123 @@
+//pagination
+
+.page-nav {
+  position: relative;
+  width: 100%;
+  float: left;
+
+  > li {
+    > a, > span {
+      color: $color-default;
+      border: 1px solid $color-default;
+
+      &:focus, &:hover {
+        color: $color-f;
+        border-color: #2196f3;
+        background-color: #2196f3;
+      }
+    }
+  }
+}
+
+.pagination {
+  > .active {
+    > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+      color: $color-f;
+      border-color: $color-default;
+      background-color: $color-default;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include pagination-variant($value, $value, $value);
+    }
+  }
+
+  &.space {
+    > li {
+      display: inline-block;
+      float: left;
+
+      & + li {
+        margin-left: 4px;
+      }
+
+      > a {
+        border-radius: 0 !important;
+      }
+
+      > a, > span {
+        color: $color-3;
+        border: 1px solid $color-9;
+      }
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .pagination {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include pagination-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .pagination {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include pagination-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .pagination {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include pagination-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .pagination {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include pagination-variant($value, $value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

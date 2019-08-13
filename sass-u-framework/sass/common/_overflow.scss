@@ -1,0 +1,336 @@
+//overflow
+
+.#{$overflow} {
+  &_auto {
+    overflow: auto;
+  }
+
+  &_hidden {
+    overflow: hidden;
+  }
+
+  &_visible {
+    overflow: visible;
+  }
+
+  &_scroll {
+    overflow: scroll;
+  }
+
+  &_x_auto {
+    overflow-x: auto;
+  }
+
+  &_y_auto {
+    overflow-y: auto;
+  }
+
+  &_x_hidden {
+    overflow-x: hidden;
+  }
+
+  &_y_hidden {
+    overflow-y: hidden;
+  }
+
+  &_x_visible {
+    overflow-x: visible;
+  }
+
+  &_y_visible {
+    overflow-y: visible;
+  }
+
+  &_x_scroll {
+    overflow-x: scroll;
+  }
+
+  &_y_scroll {
+    overflow-y: scroll;
+  }
+}
+
+.#{$scrolling} {
+  &_touch {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &_auto {
+    -webkit-overflow-scrolling: auto;
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$overflow} {
+    &_auto-lg {
+      overflow: auto;
+    }
+
+    &_hidden-lg {
+      overflow: hidden;
+    }
+
+    &_visible-lg {
+      overflow: visible;
+    }
+
+    &_scroll-lg {
+      overflow: scroll;
+    }
+
+    &_x_auto-lg {
+      overflow-x: auto;
+    }
+
+    &_y_auto-lg {
+      overflow-y: auto;
+    }
+
+    &_x_hidden-lg {
+      overflow-x: hidden;
+    }
+
+    &_y_hidden-lg {
+      overflow-y: hidden;
+    }
+
+    &_x_visible-lg {
+      overflow-x: visible;
+    }
+
+    &_y_visible-lg {
+      overflow-y: visible;
+    }
+
+    &_x_scroll-lg {
+      overflow-x: scroll;
+    }
+
+    &_y_scroll-lg {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &_touch-lg {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &_auto-lg {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$overflow} {
+    &_auto-md {
+      overflow: auto;
+    }
+
+    &_hidden-md {
+      overflow: hidden;
+    }
+
+    &_visible-md {
+      overflow: visible;
+    }
+
+    &_scroll-md {
+      overflow: scroll;
+    }
+
+    &_x_auto-md {
+      overflow-x: auto;
+    }
+
+    &_y_auto-md {
+      overflow-y: auto;
+    }
+
+    &_x_hidden-md {
+      overflow-x: hidden;
+    }
+
+    &_y_hidden-md {
+      overflow-y: hidden;
+    }
+
+    &_x_visible-md {
+      overflow-x: visible;
+    }
+
+    &_y_visible-md {
+      overflow-y: visible;
+    }
+
+    &_x_scroll-md {
+      overflow-x: scroll;
+    }
+
+    &_y_scroll-md {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &_touch-md {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &_auto-md {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$overflow} {
+    &_auto-sm {
+      overflow: auto;
+    }
+
+    &_hidden-sm {
+      overflow: hidden;
+    }
+
+    &_visible-sm {
+      overflow: visible;
+    }
+
+    &_scroll-sm {
+      overflow: scroll;
+    }
+
+    &_x_auto-sm {
+      overflow-x: auto;
+    }
+
+    &_y_auto-sm {
+      overflow-y: auto;
+    }
+
+    &_x_hidden-sm {
+      overflow-x: hidden;
+    }
+
+    &_y_hidden-sm {
+      overflow-y: hidden;
+    }
+
+    &_x_visible-sm {
+      overflow-x: visible;
+    }
+
+    &_y_visible-sm {
+      overflow-y: visible;
+    }
+
+    &_x_scroll-sm {
+      overflow-x: scroll;
+    }
+
+    &_y_scroll-sm {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &_touch-sm {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &_auto-sm {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$overflow} {
+    &_auto-xs {
+      overflow: auto;
+    }
+
+    &_hidden-xs {
+      overflow: hidden;
+    }
+
+    &_visible-xs {
+      overflow: visible;
+    }
+
+    &_scroll-xs {
+      overflow: scroll;
+    }
+
+    &_x_auto-xs {
+      overflow-x: auto;
+    }
+
+    &_y_auto-xs {
+      overflow-y: auto;
+    }
+
+    &_x_hidden-xs {
+      overflow-x: hidden;
+    }
+
+    &_y_hidden-xs {
+      overflow-y: hidden;
+    }
+
+    &_x_visible-xs {
+      overflow-x: visible;
+    }
+
+    &_y_visible-xs {
+      overflow-y: visible;
+    }
+
+    &_x_scroll-xs {
+      overflow-x: scroll;
+    }
+
+    &_y_scroll-xs {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &_touch-xs {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &_auto-xs {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

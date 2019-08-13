@@ -1,0 +1,418 @@
+//white-fill
+
+.#{$white-fill} {
+  &_a1 {
+    background: rgba(255, 255, 255, .1);
+  }
+
+  &_a2 {
+    background: rgba(255, 255, 255, .2);
+  }
+
+  &_a3 {
+    background: rgba(255, 255, 255, .3);
+  }
+
+  &_a4 {
+    background: rgba(255, 255, 255, .4);
+  }
+
+  &_a5 {
+    background: rgba(255, 255, 255, .5);
+  }
+
+  &_a6 {
+    background: rgba(255, 255, 255, .6);
+  }
+
+  &_a7 {
+    background: rgba(255, 255, 255, .7);
+  }
+
+  &_a8 {
+    background: rgba(255, 255, 255, .8);
+  }
+
+  &_a9 {
+    background: rgba(255, 255, 255, .9);
+  }
+}
+
+//black-fill
+
+.#{$black-fill} {
+  &_a1 {
+    background: rgba(0, 0, 0, .1);
+  }
+
+  &_a2 {
+    background: rgba(0, 0, 0, .2);
+  }
+
+  &_a3 {
+    background: rgba(0, 0, 0, .3);
+  }
+
+  &_a4 {
+    background: rgba(0, 0, 0, .4);
+  }
+
+  &_a5 {
+    background: rgba(0, 0, 0, .5);
+  }
+
+  &_a6 {
+    background: rgba(0, 0, 0, .6);
+  }
+
+  &_a7 {
+    background: rgba(0, 0, 0, .7);
+  }
+
+  &_a8 {
+    background: rgba(0, 0, 0, .8);
+  }
+
+  &_a9 {
+    background: rgba(0, 0, 0, .9);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$white-fill} {
+    &_a1-lg {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &_a2-lg {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &_a3-lg {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &_a4-lg {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &_a5-lg {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &_a6-lg {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &_a7-lg {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &_a8-lg {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &_a9-lg {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &_a1-lg {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &_a2-lg {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &_a3-lg {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &_a4-lg {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &_a5-lg {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &_a6-lg {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &_a7-lg {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &_a8-lg {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &_a9-lg {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$white-fill} {
+    &_a1-md {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &_a2-md {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &_a3-md {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &_a4-md {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &_a5-md {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &_a6-md {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &_a7-md {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &_a8-md {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &_a9-md {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &_a1-md {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &_a2-md {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &_a3-md {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &_a4-md {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &_a5-md {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &_a6-md {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &_a7-md {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &_a8-md {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &_a9-md {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$white-fill} {
+    &_a1-sm {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &_a2-sm {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &_a3-sm {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &_a4-sm {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &_a5-sm {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &_a6-sm {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &_a7-sm {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &_a8-sm {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &_a9-sm {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &_a1-sm {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &_a2-sm {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &_a3-sm {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &_a4-sm {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &_a5-sm {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &_a6-sm {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &_a7-sm {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &_a8-sm {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &_a9-sm {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$white-fill} {
+    &_a1-xs {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &_a2-xs {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &_a3-xs {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &_a4-xs {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &_a5-xs {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &_a6-xs {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &_a7-xs {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &_a8-xs {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &_a9-xs {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &_a1-xs {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &_a2-xs {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &_a3-xs {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &_a4-xs {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &_a5-xs {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &_a6-xs {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &_a7-xs {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &_a8-xs {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &_a9-xs {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

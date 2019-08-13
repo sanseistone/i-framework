@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>u-FrameWork - Common</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="u-FrameWork - Color">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="mr.koujun@gmail.com">
+    <!--<link rel="icon" href="favicon.ico">-->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- include style -->
+    <link rel="stylesheet" href="../../../../assets/css/plug-in-v4.css">
+
+    <!-- users style -->
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/theme-default.css">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body class="d_block">
+<!--header s-->
+<header class="sticky pin_t_0 z_100">
+    <!--nav s-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue5">
+        <a class="navbar-brand" href="#">u-FrameWork</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav"
+                aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainnav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">说明</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">基础类</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="dropdown05" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">组件</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="#">display</a>
+                        <a class="dropdown-item" href="#">container</a>
+                        <a class="dropdown-item" href="#">color</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+    <!--nav e-->
+</header>
+<!--header e-->
+
+<!--main s-->
+<main role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-12-xs left">
+                <div class="py_80">
+                    <h1 class="rem-400 line-1 mb_30">u-FrameWork</h1>
+                    <div class="mb_30">
+                        <p class="font-grey5 rem-125 italic">首先，必须要声明，本框架并非百分百原创，核心的思想，还是来源于Bootstrap。</p>
+                        <p class="rem-100"><strong>u-FrameWork</strong>，一个快速构建WEB结构的样式库，纯粹的CSS框架，目前为止，按照扩充内容的节点，大概划分为4个阶段，因此，比较懒散的方式以此为版本号的排序，目前最新的是V4。</p>
+                        <p class="rem-100">基于Bootstrap样式库的一些思路，结合自己日常工作的需求，大量的扩充了基础样式库，形成了一个庞杂的WEB构建框架。</p>
+                        <p class="rem-100">为什么说基于Bootstrap？首先，插件部分，完全依赖于Bootstrap，样式部分，完全保留 <code>p</code>标签、<code>form</code>表单、<code>table</code>等等组件的样式，对这些保留组件，增补了一些主题选择的样式。</p>
+                    </div>
+                    <div class="gmr_15 mb_10">
+                        <a href="#" class="d_inline_block btn xl btn-blue5-o">u-FrameWork</a>
+                        <a href="#" class="d_inline_block btn xl btn-blue-grey5-o"><i class="fas fa-download pr_10"></i>下载</a>
+                    </div>
+                    <p class="rem-100 font-blue5 font_bold italic">Currently v4.0</p>
+                </div>
+            </div>
+            <div class="col-6 col-12-xs right">
+                <div class="py_80">
+                    <img class="p_100 d_inline_block radius-full" src="http://placehold.it/600" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--main e-->
+
+<!--footer s-->
+<footer class="bg-blue0">
+    <div class="container">
+        <!--copyright s-->
+        <div class="copyright text-center mt_30 mb_30">
+            <p>Copyright © 2019
+                <a class="font-blue5" href="https://sanseistone.com/" target="_blank">Sansei Stone</a> All Rights Reserved.
+            </p>
+        </div>
+        <!--copyright e-->
+    </div>
+</footer>
+<!--footer e-->
+
+<!-- include js -->
+<script src="../../../../assets/js/jQuery-v3.4.1.min.js"></script>
+<script src="../../../../assets/frame/bootstrap-v4.3.1/dist/js/bootstrap.min.js"></script>
+
+<!--一键回到页面顶部-->
+<script>
+    $(function () {
+        $.scrollUp({
+            scrollSpeed: 200,
+            scrollImg: true
+        });
+    });
+</script>
+
+</body>
+
+</html>

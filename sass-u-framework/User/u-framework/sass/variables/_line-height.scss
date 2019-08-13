@@ -1,0 +1,60 @@
+@import "variables";
+
+// ===== line-height =====
+$line-height-number-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$line-height-number-series: map_merge(
+                (
+                        "10": ($number-1 * 1),
+                        "12": ($number-1 * 1.2),
+                        "14": ($number-1 * 1.4),
+                        "16": ($number-1 * 1.6),
+                        "18": ($number-1 * 1.8),
+                        "20": ($number-1 * 2),
+                        "22": ($number-1 * 2.2),
+                        "24": ($number-1 * 2.4),
+                        "26": ($number-1 * 2.6),
+                        "28": ($number-1 * 2.8),
+                        "30": ($number-1 * 3),
+                        "32": ($number-1 * 3.2),
+                        "34": ($number-1 * 3.4),
+                        "36": ($number-1 * 3.6),
+                        "38": ($number-1 * 3.8),
+                        "40": ($number-1 * 4),
+                        "42": ($number-1 * 4.2),
+                        "44": ($number-1 * 4.4),
+                        "46": ($number-1 * 4.6),
+                        "48": ($number-1 * 4.8),
+                        "50": ($number-1 * 5),
+                ),
+                $line-height-number-series
+);
+
+$line-height-pixel-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$line-height-pixel-series: map_merge(
+                (
+                        "1px": ($pixel-1 * 1),
+                        "5px": ($pixel-1 * 5),
+                        "10px": ($pixel-1 * 10),
+                        "15px": ($pixel-1 * 15),
+                        "20px": ($pixel-1 * 20),
+                        "25px": ($pixel-1 * 25),
+                        "30px": ($pixel-1 * 30),
+                        "35px": ($pixel-1 * 35),
+                        "40px": ($pixel-1 * 40),
+                        "45px": ($pixel-1 * 45),
+                        "50px": ($pixel-1 * 50),
+                        "55px": ($pixel-1 * 55),
+                        "60px": ($pixel-1 * 60),
+                        "65px": ($pixel-1 * 65),
+                        "70px": ($pixel-1 * 70),
+                        "75px": ($pixel-1 * 75),
+                        "80px": ($pixel-1 * 80),
+                        "85px": ($pixel-1 * 85),
+                        "90px": ($pixel-1 * 90),
+                        "95px": ($pixel-1 * 95),
+                        "100px": ($pixel-1 * 100),
+                ),
+                $line-height-pixel-series
+);

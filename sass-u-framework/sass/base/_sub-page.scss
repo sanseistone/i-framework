@@ -1,0 +1,80 @@
+//sub-page
+
+//post-navigation
+
+.post-navigation {
+  & .post-nav {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+
+    > a {
+      display: block;
+      padding: 8px 15px;
+      border-radius: 2px;
+    }
+  }
+
+  & .nav-previous > a {
+    padding-left: 30px;
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      content: "\f100";
+      font-family: "Font Awesome 5 Pro";
+    }
+  }
+
+  & .nav-next > a {
+    padding-right: 30px;
+
+    &:after {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      content: "\f101";
+      font-family: "Font Awesome 5 Pro";
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

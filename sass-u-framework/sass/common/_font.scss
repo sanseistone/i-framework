@@ -1,0 +1,662 @@
+//font-family
+
+.#{$font} {
+  @each $key, $value in $font-family-series {
+    &_#{$key} {
+      @include font-family-variant($value);
+    }
+  }
+}
+
+//font-size-pixel
+
+.#{$font} {
+  @each $key, $value in $font-size-series {
+    &_#{$key} {
+      @include font-size-variant($value);
+    }
+  }
+}
+
+//font-size-rem
+
+.#{$font} {
+  @each $key, $value in $rem-size-series {
+    &_#{$key} {
+      @include font-size-variant($value);
+    }
+  }
+}
+
+//font-weight
+
+.#{$font} {
+  @each $key, $value in $font-weight-series {
+    &_#{$key} {
+      @include font-weight-variant($value);
+    }
+  }
+}
+
+.#{$normal} {
+  font-weight: normal;
+}
+
+.#{$bold} {
+  font-weight: bold;
+}
+
+.#{$initial} {
+  font-weight: initial;
+}
+
+.#{$lighter} {
+  font-weight: lighter;
+}
+
+//letter-spacing
+
+.#{$letter-spacing} {
+  &_tight {
+    letter-spacing: -0.05em;
+  }
+
+  &_normal {
+    letter-spacing: 0;
+  }
+
+  &_wide {
+    letter-spacing: 0.05em;
+  }
+}
+
+//font-style
+
+.#{$italic} {
+  font-style: italic;
+}
+
+.#{$roman} {
+  font-style: normal;
+}
+
+//text-transform
+
+.#{$uppercase} {
+  text-transform: uppercase;
+}
+
+.#{$lowercase} {
+  text-transform: lowercase;
+}
+
+.#{$capitalize} {
+  text-transform: capitalize;
+}
+
+.#{$normal-case} {
+  text-transform: none;
+}
+
+//text-decoration
+
+.#{$underline} {
+  & {
+    text-decoration: underline;
+  }
+
+  &_n {
+    text-decoration: none;
+  }
+}
+
+.#{$line-through} {
+  text-decoration: line-through;
+}
+
+/*CSS3属性-webkit-font-smoothing字体抗锯齿渲染*/
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel_antialiased {
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: auto;
+}
+
+.#{$cursor-pointer} {
+  cursor: pointer;
+}
+
+.#{$cursor-hand} {
+  cursor: hand;
+}
+
+.#{$cursor-help} {
+  cursor: help;
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$font} {
+    @each $key, $value in $font-family-series {
+      &_#{$key}-lg {
+        @include font-family-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-size-series {
+      &_#{$key}-lg {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $rem-size-series {
+      &_#{$key}-lg {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-weight-series {
+      &_#{$key}-lg {
+        @include font-weight-variant($value);
+      }
+    }
+  }
+
+  .#{$normal}-lg {
+    font-weight: normal;
+  }
+
+  .#{$bold}-lg {
+    font-weight: bold;
+  }
+
+  .#{$initial}-lg {
+    font-weight: initial;
+  }
+
+  .#{$lighter}-lg {
+    font-weight: lighter;
+  }
+
+  .#{$letter-spacing} {
+    &_tight-lg {
+      letter-spacing: -0.05em;
+    }
+
+    &_normal-lg {
+      letter-spacing: 0;
+    }
+
+    &_wide-lg {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$italic}-lg {
+    font-style: italic;
+  }
+
+  .#{$roman}-lg {
+    font-style: normal;
+  }
+
+  .#{$uppercase}-lg {
+    text-transform: uppercase;
+  }
+
+  .#{$lowercase}-lg {
+    text-transform: lowercase;
+  }
+
+  .#{$capitalize}-lg {
+    text-transform: capitalize;
+  }
+
+  .#{$normal-case}-lg {
+    text-transform: none;
+  }
+
+  .#{$underline} {
+    &_lg {
+      text-decoration: underline;
+    }
+
+    &_n-lg {
+      text-decoration: none;
+    }
+  }
+
+  .#{$line-through}-lg {
+    text-decoration: line-through;
+  }
+
+  .antialiased-lg {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .subpixel_antialiased-lg {
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  .#{$cursor-pointer}-lg {
+    cursor: pointer;
+  }
+
+  .#{$cursor-hand}-lg {
+    cursor: hand;
+  }
+
+  .#{$cursor-help}-lg {
+    cursor: help;
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$font} {
+    @each $key, $value in $font-family-series {
+      &_#{$key}-md {
+        @include font-family-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-size-series {
+      &_#{$key}-md {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $rem-size-series {
+      &_#{$key}-md {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-weight-series {
+      &_#{$key}-md {
+        @include font-weight-variant($value);
+      }
+    }
+  }
+
+  .#{$normal}-md {
+    font-weight: normal;
+  }
+
+  .#{$bold}-md {
+    font-weight: bold;
+  }
+
+  .#{$initial}-md {
+    font-weight: initial;
+  }
+
+  .#{$lighter}-md {
+    font-weight: lighter;
+  }
+
+  .#{$letter-spacing} {
+    &_tight-md {
+      letter-spacing: -0.05em;
+    }
+
+    &_normal-md {
+      letter-spacing: 0;
+    }
+
+    &_wide-md {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$italic}-md {
+    font-style: italic;
+  }
+
+  .#{$roman}-md {
+    font-style: normal;
+  }
+
+  .#{$uppercase}-md {
+    text-transform: uppercase;
+  }
+
+  .#{$lowercase}-md {
+    text-transform: lowercase;
+  }
+
+  .#{$capitalize}-md {
+    text-transform: capitalize;
+  }
+
+  .#{$normal-case}-md {
+    text-transform: none;
+  }
+
+  .#{$underline} {
+    &_md {
+      text-decoration: underline;
+    }
+
+    &_n-md {
+      text-decoration: none;
+    }
+  }
+
+  .#{$line-through}-md {
+    text-decoration: line-through;
+  }
+
+  .antialiased-md {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .subpixel_antialiased-md {
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  .#{$cursor-pointer}-md {
+    cursor: pointer;
+  }
+
+  .#{$cursor-hand}-md {
+    cursor: hand;
+  }
+
+  .#{$cursor-help}-md {
+    cursor: help;
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$font} {
+    @each $key, $value in $font-family-series {
+      &_#{$key}-sm {
+        @include font-family-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-size-series {
+      &_#{$key}-sm {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $rem-size-series {
+      &_#{$key}-sm {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-weight-series {
+      &_#{$key}-sm {
+        @include font-weight-variant($value);
+      }
+    }
+  }
+
+  .#{$normal}-sm {
+    font-weight: normal;
+  }
+
+  .#{$bold}-sm {
+    font-weight: bold;
+  }
+
+  .#{$initial}-sm {
+    font-weight: initial;
+  }
+
+  .#{$lighter}-sm {
+    font-weight: lighter;
+  }
+
+  .#{$letter-spacing} {
+    &_tight-sm {
+      letter-spacing: -0.05em;
+    }
+
+    &_normal-sm {
+      letter-spacing: 0;
+    }
+
+    &_wide-sm {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$italic}-sm {
+    font-style: italic;
+  }
+
+  .#{$roman}-sm {
+    font-style: normal;
+  }
+
+  .#{$uppercase}-sm {
+    text-transform: uppercase;
+  }
+
+  .#{$lowercase}-sm {
+    text-transform: lowercase;
+  }
+
+  .#{$capitalize}-sm {
+    text-transform: capitalize;
+  }
+
+  .#{$normal-case}-sm {
+    text-transform: none;
+  }
+
+  .#{$underline} {
+    &_sm {
+      text-decoration: underline;
+    }
+
+    &_n-sm {
+      text-decoration: none;
+    }
+  }
+
+  .#{$line-through}-sm {
+    text-decoration: line-through;
+  }
+
+  .antialiased-sm {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .subpixel_antialiased-sm {
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  .#{$cursor-pointer}-sm {
+    cursor: pointer;
+  }
+
+  .#{$cursor-hand}-sm {
+    cursor: hand;
+  }
+
+  .#{$cursor-help}-sm {
+    cursor: help;
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$font} {
+    @each $key, $value in $font-family-series {
+      &_#{$key}-xs {
+        @include font-family-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-size-series {
+      &_#{$key}-xs {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $rem-size-series {
+      &_#{$key}-xs {
+        @include font-size-variant($value);
+      }
+    }
+  }
+
+  .#{$font} {
+    @each $key, $value in $font-weight-series {
+      &_#{$key}-xs {
+        @include font-weight-variant($value);
+      }
+    }
+  }
+
+  .#{$normal}-xs {
+    font-weight: normal;
+  }
+
+  .#{$bold}-xs {
+    font-weight: bold;
+  }
+
+  .#{$initial}-xs {
+    font-weight: initial;
+  }
+
+  .#{$lighter}-xs {
+    font-weight: lighter;
+  }
+
+  .#{$letter-spacing} {
+    &_tight-xs {
+      letter-spacing: -0.05em;
+    }
+
+    &_normal-xs {
+      letter-spacing: 0;
+    }
+
+    &_wide-xs {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$italic}-xs {
+    font-style: italic;
+  }
+
+  .#{$roman}-xs {
+    font-style: normal;
+  }
+
+  .#{$uppercase}-xs {
+    text-transform: uppercase;
+  }
+
+  .#{$lowercase}-xs {
+    text-transform: lowercase;
+  }
+
+  .#{$capitalize}-xs {
+    text-transform: capitalize;
+  }
+
+  .#{$normal-case}-xs {
+    text-transform: none;
+  }
+
+  .#{$underline} {
+    &_xs {
+      text-decoration: underline;
+    }
+
+    &_n-xs {
+      text-decoration: none;
+    }
+  }
+
+  .#{$line-through}-xs {
+    text-decoration: line-through;
+  }
+
+  .antialiased-xs {
+    -webkit-font-xsoothing: antialiased;
+    -moz-osx-font-xsoothing: grayscale;
+  }
+
+  .subpixel_antialiased-xs {
+    -webkit-font-xsoothing: inherit;
+    -moz-osx-font-xsoothing: auto;
+  }
+
+  .#{$cursor-pointer}-xs {
+    cursor: pointer;
+  }
+
+  .#{$cursor-hand}-xs {
+    cursor: hand;
+  }
+
+  .#{$cursor-help}-xs {
+    cursor: help;
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

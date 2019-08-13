@@ -1,0 +1,234 @@
+//display
+
+@each $key, $value in $display-series {
+  .#{$key} {
+    @include display-variant($value);
+  }
+}
+
+//visibility
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+//opacity
+
+.#{$opacity} {
+  @each $key, $value in $opacity-series {
+    &_#{$key} {
+      @include opacity-variant($value);
+    }
+  }
+}
+
+//z-index
+
+.#{$z-index} {
+  @each $key, $value in $z-index-series {
+    &_#{$key} {
+      @include z-index-variant($value);
+    }
+  }
+}
+
+//box-shadow
+
+.#{$box-shadow} {
+  @each $key, $value in $box-shadow-series {
+    &_#{$key} {
+      @include box-shadow-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  @each $key, $value in $display-series {
+    .#{$key}-lg {
+      @include display-variant($value);
+    }
+  }
+
+  .visible-lg {
+    visibility: visible;
+  }
+
+  .invisible-lg {
+    visibility: hidden;
+  }
+
+  .#{$opacity} {
+    @each $key, $value in $opacity-series {
+      &_#{$key}-lg {
+        @include opacity-variant($value);
+      }
+    }
+  }
+
+  .#{$z-index} {
+    @each $key, $value in $z-index-series {
+      &_#{$key}-lg {
+        @include z-index-variant($value);
+      }
+    }
+  }
+
+  .#{$box-shadow} {
+    @each $key, $value in $box-shadow-series {
+      &_#{$key}-lg {
+        @include box-shadow-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  @each $key, $value in $display-series {
+    .#{$key}-md {
+      @include display-variant($value);
+    }
+  }
+
+  .visible-md {
+    visibility: visible;
+  }
+
+  .invisible-md {
+    visibility: hidden;
+  }
+
+  .#{$opacity} {
+    @each $key, $value in $opacity-series {
+      &_#{$key}-md {
+        @include opacity-variant($value);
+      }
+    }
+  }
+
+  .#{$z-index} {
+    @each $key, $value in $z-index-series {
+      &_#{$key}-md {
+        @include z-index-variant($value);
+      }
+    }
+  }
+
+  .#{$box-shadow} {
+    @each $key, $value in $box-shadow-series {
+      &_#{$key}-md {
+        @include box-shadow-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  @each $key, $value in $display-series {
+    .#{$key}-sm {
+      @include display-variant($value);
+    }
+  }
+
+  .visible-sm {
+    visibility: visible;
+  }
+
+  .invisible-sm {
+    visibility: hidden;
+  }
+
+  .#{$opacity} {
+    @each $key, $value in $opacity-series {
+      &_#{$key}-sm {
+        @include opacity-variant($value);
+      }
+    }
+  }
+
+  .#{$z-index} {
+    @each $key, $value in $z-index-series {
+      &_#{$key}-sm {
+        @include z-index-variant($value);
+      }
+    }
+  }
+
+  .#{$box-shadow} {
+    @each $key, $value in $box-shadow-series {
+      &_#{$key}-sm {
+        @include box-shadow-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  @each $key, $value in $display-series {
+    .#{$key}-xs {
+      @include display-variant($value);
+    }
+  }
+
+  .visible-xs {
+    visibility: visible;
+  }
+
+  .invisible-xs {
+    visibility: hidden;
+  }
+
+  .#{$opacity} {
+    @each $key, $value in $opacity-series {
+      &_#{$key}-xs {
+        @include opacity-variant($value);
+      }
+    }
+  }
+
+  .#{$z-index} {
+    @each $key, $value in $z-index-series {
+      &_#{$key}-xs {
+        @include z-index-variant($value);
+      }
+    }
+  }
+
+  .#{$box-shadow} {
+    @each $key, $value in $box-shadow-series {
+      &_#{$key}-xs {
+        @include box-shadow-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

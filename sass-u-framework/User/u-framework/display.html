@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>u-FrameWork - Display</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="u-FrameWork - Display">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="mr.koujun@gmail.com">
+    <!--<link rel="icon" href="favicon.ico">-->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- include style -->
+    <link rel="stylesheet" href="../../../../assets/css/plug-in-v4.css">
+
+    <!-- users style -->
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-default.css">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body class="d_block">
+<!--header s-->
+<header class="sticky pin_t_0 z_100">
+    <!--nav s-->
+    <nav class="navbar nav-main bg_blue5">
+        <a class="navbar-brand" href="http://u-FrameWork.com/">u-FrameWork</a>
+        <div class="nav left">
+            <ul class="navbar-nav flex_row">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="introduction.html">Documentation</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cooperation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav right ml-auto hide-sm">
+            <ul class="navbar-nav flex_row">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">v4.0</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">v3.0</a>
+                        <a class="dropdown-item" href="#">v1.0</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-code-merge"></i> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">下载</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://sanseistone.com/">博客</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--nav e-->
+</header>
+<!--header e-->
+
+<!--main s-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col_2 col_4-md col_12-sm page-left z_10">
+            <form class="aside-search py_10 border b_solid n-sm form-inline">
+                <div class="search"><input class="form-control" type="text" placeholder="Search..."></div>
+                <button class="btn aside-toggler" type="button" data-toggle="collapse" data-target="#aside-nav"
+                        aria-controls="aside-nav" aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </form>
+            <nav class="aside-menu gmb_10 py_15 collapse" id="aside-nav">
+                <div class="item">
+                    <a class="item-title" href="introduction.html">Getting started</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="introduction.html"> Introduction</a>
+                        </li>
+                        <li>
+                            <a href="variables.html"> variables.scss</a>
+                        </li>
+                        <li>
+                            <a href="color-scss.html"> color.scss</a>
+                        </li>
+                        <li>
+                            <a href="class.html"> class.scss</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="nav-tabs.html">Base</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="nav-tabs.html"> nav-tabs</a>
+                        </li>
+                        <li>
+                            <a href="pagination.html"> pagination</a>
+                        </li>
+                        <li>
+                            <a href="owl-carousel.html"> owl-carousel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item active">
+                    <a class="item-title" href="display.html">Display</a>
+                    <ul class="nav item-list mb_20">
+                        <li class="active">
+                            <a href="display.html"> display</a>
+                        </li>
+                        <li>
+                            <a href="container.html"> container</a>
+                        </li>
+                        <li>
+                            <a href="overflow.html"> overflow</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="icon.html">Modules</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="icon.html"> icon</a>
+                        </li>
+                        <li>
+                            <a href="heading.html"> heading</a>
+                        </li>
+                        <li>
+                            <a href="link.html"> link</a>
+                        </li>
+                        <li>
+                            <a href="text.html"> text</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="color.html">Elements</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="color.html"> color</a>
+                        </li>
+                        <li>
+                            <a href="image.html"> img</a>
+                        </li>
+                        <li>
+                            <a href="list.html"> list</a>
+                        </li>
+                        <li>
+                            <a href="form.html"> form</a>
+                        </li>
+                        <li>
+                            <a href="table.html"> table</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="position.html">Layout</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="position.html"> position</a>
+                        </li>
+                        <li>
+                            <a href="float.html"> float</a>
+                        </li>
+                        <li>
+                            <a href="flex.html"> flex</a>
+                        </li>
+                        <li>
+                            <a href="grid.html"> grid</a>
+                        </li>
+                        <li>
+                            <a href="transform.html"> transform</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="width.html">Box</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="width.html"> width</a>
+                        </li>
+                        <li>
+                            <a href="height.html"> height</a>
+                        </li>
+                        <li>
+                            <a href="padding.html"> padding</a>
+                        </li>
+                        <li>
+                            <a href="margin.html"> margin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="column.html">Grid</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="column.html"> column</a>
+                        </li>
+                        <li>
+                            <a href="average.html"> average</a>
+                        </li>
+                        <li>
+                            <a href="col.html"> col</a>
+                        </li>
+                        <li>
+                            <a href="space.html"> space</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="font.html">Font</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="font.html"> font</a>
+                        </li>
+                        <li>
+                            <a href="font-color.html"> font-color</a>
+                        </li>
+                        <li>
+                            <a href="line-height.html"> line-height</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="border.html">Border</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="border.html"> border</a>
+                        </li>
+                        <li>
+                            <a href="border-color.html"> border-color</a>
+                        </li>
+                        <li>
+                            <a href="radius.html"> radius</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="button.html">Button</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="button.html"> button</a>
+                        </li>
+                        <li>
+                            <a href="button-color.html"> button-color</a>
+                        </li>
+                        <li>
+                            <a href="button-group.html"> button-group</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a class="item-title" href="background.html">Background</a>
+                    <ul class="nav item-list mb_20">
+                        <li>
+                            <a href="background.html"> background</a>
+                        </li>
+                        <li>
+                            <a href="background-color.html"> background-color</a>
+                        </li>
+                        <li>
+                            <a href="transparent.html"> transparent</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col_2 hide-md order_last page-right">
+            <ul class="list list_reset font_r0875 line_2 pl_15 my_30 section-nav">
+                <li><a href="#block-01">Display</a></li>
+                <li><a href="#block-02">实例</a></li>
+                <li><a href="#block-03">CSS</a></li>
+            </ul>
+        </div>
+        <main class="col_8 col_12-sm my_r200 page-middle" role="main">
+            <div class="gmb_r200 pb_r200">
+                <div class="content" id="block-01">
+                    <div class="item mb_30">
+                        <h1 class="title font_r150 font_bold">
+                            <span class="d_inline_block">Display</span>
+                        </h1>
+                        <p class="font_grey font_r100">在这个模块里，分别包含display、visibility、opacity、z-index和box-shadow。</p>
+                    </div>
+                    <div class="item mb_30">
+                        <h2 class="font_r100 font_bold">
+                            <span class="d_inline_block">如何应用？</span>
+                        </h2>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//display 元素显示方式</span></code>
+class="d_block"
+class="d_inline_block"
+class="d_inline"
+class="d_table"
+class="d_table_row"
+class="d_table_cell"
+class="d_inline_table"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//display 显示和隐藏</span></code>
+class="show"
+class="hide"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//visibility 元素可见</span></code>
+class="visible"
+class="invisible"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//opacity 透明度，按百分百预设，透明度90%即opacity-10，80%即opacity-20，以此类推，不透明即opacity-100。</span></code>
+class="opacity_0"
+class="opacity_10"
+class="opacity_20"
+class="opacity_30"
+...
+class="opacity_80"
+class="opacity_90"
+class="opacity_100"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//z-index 层叠顺序，预设0-10，然后20-100之间按数字10递增。</span></code>
+class="z_0"
+class="z_1"
+class="z_2"
+class="z_3"
+...
+class="z_8"
+class="z_9"
+class="z_10"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0">class="z_20"
+class="z_30"
+class="z_40"
+...
+class="z_80"
+class="z_90"
+class="z_100"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0">class="z_1000"
+class="z_auto"</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//box-shadow 阴影</span></code>
+class="shadow_xs"
+class="shadow_sm"
+class="shadow_md"
+class="shadow_lg"
+class="shadow_n"</pre>
+                        </figure>
+                    </div>
+                </div>
+                <div class="content" id="block-02">
+                    <div class="item mb_30">
+                        <h2 class="title font_r125 font_bold">
+                            <span class="d_inline_block">实例</span>
+                        </h2>
+                        <p class="font_grey font_r100">在Base这个分类下，是对bootstrap的组件及其他插件进行了主题颜色扩展，以及修改了原样式。</p>
+                        <figure class="p_10 bg_blue0 gmy_10">
+                            <div class="info p_10 mb_15 bg_white">
+                                <span class="d_block p_10 mb_10 bg_amber">span元素 display: d_block;</span>
+                                <span class="d_inline_block p_10 bg_amber">span元素 display: d_inline-block;</span>
+                            </div>
+                            <div class="info p_10 mb_15 gmx_10 gmy_10-sm bg_white">
+                                <div class="d_inline_block w_100 h_100 opacity_30 bg_amber">opacity_30</div>
+                                <div class="d_inline_block w_100 h_100 opacity_50 bg_amber">opacity_50</div>
+                                <div class="d_inline_block w_100 h_100 opacity_80 bg_amber">opacity_80</div>
+                                <div class="d_inline_block w_100 h_100 opacity_100 bg_amber">opacity_100</div>
+                            </div>
+                            <div class="info d_block relative w_auto min_h_200 p_10 mb_15 bg_white">
+                                <div class="absolute w_100 h_100 p_10 bg_red z_10">z_10</div>
+                                <div class="absolute pin_t_30 pin_l_30 w_100 h_100 p_10 bg_blue z_20">z_20</div>
+                                <div class="absolute pin_t_60 pin_l_60 w_100 h_100 p_10 bg_pink z_30">z_30</div>
+                                <div class="absolute pin_t_90 pin_l_90 w_100 h_100 p_10 bg_green z_40">z_40</div>
+                            </div>
+                            <div class="info p_10 mb_15 gmx_10 gmy_10-sm bg_white">
+                                <div class="d_inline_block w_100 h_100 bg_amber shadow_xs">shadow_xs</div>
+                                <div class="d_inline_block w_100 h_100 bg_amber shadow_sm">shadow_sm</div>
+                                <div class="d_inline_block w_100 h_100 bg_amber shadow_md">shadow_md</div>
+                                <div class="d_inline_block w_100 h_100 bg_amber shadow_lg">shadow_lg</div>
+                            </div>
+                            <textarea class="form-control" cols="30" rows="10">
+<span class="d_block">span元素 display: d_block;</span>
+<span class="d_inline_block">span元素 display: d_inline-block;</span>
+
+<div class="opacity_30">opacity_30</div>
+<div class="opacity_50">opacity_50</div>
+<div class="opacity_80">opacity_80</div>
+<div class="opacity_100">opacity_100</div>
+
+<div class="z_10">z_10</div>
+<div class="z_20">z_20</div>
+<div class="z_30">z_30</div>
+<div class="z_40">z_40</div>
+
+<div class="shadow_xs">shadow_xs</div>
+<div class="shadow_sm">shadow_sm</div>
+<div class="shadow_md">shadow_md</div>
+<div class="shadow_lg">shadow_lg</div>
+                            </textarea>
+                        </figure>
+                    </div>
+                </div>
+                <div class="content" id="block-03">
+                    <div class="item mb_30">
+                        <h2 class="title font_r125 font_bold">
+                            <span class="d_inline_block">CSS</span>
+                        </h2>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//display</span></code>
+.d_block {
+  display: block;
+}
+
+.d_inline_block {
+  display: inline-block;
+}
+
+.d_inline {
+  display: inline;
+}
+
+.d_table {
+  display: table;
+}
+
+.d_table_row {
+  display: table-row;
+}
+
+.d_table_cell {
+  display: table-cell;
+}
+
+.d_inline_table {
+  display: inline-table;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//visibility</span></code>
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//opacity</span></code>
+.opacity_0 {
+  opacity: 0;
+}
+.opacity_10 {
+  opacity: 0.1;
+}
+.opacity_20 {
+  opacity: 0.2;
+}
+.opacity_30 {
+  opacity: 0.3;
+}
+.opacity_40 {
+  opacity: 0.4;
+}
+.opacity_50 {
+  opacity: 0.5;
+}
+.opacity_60 {
+  opacity: 0.6;
+}
+.opacity_70 {
+  opacity: 0.7;
+}
+.opacity_80 {
+  opacity: 0.8;
+}
+.opacity_90 {
+  opacity: 0.9;
+}
+.opacity_100 {
+  opacity: 1;
+}</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//z-index</span></code>
+.z_0 {
+  z-index: 0;
+}
+.z_1 {
+  z-index: 1;
+}
+.z_2 {
+  z-index: 2;
+}
+.z_3 {
+  z-index: 3;
+}
+.z_4 {
+  z-index: 4;
+}
+.z_5 {
+  z-index: 5;
+}
+.z_6 {
+  z-index: 6;
+}
+.z_7 {
+  z-index: 7;
+}
+.z_8 {
+  z-index: 8;
+}
+.z_9 {
+  z-index: 9;
+}
+.z_10 {
+  z-index: 10;
+}
+.z_20 {
+  z-index: 20;
+}
+.z_30 {
+  z-index: 30;
+}
+.z_40 {
+  z-index: 40;
+}
+.z_50 {
+  z-index: 50;
+}
+.z_60 {
+  z-index: 60;
+}
+.z_70 {
+  z-index: 70;
+}
+.z_80 {
+  z-index: 80;
+}
+.z_90 {
+  z-index: 90;
+}
+.z_100 {
+  z-index: 100;
+}
+.z_1000 {
+  z-index: 1000;
+}
+.z_auto {
+  z-index: auto;
+}</pre>
+                        </figure>
+                        <figure class="p_10 bg_blue0">
+                            <pre class="mb_0"><code><span>//box-shadow</span></code>
+.shadow_xs {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.shadow_sm {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.shadow_md {
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+.shadow_lg {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.shadow_n {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}</pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!--main e-->
+
+<!-- include js -->
+<script src="../../../../assets/js/jQuery-v3.4.1.min.js"></script>
+<!--<script src="../../../../plug-in/popper.js/dist/popper.min.js"></script>-->
+<script src="../../../../assets/frame/bootstrap-v4.3.1/dist/js/bootstrap.min.js"></script>
+<script src="../../../../plug-in/scrollup/dist/jquery.scrollUp.min.js"></script>
+
+<!--一键回到页面顶部-->
+<script>
+    $(function () {
+        $.scrollUp({
+            scrollSpeed: 200,
+            scrollImg: true
+        });
+    });
+</script>
+
+</body>
+
+</html>

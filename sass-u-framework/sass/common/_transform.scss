@@ -1,0 +1,1521 @@
+//p=positive(正数)
+//n=negative(负数)
+
+//rotate
+
+.#{$rotate} {
+  &_0 {
+    transform: rotate(0);
+  }
+
+  &_180 {
+    transform: rotate(180deg);
+  }
+
+  &_p5 {
+    transform: rotate(5deg);
+  }
+
+  &_p10 {
+    transform: rotate(10deg);
+  }
+
+  &_p15 {
+    transform: rotate(15deg);
+  }
+
+  &_p20 {
+    transform: rotate(20deg);
+  }
+
+  &_p25 {
+    transform: rotate(25deg);
+  }
+
+  &_p30 {
+    transform: rotate(30deg);
+  }
+
+  &_p35 {
+    transform: rotate(35deg);
+  }
+
+  &_p40 {
+    transform: rotate(40deg);
+  }
+
+  &_p45 {
+    transform: rotate(45deg);
+  }
+
+  &_p50 {
+    transform: rotate(50deg);
+  }
+
+  &_p55 {
+    transform: rotate(55deg);
+  }
+
+  &_p60 {
+    transform: rotate(60deg);
+  }
+
+  &_p65 {
+    transform: rotate(65deg);
+  }
+
+  &_p70 {
+    transform: rotate(70deg);
+  }
+
+  &_p75 {
+    transform: rotate(75deg);
+  }
+
+  &_p80 {
+    transform: rotate(80deg);
+  }
+
+  &_p85 {
+    transform: rotate(85deg);
+  }
+
+  &_p90 {
+    transform: rotate(90deg);
+  }
+
+  &_p95 {
+    transform: rotate(95deg);
+  }
+
+  &_p100 {
+    transform: rotate(100deg);
+  }
+
+  &_p105 {
+    transform: rotate(105deg);
+  }
+
+  &_p110 {
+    transform: rotate(110deg);
+  }
+
+  &_p115 {
+    transform: rotate(115deg);
+  }
+
+  &_p120 {
+    transform: rotate(120deg);
+  }
+
+  &_p125 {
+    transform: rotate(125deg);
+  }
+
+  &_p130 {
+    transform: rotate(130deg);
+  }
+
+  &_p135 {
+    transform: rotate(135deg);
+  }
+
+  &_p130 {
+    transform: rotate(140deg);
+  }
+
+  &_p145 {
+    transform: rotate(145deg);
+  }
+
+  &_p150 {
+    transform: rotate(150deg);
+  }
+
+  &_p155 {
+    transform: rotate(155deg);
+  }
+
+  &_p160 {
+    transform: rotate(160deg);
+  }
+
+  &_p165 {
+    transform: rotate(165deg);
+  }
+
+  &_p170 {
+    transform: rotate(170deg);
+  }
+
+  &_p175 {
+    transform: rotate(175deg);
+  }
+
+  &_n5 {
+    transform: rotate(-5deg);
+  }
+
+  &_n10 {
+    transform: rotate(-10deg);
+  }
+
+  &_n15 {
+    transform: rotate(-15deg);
+  }
+
+  &_n20 {
+    transform: rotate(-20deg);
+  }
+
+  &_n25 {
+    transform: rotate(-25deg);
+  }
+
+  &_n30 {
+    transform: rotate(-30deg);
+  }
+
+  &_n35 {
+    transform: rotate(-35deg);
+  }
+
+  &_n40 {
+    transform: rotate(-40deg);
+  }
+
+  &_n45 {
+    transform: rotate(-45deg);
+  }
+
+  &_n50 {
+    transform: rotate(-50deg);
+  }
+
+  &_n55 {
+    transform: rotate(-55deg);
+  }
+
+  &_n60 {
+    transform: rotate(-60deg);
+  }
+
+  &_n65 {
+    transform: rotate(-65deg);
+  }
+
+  &_n70 {
+    transform: rotate(-70deg);
+  }
+
+  &_n75 {
+    transform: rotate(-75deg);
+  }
+
+  &_n80 {
+    transform: rotate(-80deg);
+  }
+
+  &_n85 {
+    transform: rotate(-85deg);
+  }
+
+  &_n90 {
+    transform: rotate(-90deg);
+  }
+
+  &_n95 {
+    transform: rotate(-95deg);
+  }
+
+  &_n100 {
+    transform: rotate(-100deg);
+  }
+
+  &_n105 {
+    transform: rotate(-105deg);
+  }
+
+  &_n110 {
+    transform: rotate(-110deg);
+  }
+
+  &_n115 {
+    transform: rotate(-115deg);
+  }
+
+  &_n120 {
+    transform: rotate(-120deg);
+  }
+
+  &_n125 {
+    transform: rotate(-125deg);
+  }
+
+  &_n130 {
+    transform: rotate(-130deg);
+  }
+
+  &_n135 {
+    transform: rotate(-135deg);
+  }
+
+  &_n130 {
+    transform: rotate(-140deg);
+  }
+
+  &_n145 {
+    transform: rotate(-145deg);
+  }
+
+  &_n150 {
+    transform: rotate(-150deg);
+  }
+
+  &_n155 {
+    transform: rotate(-155deg);
+  }
+
+  &_n160 {
+    transform: rotate(-160deg);
+  }
+
+  &_n165 {
+    transform: rotate(-165deg);
+  }
+
+  &_n170 {
+    transform: rotate(-170deg);
+  }
+
+  &_n175 {
+    transform: rotate(-175deg);
+  }
+}
+
+//scale
+
+.#{$scale} {
+  &_1 {
+    transform: scale(1, 1);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$rotate} {
+    &_0-lg {
+      transform: rotate(0);
+    }
+
+    &_180-lg {
+      transform: rotate(180deg);
+    }
+
+    &_p5-lg {
+      transform: rotate(5deg);
+    }
+
+    &_p10-lg {
+      transform: rotate(10deg);
+    }
+
+    &_p15-lg {
+      transform: rotate(15deg);
+    }
+
+    &_p20-lg {
+      transform: rotate(20deg);
+    }
+
+    &_p25-lg {
+      transform: rotate(25deg);
+    }
+
+    &_p30-lg {
+      transform: rotate(30deg);
+    }
+
+    &_p35-lg {
+      transform: rotate(35deg);
+    }
+
+    &_p40-lg {
+      transform: rotate(40deg);
+    }
+
+    &_p45-lg {
+      transform: rotate(45deg);
+    }
+
+    &_p50-lg {
+      transform: rotate(50deg);
+    }
+
+    &_p55-lg {
+      transform: rotate(55deg);
+    }
+
+    &_p60-lg {
+      transform: rotate(60deg);
+    }
+
+    &_p65-lg {
+      transform: rotate(65deg);
+    }
+
+    &_p70-lg {
+      transform: rotate(70deg);
+    }
+
+    &_p75-lg {
+      transform: rotate(75deg);
+    }
+
+    &_p80-lg {
+      transform: rotate(80deg);
+    }
+
+    &_p85-lg {
+      transform: rotate(85deg);
+    }
+
+    &_p90-lg {
+      transform: rotate(90deg);
+    }
+
+    &_p95-lg {
+      transform: rotate(95deg);
+    }
+
+    &_p100-lg {
+      transform: rotate(100deg);
+    }
+
+    &_p105-lg {
+      transform: rotate(105deg);
+    }
+
+    &_p110-lg {
+      transform: rotate(110deg);
+    }
+
+    &_p115-lg {
+      transform: rotate(115deg);
+    }
+
+    &_p120-lg {
+      transform: rotate(120deg);
+    }
+
+    &_p125-lg {
+      transform: rotate(125deg);
+    }
+
+    &_p130-lg {
+      transform: rotate(130deg);
+    }
+
+    &_p135-lg {
+      transform: rotate(135deg);
+    }
+
+    &_p130-lg {
+      transform: rotate(140deg);
+    }
+
+    &_p145-lg {
+      transform: rotate(145deg);
+    }
+
+    &_p150-lg {
+      transform: rotate(150deg);
+    }
+
+    &_p155-lg {
+      transform: rotate(155deg);
+    }
+
+    &_p160-lg {
+      transform: rotate(160deg);
+    }
+
+    &_p165-lg {
+      transform: rotate(165deg);
+    }
+
+    &_p170-lg {
+      transform: rotate(170deg);
+    }
+
+    &_p175-lg {
+      transform: rotate(175deg);
+    }
+
+    &_n5-lg {
+      transform: rotate(-5deg);
+    }
+
+    &_n10-lg {
+      transform: rotate(-10deg);
+    }
+
+    &_n15-lg {
+      transform: rotate(-15deg);
+    }
+
+    &_n20-lg {
+      transform: rotate(-20deg);
+    }
+
+    &_n25-lg {
+      transform: rotate(-25deg);
+    }
+
+    &_n30-lg {
+      transform: rotate(-30deg);
+    }
+
+    &_n35-lg {
+      transform: rotate(-35deg);
+    }
+
+    &_n40-lg {
+      transform: rotate(-40deg);
+    }
+
+    &_n45-lg {
+      transform: rotate(-45deg);
+    }
+
+    &_n50-lg {
+      transform: rotate(-50deg);
+    }
+
+    &_n55-lg {
+      transform: rotate(-55deg);
+    }
+
+    &_n60-lg {
+      transform: rotate(-60deg);
+    }
+
+    &_n65-lg {
+      transform: rotate(-65deg);
+    }
+
+    &_n70-lg {
+      transform: rotate(-70deg);
+    }
+
+    &_n75-lg {
+      transform: rotate(-75deg);
+    }
+
+    &_n80-lg {
+      transform: rotate(-80deg);
+    }
+
+    &_n85-lg {
+      transform: rotate(-85deg);
+    }
+
+    &_n90-lg {
+      transform: rotate(-90deg);
+    }
+
+    &_n95-lg {
+      transform: rotate(-95deg);
+    }
+
+    &_n100-lg {
+      transform: rotate(-100deg);
+    }
+
+    &_n105-lg {
+      transform: rotate(-105deg);
+    }
+
+    &_n110-lg {
+      transform: rotate(-110deg);
+    }
+
+    &_n115-lg {
+      transform: rotate(-115deg);
+    }
+
+    &_n120-lg {
+      transform: rotate(-120deg);
+    }
+
+    &_n125-lg {
+      transform: rotate(-125deg);
+    }
+
+    &_n130-lg {
+      transform: rotate(-130deg);
+    }
+
+    &_n135-lg {
+      transform: rotate(-135deg);
+    }
+
+    &_n130-lg {
+      transform: rotate(-140deg);
+    }
+
+    &_n145-lg {
+      transform: rotate(-145deg);
+    }
+
+    &_n150-lg {
+      transform: rotate(-150deg);
+    }
+
+    &_n155-lg {
+      transform: rotate(-155deg);
+    }
+
+    &_n160-lg {
+      transform: rotate(-160deg);
+    }
+
+    &_n165-lg {
+      transform: rotate(-165deg);
+    }
+
+    &_n170-lg {
+      transform: rotate(-170deg);
+    }
+
+    &_n175-lg {
+      transform: rotate(-175deg);
+    }
+  }
+
+  .#{$scale} {
+    &_1-lg {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$rotate} {
+    &_0-md {
+      transform: rotate(0);
+    }
+
+    &_180-md {
+      transform: rotate(180deg);
+    }
+
+    &_p5-md {
+      transform: rotate(5deg);
+    }
+
+    &_p10-md {
+      transform: rotate(10deg);
+    }
+
+    &_p15-md {
+      transform: rotate(15deg);
+    }
+
+    &_p20-md {
+      transform: rotate(20deg);
+    }
+
+    &_p25-md {
+      transform: rotate(25deg);
+    }
+
+    &_p30-md {
+      transform: rotate(30deg);
+    }
+
+    &_p35-md {
+      transform: rotate(35deg);
+    }
+
+    &_p40-md {
+      transform: rotate(40deg);
+    }
+
+    &_p45-md {
+      transform: rotate(45deg);
+    }
+
+    &_p50-md {
+      transform: rotate(50deg);
+    }
+
+    &_p55-md {
+      transform: rotate(55deg);
+    }
+
+    &_p60-md {
+      transform: rotate(60deg);
+    }
+
+    &_p65-md {
+      transform: rotate(65deg);
+    }
+
+    &_p70-md {
+      transform: rotate(70deg);
+    }
+
+    &_p75-md {
+      transform: rotate(75deg);
+    }
+
+    &_p80-md {
+      transform: rotate(80deg);
+    }
+
+    &_p85-md {
+      transform: rotate(85deg);
+    }
+
+    &_p90-md {
+      transform: rotate(90deg);
+    }
+
+    &_p95-md {
+      transform: rotate(95deg);
+    }
+
+    &_p100-md {
+      transform: rotate(100deg);
+    }
+
+    &_p105-md {
+      transform: rotate(105deg);
+    }
+
+    &_p110-md {
+      transform: rotate(110deg);
+    }
+
+    &_p115-md {
+      transform: rotate(115deg);
+    }
+
+    &_p120-md {
+      transform: rotate(120deg);
+    }
+
+    &_p125-md {
+      transform: rotate(125deg);
+    }
+
+    &_p130-md {
+      transform: rotate(130deg);
+    }
+
+    &_p135-md {
+      transform: rotate(135deg);
+    }
+
+    &_p130-md {
+      transform: rotate(140deg);
+    }
+
+    &_p145-md {
+      transform: rotate(145deg);
+    }
+
+    &_p150-md {
+      transform: rotate(150deg);
+    }
+
+    &_p155-md {
+      transform: rotate(155deg);
+    }
+
+    &_p160-md {
+      transform: rotate(160deg);
+    }
+
+    &_p165-md {
+      transform: rotate(165deg);
+    }
+
+    &_p170-md {
+      transform: rotate(170deg);
+    }
+
+    &_p175-md {
+      transform: rotate(175deg);
+    }
+
+    &_n5-md {
+      transform: rotate(-5deg);
+    }
+
+    &_n10-md {
+      transform: rotate(-10deg);
+    }
+
+    &_n15-md {
+      transform: rotate(-15deg);
+    }
+
+    &_n20-md {
+      transform: rotate(-20deg);
+    }
+
+    &_n25-md {
+      transform: rotate(-25deg);
+    }
+
+    &_n30-md {
+      transform: rotate(-30deg);
+    }
+
+    &_n35-md {
+      transform: rotate(-35deg);
+    }
+
+    &_n40-md {
+      transform: rotate(-40deg);
+    }
+
+    &_n45-md {
+      transform: rotate(-45deg);
+    }
+
+    &_n50-md {
+      transform: rotate(-50deg);
+    }
+
+    &_n55-md {
+      transform: rotate(-55deg);
+    }
+
+    &_n60-md {
+      transform: rotate(-60deg);
+    }
+
+    &_n65-md {
+      transform: rotate(-65deg);
+    }
+
+    &_n70-md {
+      transform: rotate(-70deg);
+    }
+
+    &_n75-md {
+      transform: rotate(-75deg);
+    }
+
+    &_n80-md {
+      transform: rotate(-80deg);
+    }
+
+    &_n85-md {
+      transform: rotate(-85deg);
+    }
+
+    &_n90-md {
+      transform: rotate(-90deg);
+    }
+
+    &_n95-md {
+      transform: rotate(-95deg);
+    }
+
+    &_n100-md {
+      transform: rotate(-100deg);
+    }
+
+    &_n105-md {
+      transform: rotate(-105deg);
+    }
+
+    &_n110-md {
+      transform: rotate(-110deg);
+    }
+
+    &_n115-md {
+      transform: rotate(-115deg);
+    }
+
+    &_n120-md {
+      transform: rotate(-120deg);
+    }
+
+    &_n125-md {
+      transform: rotate(-125deg);
+    }
+
+    &_n130-md {
+      transform: rotate(-130deg);
+    }
+
+    &_n135-md {
+      transform: rotate(-135deg);
+    }
+
+    &_n130-md {
+      transform: rotate(-140deg);
+    }
+
+    &_n145-md {
+      transform: rotate(-145deg);
+    }
+
+    &_n150-md {
+      transform: rotate(-150deg);
+    }
+
+    &_n155-md {
+      transform: rotate(-155deg);
+    }
+
+    &_n160-md {
+      transform: rotate(-160deg);
+    }
+
+    &_n165-md {
+      transform: rotate(-165deg);
+    }
+
+    &_n170-md {
+      transform: rotate(-170deg);
+    }
+
+    &_n175-md {
+      transform: rotate(-175deg);
+    }
+  }
+
+  .#{$scale} {
+    &_1-md {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$rotate} {
+    &_0-sm {
+      transform: rotate(0);
+    }
+
+    &_180-sm {
+      transform: rotate(180deg);
+    }
+
+    &_p5-sm {
+      transform: rotate(5deg);
+    }
+
+    &_p10-sm {
+      transform: rotate(10deg);
+    }
+
+    &_p15-sm {
+      transform: rotate(15deg);
+    }
+
+    &_p20-sm {
+      transform: rotate(20deg);
+    }
+
+    &_p25-sm {
+      transform: rotate(25deg);
+    }
+
+    &_p30-sm {
+      transform: rotate(30deg);
+    }
+
+    &_p35-sm {
+      transform: rotate(35deg);
+    }
+
+    &_p40-sm {
+      transform: rotate(40deg);
+    }
+
+    &_p45-sm {
+      transform: rotate(45deg);
+    }
+
+    &_p50-sm {
+      transform: rotate(50deg);
+    }
+
+    &_p55-sm {
+      transform: rotate(55deg);
+    }
+
+    &_p60-sm {
+      transform: rotate(60deg);
+    }
+
+    &_p65-sm {
+      transform: rotate(65deg);
+    }
+
+    &_p70-sm {
+      transform: rotate(70deg);
+    }
+
+    &_p75-sm {
+      transform: rotate(75deg);
+    }
+
+    &_p80-sm {
+      transform: rotate(80deg);
+    }
+
+    &_p85-sm {
+      transform: rotate(85deg);
+    }
+
+    &_p90-sm {
+      transform: rotate(90deg);
+    }
+
+    &_p95-sm {
+      transform: rotate(95deg);
+    }
+
+    &_p100-sm {
+      transform: rotate(100deg);
+    }
+
+    &_p105-sm {
+      transform: rotate(105deg);
+    }
+
+    &_p110-sm {
+      transform: rotate(110deg);
+    }
+
+    &_p115-sm {
+      transform: rotate(115deg);
+    }
+
+    &_p120-sm {
+      transform: rotate(120deg);
+    }
+
+    &_p125-sm {
+      transform: rotate(125deg);
+    }
+
+    &_p130-sm {
+      transform: rotate(130deg);
+    }
+
+    &_p135-sm {
+      transform: rotate(135deg);
+    }
+
+    &_p130-sm {
+      transform: rotate(140deg);
+    }
+
+    &_p145-sm {
+      transform: rotate(145deg);
+    }
+
+    &_p150-sm {
+      transform: rotate(150deg);
+    }
+
+    &_p155-sm {
+      transform: rotate(155deg);
+    }
+
+    &_p160-sm {
+      transform: rotate(160deg);
+    }
+
+    &_p165-sm {
+      transform: rotate(165deg);
+    }
+
+    &_p170-sm {
+      transform: rotate(170deg);
+    }
+
+    &_p175-sm {
+      transform: rotate(175deg);
+    }
+
+    &_n5-sm {
+      transform: rotate(-5deg);
+    }
+
+    &_n10-sm {
+      transform: rotate(-10deg);
+    }
+
+    &_n15-sm {
+      transform: rotate(-15deg);
+    }
+
+    &_n20-sm {
+      transform: rotate(-20deg);
+    }
+
+    &_n25-sm {
+      transform: rotate(-25deg);
+    }
+
+    &_n30-sm {
+      transform: rotate(-30deg);
+    }
+
+    &_n35-sm {
+      transform: rotate(-35deg);
+    }
+
+    &_n40-sm {
+      transform: rotate(-40deg);
+    }
+
+    &_n45-sm {
+      transform: rotate(-45deg);
+    }
+
+    &_n50-sm {
+      transform: rotate(-50deg);
+    }
+
+    &_n55-sm {
+      transform: rotate(-55deg);
+    }
+
+    &_n60-sm {
+      transform: rotate(-60deg);
+    }
+
+    &_n65-sm {
+      transform: rotate(-65deg);
+    }
+
+    &_n70-sm {
+      transform: rotate(-70deg);
+    }
+
+    &_n75-sm {
+      transform: rotate(-75deg);
+    }
+
+    &_n80-sm {
+      transform: rotate(-80deg);
+    }
+
+    &_n85-sm {
+      transform: rotate(-85deg);
+    }
+
+    &_n90-sm {
+      transform: rotate(-90deg);
+    }
+
+    &_n95-sm {
+      transform: rotate(-95deg);
+    }
+
+    &_n100-sm {
+      transform: rotate(-100deg);
+    }
+
+    &_n105-sm {
+      transform: rotate(-105deg);
+    }
+
+    &_n110-sm {
+      transform: rotate(-110deg);
+    }
+
+    &_n115-sm {
+      transform: rotate(-115deg);
+    }
+
+    &_n120-sm {
+      transform: rotate(-120deg);
+    }
+
+    &_n125-sm {
+      transform: rotate(-125deg);
+    }
+
+    &_n130-sm {
+      transform: rotate(-130deg);
+    }
+
+    &_n135-sm {
+      transform: rotate(-135deg);
+    }
+
+    &_n130-sm {
+      transform: rotate(-140deg);
+    }
+
+    &_n145-sm {
+      transform: rotate(-145deg);
+    }
+
+    &_n150-sm {
+      transform: rotate(-150deg);
+    }
+
+    &_n155-sm {
+      transform: rotate(-155deg);
+    }
+
+    &_n160-sm {
+      transform: rotate(-160deg);
+    }
+
+    &_n165-sm {
+      transform: rotate(-165deg);
+    }
+
+    &_n170-sm {
+      transform: rotate(-170deg);
+    }
+
+    &_n175-sm {
+      transform: rotate(-175deg);
+    }
+  }
+
+  .#{$scale} {
+    &_1-sm {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$rotate} {
+    &_0-xs {
+      transform: rotate(0);
+    }
+
+    &_180-xs {
+      transform: rotate(180deg);
+    }
+
+    &_p5-xs {
+      transform: rotate(5deg);
+    }
+
+    &_p10-xs {
+      transform: rotate(10deg);
+    }
+
+    &_p15-xs {
+      transform: rotate(15deg);
+    }
+
+    &_p20-xs {
+      transform: rotate(20deg);
+    }
+
+    &_p25-xs {
+      transform: rotate(25deg);
+    }
+
+    &_p30-xs {
+      transform: rotate(30deg);
+    }
+
+    &_p35-xs {
+      transform: rotate(35deg);
+    }
+
+    &_p40-xs {
+      transform: rotate(40deg);
+    }
+
+    &_p45-xs {
+      transform: rotate(45deg);
+    }
+
+    &_p50-xs {
+      transform: rotate(50deg);
+    }
+
+    &_p55-xs {
+      transform: rotate(55deg);
+    }
+
+    &_p60-xs {
+      transform: rotate(60deg);
+    }
+
+    &_p65-xs {
+      transform: rotate(65deg);
+    }
+
+    &_p70-xs {
+      transform: rotate(70deg);
+    }
+
+    &_p75-xs {
+      transform: rotate(75deg);
+    }
+
+    &_p80-xs {
+      transform: rotate(80deg);
+    }
+
+    &_p85-xs {
+      transform: rotate(85deg);
+    }
+
+    &_p90-xs {
+      transform: rotate(90deg);
+    }
+
+    &_p95-xs {
+      transform: rotate(95deg);
+    }
+
+    &_p100-xs {
+      transform: rotate(100deg);
+    }
+
+    &_p105-xs {
+      transform: rotate(105deg);
+    }
+
+    &_p110-xs {
+      transform: rotate(110deg);
+    }
+
+    &_p115-xs {
+      transform: rotate(115deg);
+    }
+
+    &_p120-xs {
+      transform: rotate(120deg);
+    }
+
+    &_p125-xs {
+      transform: rotate(125deg);
+    }
+
+    &_p130-xs {
+      transform: rotate(130deg);
+    }
+
+    &_p135-xs {
+      transform: rotate(135deg);
+    }
+
+    &_p130-xs {
+      transform: rotate(140deg);
+    }
+
+    &_p145-xs {
+      transform: rotate(145deg);
+    }
+
+    &_p150-xs {
+      transform: rotate(150deg);
+    }
+
+    &_p155-xs {
+      transform: rotate(155deg);
+    }
+
+    &_p160-xs {
+      transform: rotate(160deg);
+    }
+
+    &_p165-xs {
+      transform: rotate(165deg);
+    }
+
+    &_p170-xs {
+      transform: rotate(170deg);
+    }
+
+    &_p175-xs {
+      transform: rotate(175deg);
+    }
+
+    &_n5-xs {
+      transform: rotate(-5deg);
+    }
+
+    &_n10-xs {
+      transform: rotate(-10deg);
+    }
+
+    &_n15-xs {
+      transform: rotate(-15deg);
+    }
+
+    &_n20-xs {
+      transform: rotate(-20deg);
+    }
+
+    &_n25-xs {
+      transform: rotate(-25deg);
+    }
+
+    &_n30-xs {
+      transform: rotate(-30deg);
+    }
+
+    &_n35-xs {
+      transform: rotate(-35deg);
+    }
+
+    &_n40-xs {
+      transform: rotate(-40deg);
+    }
+
+    &_n45-xs {
+      transform: rotate(-45deg);
+    }
+
+    &_n50-xs {
+      transform: rotate(-50deg);
+    }
+
+    &_n55-xs {
+      transform: rotate(-55deg);
+    }
+
+    &_n60-xs {
+      transform: rotate(-60deg);
+    }
+
+    &_n65-xs {
+      transform: rotate(-65deg);
+    }
+
+    &_n70-xs {
+      transform: rotate(-70deg);
+    }
+
+    &_n75-xs {
+      transform: rotate(-75deg);
+    }
+
+    &_n80-xs {
+      transform: rotate(-80deg);
+    }
+
+    &_n85-xs {
+      transform: rotate(-85deg);
+    }
+
+    &_n90-xs {
+      transform: rotate(-90deg);
+    }
+
+    &_n95-xs {
+      transform: rotate(-95deg);
+    }
+
+    &_n100-xs {
+      transform: rotate(-100deg);
+    }
+
+    &_n105-xs {
+      transform: rotate(-105deg);
+    }
+
+    &_n110-xs {
+      transform: rotate(-110deg);
+    }
+
+    &_n115-xs {
+      transform: rotate(-115deg);
+    }
+
+    &_n120-xs {
+      transform: rotate(-120deg);
+    }
+
+    &_n125-xs {
+      transform: rotate(-125deg);
+    }
+
+    &_n130-xs {
+      transform: rotate(-130deg);
+    }
+
+    &_n135-xs {
+      transform: rotate(-135deg);
+    }
+
+    &_n130-xs {
+      transform: rotate(-140deg);
+    }
+
+    &_n145-xs {
+      transform: rotate(-145deg);
+    }
+
+    &_n150-xs {
+      transform: rotate(-150deg);
+    }
+
+    &_n155-xs {
+      transform: rotate(-155deg);
+    }
+
+    &_n160-xs {
+      transform: rotate(-160deg);
+    }
+
+    &_n165-xs {
+      transform: rotate(-165deg);
+    }
+
+    &_n170-xs {
+      transform: rotate(-170deg);
+    }
+
+    &_n175-xs {
+      transform: rotate(-175deg);
+    }
+  }
+
+  .#{$scale} {
+    &_1-xs {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

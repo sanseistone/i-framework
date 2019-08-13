@@ -1,0 +1,273 @@
+//width-percent
+
+.#{$layout} > [class^="w_"],
+.#{$row} > [class^="w_"] {
+  position: relative;
+  min-height: 1px;
+  /*float: left;*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//width-percent
+
+.#{$width} {
+  @each $key, $value in $width-grid-series {
+    &_#{$key} {
+      @include width-flex-grid-variant($value);
+    }
+  }
+}
+
+//offset
+
+.#{$width-offset} {
+  @each $key, $value in $width-offset-series {
+    &_#{$key} {
+      @include width-flex-offset-variant($value);
+    }
+  }
+}
+
+//width-pixel
+
+.#{$width} {
+  @each $key, $value in $width-pixel-series {
+    &_#{$key} {
+      @include width-pixel-variant($value);
+    }
+  }
+}
+
+//other
+
+.#{$max-width} {
+  &_full {
+    max-width: 100%;
+  }
+}
+
+.#{$min-width} {
+  &_0 {
+    min-width: 0;
+  }
+
+  &_full {
+    min-width: 100%;
+  }
+
+  &_screen {
+    min-width: 100vw;
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$width} {
+    @each $key, $value in $width-grid-series {
+      &_#{$key}-lg {
+        @include width-flex-grid-variant($value);
+      }
+    }
+  }
+
+  .#{$width-offset} {
+    @each $key, $value in $width-offset-series {
+      &_#{$key}-lg {
+        @include width-flex-offset-variant($value);
+      }
+    }
+  }
+
+  .#{$width} {
+    @each $key, $value in $width-pixel-series {
+      &_#{$key}-lg {
+        @include width-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-width} {
+    &_full-lg {
+      max-width: 100%;
+    }
+  }
+
+  .#{$min-width} {
+    &_0-lg {
+      min-width: 0;
+    }
+
+    &_full-lg {
+      min-width: 100%;
+    }
+
+    &_screen-lg {
+      min-width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$width} {
+    @each $key, $value in $width-grid-series {
+      &_#{$key}-md {
+        @include width-flex-grid-variant($value);
+      }
+    }
+  }
+
+  .#{$width-offset} {
+    @each $key, $value in $width-offset-series {
+      &_#{$key}-md {
+        @include width-flex-offset-variant($value);
+      }
+    }
+  }
+
+  .#{$width} {
+    @each $key, $value in $width-pixel-series {
+      &_#{$key}-md {
+        @include width-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-width} {
+    &_full-md {
+      max-width: 100%;
+    }
+  }
+
+  .#{$min-width} {
+    &_0-md {
+      min-width: 0;
+    }
+
+    &_full-md {
+      min-width: 100%;
+    }
+
+    &_screen-md {
+      min-width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$width} {
+    @each $key, $value in $width-grid-series {
+      &_#{$key}-sm {
+        @include width-flex-grid-variant($value);
+      }
+    }
+  }
+
+  .#{$width-offset} {
+    @each $key, $value in $width-offset-series {
+      &_#{$key}-sm {
+        @include width-flex-offset-variant($value);
+      }
+    }
+  }
+
+  .#{$width} {
+    @each $key, $value in $width-pixel-series {
+      &_#{$key}-sm {
+        @include width-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-width} {
+    &_full-sm {
+      max-width: 100%;
+    }
+  }
+
+  .#{$min-width} {
+    &_0-sm {
+      min-width: 0;
+    }
+
+    &_full-sm {
+      min-width: 100%;
+    }
+
+    &_screen-sm {
+      min-width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$width} {
+    @each $key, $value in $width-grid-series {
+      &_#{$key}-xs {
+        @include width-flex-grid-variant($value);
+      }
+    }
+  }
+
+  .#{$width-offset} {
+    @each $key, $value in $width-offset-series {
+      &_#{$key}-xs {
+        @include width-flex-offset-variant($value);
+      }
+    }
+  }
+
+  .#{$width} {
+    @each $key, $value in $width-pixel-series {
+      &_#{$key}-xs {
+        @include width-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-width} {
+    &_full-xs {
+      max-width: 100%;
+    }
+  }
+
+  .#{$min-width} {
+    &_0-xs {
+      min-width: 0;
+    }
+
+    &_full-xs {
+      min-width: 100%;
+    }
+
+    &_screen-xs {
+      min-width: 100vw;
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

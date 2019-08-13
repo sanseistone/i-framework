@@ -1,0 +1,596 @@
+//position
+
+@each $key, $value in $position-default-series {
+  .#{$key} {
+    @include position-default-variant($value);
+  }
+}
+
+.#{$position} {
+  @each $key, $value in $position-round-series {
+    &_#{$key} {
+      @include position-round-variant($value, $value, $value, $value);
+    }
+  }
+
+  &_center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_x_center {
+    /*top: inherit;*/
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &_y_center {
+    top: 50%;
+    /*left: inherit;*/
+    transform: translateY(-50%);
+  }
+}
+
+.#{$position-top} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-top-variant($value);
+    }
+  }
+}
+
+.#{$position-top-out} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-top-out-variant($value);
+    }
+  }
+}
+
+.#{$position-right} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-right-variant($value);
+    }
+  }
+}
+
+.#{$position-right-out} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-right-out-variant($value);
+    }
+  }
+}
+
+.#{$position-bottom} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-bottom-variant($value);
+    }
+  }
+}
+
+.#{$position-bottom-out} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-bottom-out-variant($value);
+    }
+  }
+}
+
+.#{$position-left} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-left-variant($value);
+    }
+  }
+}
+
+.#{$position-left-out} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-left-out-variant($value);
+    }
+  }
+}
+
+.#{$position-x-axis} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-x-axis-variant($value, $value);
+    }
+  }
+}
+
+.#{$position-y-axis} {
+  @each $key, $value in $position-series {
+    &_#{$key} {
+      @include position-y-axis-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  @each $key, $value in $position-default-series {
+    .#{$key}-lg {
+      @include position-default-variant($value);
+    }
+  }
+
+  .#{$position} {
+    @each $key, $value in $position-round-series {
+      &_#{$key}-lg {
+        @include position-round-variant($value, $value, $value, $value);
+      }
+    }
+
+    &_center-lg {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_x_center-lg {
+      /*top: inherit;*/
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &_y_center-lg {
+      top: 50%;
+      /*left: inherit;*/
+      transform: translateY(-50%);
+    }
+  }
+
+  .#{$position-top} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-top-variant($value);
+      }
+    }
+  }
+
+  .#{$position-top-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-top-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-right-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-right-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-bottom-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-bottom-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-left-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-left-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-x-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-x-axis-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$position-y-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-lg {
+        @include position-y-axis-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  @each $key, $value in $position-default-series {
+    .#{$key}-md {
+      @include position-default-variant($value);
+    }
+  }
+
+  .#{$position} {
+    @each $key, $value in $position-round-series {
+      &_#{$key}-md {
+        @include position-round-variant($value, $value, $value, $value);
+      }
+    }
+
+    &_center-md {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_x_center-md {
+      /*top: inherit;*/
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &_y_center-md {
+      top: 50%;
+      /*left: inherit;*/
+      transform: translateY(-50%);
+    }
+  }
+
+  .#{$position-top} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-top-variant($value);
+      }
+    }
+  }
+
+  .#{$position-top-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-top-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-right-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-right-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-bottom-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-bottom-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-left-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-left-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-x-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-x-axis-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$position-y-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-md {
+        @include position-y-axis-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  @each $key, $value in $position-default-series {
+    .#{$key}-sm {
+      @include position-default-variant($value);
+    }
+  }
+
+  .#{$position} {
+    @each $key, $value in $position-round-series {
+      &_#{$key}-sm {
+        @include position-round-variant($value, $value, $value, $value);
+      }
+    }
+
+    &_center-sm {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_x_center-sm {
+      /*top: inherit;*/
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &_y_center-sm {
+      top: 50%;
+      /*left: inherit;*/
+      transform: translateY(-50%);
+    }
+  }
+
+  .#{$position-top} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-top-variant($value);
+      }
+    }
+  }
+
+  .#{$position-top-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-top-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-right-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-right-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-bottom-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-bottom-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-left-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-left-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-x-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-x-axis-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$position-y-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-sm {
+        @include position-y-axis-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  @each $key, $value in $position-default-series {
+    .#{$key}-xs {
+      @include position-default-variant($value);
+    }
+  }
+
+  .#{$position} {
+    @each $key, $value in $position-round-series {
+      &_#{$key}-xs {
+        @include position-round-variant($value, $value, $value, $value);
+      }
+    }
+
+    &_center-xs {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_x_center-xs {
+      /*top: inherit;*/
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &_y_center-xs {
+      top: 50%;
+      /*left: inherit;*/
+      transform: translateY(-50%);
+    }
+  }
+
+  .#{$position-top} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-top-variant($value);
+      }
+    }
+  }
+
+  .#{$position-top-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-top-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-right-variant($value);
+      }
+    }
+  }
+
+  .#{$position-right-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-right-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-bottom-variant($value);
+      }
+    }
+  }
+
+  .#{$position-bottom-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-bottom-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-left-variant($value);
+      }
+    }
+  }
+
+  .#{$position-left-out} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-left-out-variant($value);
+      }
+    }
+  }
+
+  .#{$position-x-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-x-axis-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$position-y-axis} {
+    @each $key, $value in $position-series {
+      &_#{$key}-xs {
+        @include position-y-axis-variant($value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

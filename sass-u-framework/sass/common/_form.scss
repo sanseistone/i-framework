@@ -1,0 +1,675 @@
+//form
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /*chrome浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  /*Firefox浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -moz-appearance: textfield;
+}
+
+:focus {
+  outline: none;
+}
+
+.#{$form-control} {
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $color-default;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  @each $key, $value in $red-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include form-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

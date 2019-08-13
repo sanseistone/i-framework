@@ -1,0 +1,212 @@
+//percent
+
+.#{$height} {
+  @each $key, $value in $height-percent-series {
+    &_#{$key} {
+      @include height-percent-variant($value);
+    }
+  }
+}
+
+//pixel
+
+.#{$height} {
+  @each $key, $value in $height-pixel-series {
+    &_#{$key} {
+      @include height-pixel-variant($value);
+    }
+  }
+}
+
+//rem
+
+.#{$height} {
+  @each $key, $value in $rem-size-series {
+    &_#{$key} {
+      @include height-rem-variant($value);
+    }
+  }
+}
+
+//max-height
+
+.#{$max-height} {
+  @each $key, $value in $max-height-series {
+    &_#{$key} {
+      @include max-height-variant($value);
+    }
+  }
+}
+
+//min-height
+
+.#{$min-height} {
+  @each $key, $value in $min-height-series {
+    &_#{$key} {
+      @include min-height-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$height} {
+    @each $key, $value in $height-percent-series {
+      &_#{$key}-lg {
+        @include height-percent-variant($value);
+      }
+    }
+  }
+
+  .#{$height} {
+    @each $key, $value in $height-pixel-series {
+      &_#{$key}-lg {
+        @include height-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-height} {
+    @each $key, $value in $max-height-series {
+      &_#{$key}-lg {
+        @include max-height-variant($value);
+      }
+    }
+  }
+
+  .#{$min-height} {
+    @each $key, $value in $min-height-series {
+      &_#{$key}-lg {
+        @include min-height-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$height} {
+    @each $key, $value in $height-percent-series {
+      &_#{$key}-md {
+        @include height-percent-variant($value);
+      }
+    }
+  }
+
+  .#{$height} {
+    @each $key, $value in $height-pixel-series {
+      &_#{$key}-md {
+        @include height-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-height} {
+    @each $key, $value in $max-height-series {
+      &_#{$key}-md {
+        @include max-height-variant($value);
+      }
+    }
+  }
+
+  .#{$min-height} {
+    @each $key, $value in $min-height-series {
+      &_#{$key}-md {
+        @include min-height-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$height} {
+    @each $key, $value in $height-percent-series {
+      &_#{$key}-sm {
+        @include height-percent-variant($value);
+      }
+    }
+  }
+
+  .#{$height} {
+    @each $key, $value in $height-pixel-series {
+      &_#{$key}-sm {
+        @include height-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-height} {
+    @each $key, $value in $max-height-series {
+      &_#{$key}-sm {
+        @include max-height-variant($value);
+      }
+    }
+  }
+
+  .#{$min-height} {
+    @each $key, $value in $min-height-series {
+      &_#{$key}-sm {
+        @include min-height-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$height} {
+    @each $key, $value in $height-percent-series {
+      &_#{$key}-xs {
+        @include height-percent-variant($value);
+      }
+    }
+  }
+
+  .#{$height} {
+    @each $key, $value in $height-pixel-series {
+      &_#{$key}-xs {
+        @include height-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$max-height} {
+    @each $key, $value in $max-height-series {
+      &_#{$key}-xs {
+        @include max-height-variant($value);
+      }
+    }
+  }
+
+  .#{$min-height} {
+    @each $key, $value in $min-height-series {
+      &_#{$key}-xs {
+        @include min-height-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

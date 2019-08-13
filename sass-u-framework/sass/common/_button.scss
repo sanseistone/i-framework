@@ -1,0 +1,179 @@
+//button
+
+.#{$button} {
+  & {
+    //color: $color-f;
+    //border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    transition: all .3s ease;
+  }
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    //color: $color-f;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    box-shadow: none;
+    outline: none;
+    outline-offset: 0;
+  }
+
+  &.active.focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &:active:focus,
+  &:focus {
+    /*outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;*/
+    outline: none;
+    outline-offset: 0;
+  }
+
+  &.xs {
+    @include button-xs;
+  }
+
+  &.sm {
+    @include button-sm;
+  }
+
+  &.default {
+    @include button-default;
+  }
+
+  &.lg {
+    @include button-lg;
+  }
+
+  &.xl {
+    @include button-xl;
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$button} {
+    &.xs-lg {
+      @include button-xs;
+    }
+
+    &.sm-lg {
+      @include button-sm;
+    }
+
+    &.default-lg {
+      @include button-default;
+    }
+
+    &.lg-lg {
+      @include button-lg;
+    }
+
+    &.xl-lg {
+      @include button-xl;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$button} {
+    &.xs-md {
+      @include button-xs;
+    }
+
+    &.sm-md {
+      @include button-sm;
+    }
+
+    &.default-md {
+      @include button-default;
+    }
+
+    &.lg-md {
+      @include button-lg;
+    }
+
+    &.xl-md {
+      @include button-xl;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$button} {
+    &.xs-sm {
+      @include button-xs;
+    }
+
+    &.sm-sm {
+      @include button-sm;
+    }
+
+    &.default-sm {
+      @include button-default;
+    }
+
+    &.lg-sm {
+      @include button-lg;
+    }
+
+    &.xl-sm {
+      @include button-xl;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$button} {
+    &.xs-xs {
+      @include button-xs;
+    }
+
+    &.sm-xs {
+      @include button-sm;
+    }
+
+    &.default-xs {
+      @include button-default;
+    }
+
+    &.lg-xs {
+      @include button-lg;
+    }
+
+    &.xl-xs {
+      @include button-xl;
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

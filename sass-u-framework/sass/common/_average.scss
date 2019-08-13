@@ -1,0 +1,86 @@
+//global
+
+.#{$average} {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//average
+
+.#{$layout}, .#{$row} {
+  @each $key, $value in $width-column-series {
+    &.#{$key} > .#{$average} {
+      @include width-column-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$layout}, .#{$row} {
+    @each $key, $value in $width-column-series {
+      &.#{$key}-lg > .#{$average} {
+        @include width-column-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$layout}, .#{$row} {
+    @each $key, $value in $width-column-series {
+      &.#{$key}-md > .#{$average} {
+        @include width-column-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$layout}, .#{$row} {
+    @each $key, $value in $width-column-series {
+      &.#{$key}-sm > .#{$average} {
+        @include width-column-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$layout}, .#{$row} {
+    @each $key, $value in $width-column-series {
+      &.#{$key}-xs > .#{$average} {
+        @include width-column-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

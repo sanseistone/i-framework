@@ -1,0 +1,146 @@
+//link
+
+a.#{$hover} {
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.white:focus,
+  &.white:hover {
+    color: $color-f;
+  }
+
+  &.black:focus,
+  &.black:hover {
+    color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  a.#{$hover} {
+    &.underline-lg {
+      text-decoration: underline;
+    }
+
+    &.white-lg:focus,
+    &.white-lg:hover {
+      color: $color-f;
+    }
+
+    &.black-lg:focus,
+    &.black-lg:hover {
+      color: $color-0;
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  a.#{$hover} {
+    &.underline-md {
+      text-decoration: underline;
+    }
+
+    &.white-md:focus,
+    &.white-md:hover {
+      color: $color-f;
+    }
+
+    &.black-md:focus,
+    &.black-md:hover {
+      color: $color-0;
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  a.#{$hover} {
+    &.underline-sm {
+      text-decoration: underline;
+    }
+
+    &.white-sm:focus,
+    &.white-sm:hover {
+      color: $color-f;
+    }
+
+    &.black-sm:focus,
+    &.black-sm:hover {
+      color: $color-0;
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  a.#{$hover} {
+    &.underline-xs {
+      text-decoration: underline;
+    }
+
+    &.white-xs:focus,
+    &.white-xs:hover {
+      color: $color-f;
+    }
+
+    &.black-xs:focus,
+    &.black-xs:hover {
+      color: $color-0;
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}
