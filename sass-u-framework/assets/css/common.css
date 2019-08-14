@@ -840,14 +840,6 @@
   margin-left: -15px;
 }
 
-.wrapper,
-.package {
-  position: relative;
-  display: block;
-  width: 100%;
-  float: left;
-}
-
 @media (max-width: 1199px) {
   .container {
     max-width: inherit;
@@ -88839,7 +88831,6 @@ Grid布局
 .average {
   position: relative;
   min-height: 1px;
-  float: left;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -89036,7 +89027,6 @@ Grid布局
 [class^="col_"] {
   position: relative;
   min-height: 1px;
-  float: left;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -138203,19 +138193,6 @@ Grid布局
 
 .layout:after,
 .row:after {
-  clear: both;
-}
-
-.wrapper:before,
-.wrapper:after,
-.package:before,
-.package:after {
-  display: table;
-  content: "";
-}
-
-.wrapper:after,
-.package:after {
   clear: both;
 }
 

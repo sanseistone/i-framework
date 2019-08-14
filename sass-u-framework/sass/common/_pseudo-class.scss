@@ -35,19 +35,6 @@
   clear: both;
 }
 
-.#{$wrapper}:before,
-.#{$wrapper}:after,
-.#{$package}:before,
-.#{$package}:after {
-  display: table;
-  content: "";
-}
-
-.#{$wrapper}:after,
-.#{$package}:after {
-  clear: both;
-}
-
 .#{$average}:before,
 .#{$average}:after {
   display: table;

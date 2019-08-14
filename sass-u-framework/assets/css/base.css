@@ -1838,7 +1838,6 @@ img {
 .page-nav {
   position: relative;
   width: 100%;
-  float: left;
 }
 .page-nav > li > a, .page-nav > li > span {
   color: #1e88e5;
