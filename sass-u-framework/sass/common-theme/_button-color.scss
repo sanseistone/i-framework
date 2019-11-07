@@ -1,0 +1,1262 @@
+//border-color
+
+[class^="btn-"].default {
+  color: $color-f;
+  border-color: $color-default;
+  background-color: $color-default;
+}
+
+.#{$button-white} {
+  color: $color-3;
+  border-color: $color-3;
+  background-color: $color-f;
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+}
+
+.#{$button-black} {
+  color: $color-f;
+  border-color: $color-3;
+  background-color: $color-3;
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: $color-f;
+    border-color: $color-f;
+    background-color: $color-3;
+  }
+}
+
+@each $key, $value in $red-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $red-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$button-white}-lg {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-lg {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$button-white}-md {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-md {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$button-white}-sm {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-sm {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$button-white}-xs {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-xs {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -209,115 +209,115 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
   display: flex;
 }
 
-.inline_flex {
+.inline-flex {
   display: inline-flex;
 }
 
 //flex-direction
 
-.flex_row {
+.flex-row {
   flex-direction: row;
 }
 
-.flex_row_reverse {
+.flex-row-reverse {
   flex-direction: row-reverse;
 }
 
-.flex_col {
+.flex-col {
   flex-direction: column;
 }
 
-.flex_col_reverse {
+.flex-col-reverse {
   flex-direction: column-reverse;
 }
 
 //flex-wrap
 
-.flex_n_wrap {
+.flex-n-wrap {
   flex-wrap: nowrap;
 }
 
-.flex_wrap {
+.flex-wrap {
   flex-wrap: wrap;
 }
 
-.flex_wrap_reverse {
+.flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
 //flex-flow
 
-.flex_flow {
+.flex-flow {
   flex-flow: row nowrap;
 }
 
 //justify-content
 
-.justify_start {
+.justify-start {
   justify-content: flex-start;
 }
 
-.justify_end {
+.justify-end {
   justify-content: flex-end;
 }
 
-.justify_center {
+.justify-center {
   justify-content: center;
 }
 
-.justify_between {
+.justify-between {
   justify-content: space-between;
 }
 
-.justify_around {
+.justify-around {
   justify-content: space-around;
 }
 
 //align-items
 
-.items_start {
+.items-start {
   align-items: flex-start;
 }
 
-.items_end {
+.items-end {
   align-items: flex-end;
 }
 
-.items_center {
+.items-center {
   align-items: center;
 }
 
-.items_baseline {
+.items-baseline {
   align-items: baseline;
 }
 
-.items_stretch {
+.items-stretch {
   align-items: stretch;
 }
 
 //align-content
 
-.content_start {
+.content-start {
   align-content: flex-start;
 }
 
-.content_end {
+.content-end {
   align-content: flex-end;
 }
 
-.content_center {
+.content-center {
   align-content: center;
 }
 
-.content_between {
+.content-between {
   align-content: space-between;
 }
 
-.content_around {
+.content-around {
   align-content: space-around;
 }
 
-.content_stretch {
+.content-stretch {
   align-content: stretch;
 }
 
@@ -325,7 +325,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 
 .#{$flex-order} {
   @each $key, $value in $flex-order-series {
-    &_#{$key} {
+    &-#{$key} {
       @include flex-order-variant($value);
     }
   }
@@ -333,70 +333,70 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 
 //flex-grow
 
-.flex_grow {
+.flex-grow {
   flex-grow: 1;
 }
 
-.flex_n_grow {
+.flex-n-grow {
   flex-grow: 0;
 }
 
 //flex-shrink
 
-.flex_shrink {
+.flex-shrink {
   flex-shrink: 1;
 }
 
-.flex_n_shrink {
+.flex-n-shrink {
   flex-shrink: 0;
 }
 
 //flex-basis
 
-.flex_basis {
+.flex-basis {
 }
 
 //flex
 
-.flex_initial {
+.flex-initial {
   flex: initial;
 }
 
-.flex_1 {
+.flex-1 {
   flex: 1;
 }
 
-.flex_auto {
+.flex-auto {
   flex: auto;
 }
 
-.flex_n {
+.flex-n {
   flex: none;
 }
 
 //align-self
 
-.self_auto {
+.self-auto {
   align-self: auto;
 }
 
-.self_start {
+.self-start {
   align-self: flex-start;
 }
 
-.self_end {
+.self-end {
   align-self: flex-end;
 }
 
-.self_center {
+.self-center {
   align-self: center;
 }
 
-.self_baseline {
+.self-baseline {
   align-self: baseline;
 }
 
-.self_stretch {
+.self-stretch {
   align-self: stretch;
 }
 
@@ -406,7 +406,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$flex-order} {
     @each $key, $value in $flex-order-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include flex-order-variant($value);
       }
     }
@@ -417,7 +417,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
   //Large devices (desktops, 768px and 992px)
   .#{$flex-order} {
     @each $key, $value in $flex-order-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include flex-order-variant($value);
       }
     }
@@ -428,7 +428,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
   //Medium devices (tablets, 576px and 768px)
   .#{$flex-order} {
     @each $key, $value in $flex-order-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include flex-order-variant($value);
       }
     }
@@ -439,7 +439,7 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
   //Small devices (landscape phones, max-width 576px)
   .#{$flex-order} {
     @each $key, $value in $flex-order-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include flex-order-variant($value);
       }
     }

@@ -11,48 +11,48 @@
     border: none !important;
   }
 
-  &.t_n {
+  &.t-n {
     border-top: none !important;
   }
 
-  &.r_n {
+  &.r-n {
     border-right: none !important;
   }
 
-  &.b_n {
+  &.b-n {
     border-bottom: none !important;
   }
 
-  &.l_n {
+  &.l-n {
     border-left: none !important;
   }
 
-  &.tr_n {
+  &.tr-n {
     border-top: none !important;
     border-right: none !important;
   }
 
-  &.tb_n {
+  &.tb-n {
     border-top: none !important;
     border-bottom: none !important;
   }
 
-  &.tl_n {
+  &.tl-n {
     border-top: none !important;
     border-left: none !important;
   }
 
-  &.lr_n {
+  &.lr-n {
     border-left: none !important;
     border-right: none !important;
   }
 
-  &.rb_n {
+  &.rb-n {
     border-right: none !important;
     border-bottom: none !important;
   }
 
-  &.bl_n {
+  &.bl-n {
     border-bottom: none !important;
     border-left: none !important;
   }
@@ -65,28 +65,28 @@
     border-style: solid;
   }
 
-  &.t_#{$solid} {
+  &.t-#{$solid} {
     border-right: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-top-style: solid;
   }
 
-  &.r_#{$solid} {
+  &.r-#{$solid} {
     border-top: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-right-style: solid;
   }
 
-  &.b_#{$solid} {
+  &.b-#{$solid} {
     border-top: none !important;
     border-right: none !important;
     border-left: none !important;
     border-bottom-style: solid;
   }
 
-  &.l_#{$solid} {
+  &.l-#{$solid} {
     border-top: none;
     border-right: none !important;
     border-bottom: none !important;
@@ -101,28 +101,28 @@
     border-style: dashed;
   }
 
-  &.t_#{$dashed} {
+  &.t-#{$dashed} {
     border-right: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-top-style: dashed;
   }
 
-  &.r_#{$dashed} {
+  &.r-#{$dashed} {
     border-top: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-right-style: dashed;
   }
 
-  &.b_#{$dashed} {
+  &.b-#{$dashed} {
     border-top: none !important;
     border-right: none !important;
     border-left: none !important;
     border-bottom-style: dashed;
   }
 
-  &.l_#{$dashed} {
+  &.l-#{$dashed} {
     border-top: none !important;
     border-right: none !important;
     border-bottom: none !important;
@@ -137,28 +137,28 @@
     border-style: dotted;
   }
 
-  &.t_#{$dotted} {
+  &.t-#{$dotted} {
     border-right: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-top-style: dotted;
   }
 
-  &.r_#{$dotted} {
+  &.r-#{$dotted} {
     border-top: none !important;
     border-bottom: none !important;
     border-left: none !important;
     border-right-style: dotted;
   }
 
-  &.b_#{$dotted} {
+  &.b-#{$dotted} {
     border-top: none !important;
     border-right: none !important;
     border-left: none !important;
     border-bottom-style: dotted;
   }
 
-  &.l_#{$dotted} {
+  &.l-#{$dotted} {
     border-top: none !important;
     border-right: none !important;
     border-bottom: none !important;
@@ -170,7 +170,7 @@
 
 .#{$border} {
   @each $key, $value in $border-width-series {
-    &_#{$key} {
+    &-#{$key} {
       @include border-width-variant($value);
     }
   }
@@ -191,48 +191,48 @@
       border: none !important;
     }
 
-    &.t_n-lg {
+    &.t-n-lg {
       border-top: none !important;
     }
 
-    &.r_n-lg {
+    &.r-n-lg {
       border-right: none !important;
     }
 
-    &.b_n-lg {
+    &.b-n-lg {
       border-bottom: none !important;
     }
 
-    &.l_n-lg {
+    &.l-n-lg {
       border-left: none !important;
     }
 
-    &.tr_n-lg {
+    &.tr-n-lg {
       border-top: none !important;
       border-right: none !important;
     }
 
-    &.tb_n-lg {
+    &.tb-n-lg {
       border-top: none !important;
       border-bottom: none !important;
     }
 
-    &.tl_n-lg {
+    &.tl-n-lg {
       border-top: none !important;
       border-left: none !important;
     }
 
-    &.lr_n-lg {
+    &.lr-n-lg {
       border-left: none !important;
       border-right: none !important;
     }
 
-    &.rb_n-lg {
+    &.rb-n-lg {
       border-right: none !important;
       border-bottom: none !important;
     }
 
-    &.bl_n-lg {
+    &.bl-n-lg {
       border-bottom: none !important;
       border-left: none !important;
     }
@@ -243,28 +243,28 @@
       border-style: solid;
     }
 
-    &.t_#{$solid}-lg {
+    &.t-#{$solid}-lg {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: solid;
     }
 
-    &.r_#{$solid}-lg {
+    &.r-#{$solid}-lg {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: solid;
     }
 
-    &.b_#{$solid}-lg {
+    &.b-#{$solid}-lg {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: solid;
     }
 
-    &.l_#{$solid}-lg {
+    &.l-#{$solid}-lg {
       border-top: none;
       border-right: none !important;
       border-bottom: none !important;
@@ -277,28 +277,28 @@
       border-style: dashed;
     }
 
-    &.t_#{$dashed}-lg {
+    &.t-#{$dashed}-lg {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dashed;
     }
 
-    &.r_#{$dashed}-lg {
+    &.r-#{$dashed}-lg {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dashed;
     }
 
-    &.b_#{$dashed}-lg {
+    &.b-#{$dashed}-lg {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dashed;
     }
 
-    &.l_#{$dashed}-lg {
+    &.l-#{$dashed}-lg {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -311,28 +311,28 @@
       border-style: dotted;
     }
 
-    &.t_#{$dotted}-lg {
+    &.t-#{$dotted}-lg {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dotted;
     }
 
-    &.r_#{$dotted}-lg {
+    &.r-#{$dotted}-lg {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dotted;
     }
 
-    &.b_#{$dotted}-lg {
+    &.b-#{$dotted}-lg {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dotted;
     }
 
-    &.l_#{$dotted}-lg {
+    &.l-#{$dotted}-lg {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -342,7 +342,7 @@
 
   .#{$border} {
     @each $key, $value in $border-width-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include border-width-variant($value);
       }
     }
@@ -362,48 +362,48 @@
       border: none !important;
     }
 
-    &.t_n-md {
+    &.t-n-md {
       border-top: none !important;
     }
 
-    &.r_n-md {
+    &.r-n-md {
       border-right: none !important;
     }
 
-    &.b_n-md {
+    &.b-n-md {
       border-bottom: none !important;
     }
 
-    &.l_n-md {
+    &.l-n-md {
       border-left: none !important;
     }
 
-    &.tr_n-md {
+    &.tr-n-md {
       border-top: none !important;
       border-right: none !important;
     }
 
-    &.tb_n-md {
+    &.tb-n-md {
       border-top: none !important;
       border-bottom: none !important;
     }
 
-    &.tl_n-md {
+    &.tl-n-md {
       border-top: none !important;
       border-left: none !important;
     }
 
-    &.lr_n-md {
+    &.lr-n-md {
       border-left: none !important;
       border-right: none !important;
     }
 
-    &.rb_n-md {
+    &.rb-n-md {
       border-right: none !important;
       border-bottom: none !important;
     }
 
-    &.bl_n-md {
+    &.bl-n-md {
       border-bottom: none !important;
       border-left: none !important;
     }
@@ -414,28 +414,28 @@
       border-style: solid;
     }
 
-    &.t_#{$solid}-md {
+    &.t-#{$solid}-md {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: solid;
     }
 
-    &.r_#{$solid}-md {
+    &.r-#{$solid}-md {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: solid;
     }
 
-    &.b_#{$solid}-md {
+    &.b-#{$solid}-md {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: solid;
     }
 
-    &.l_#{$solid}-md {
+    &.l-#{$solid}-md {
       border-top: none;
       border-right: none !important;
       border-bottom: none !important;
@@ -448,28 +448,28 @@
       border-style: dashed;
     }
 
-    &.t_#{$dashed}-md {
+    &.t-#{$dashed}-md {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dashed;
     }
 
-    &.r_#{$dashed}-md {
+    &.r-#{$dashed}-md {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dashed;
     }
 
-    &.b_#{$dashed}-md {
+    &.b-#{$dashed}-md {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dashed;
     }
 
-    &.l_#{$dashed}-md {
+    &.l-#{$dashed}-md {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -482,28 +482,28 @@
       border-style: dotted;
     }
 
-    &.t_#{$dotted}-md {
+    &.t-#{$dotted}-md {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dotted;
     }
 
-    &.r_#{$dotted}-md {
+    &.r-#{$dotted}-md {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dotted;
     }
 
-    &.b_#{$dotted}-md {
+    &.b-#{$dotted}-md {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dotted;
     }
 
-    &.l_#{$dotted}-md {
+    &.l-#{$dotted}-md {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -513,7 +513,7 @@
 
   .#{$border} {
     @each $key, $value in $border-width-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include border-width-variant($value);
       }
     }
@@ -533,48 +533,48 @@
       border: none !important;
     }
 
-    &.t_n-sm {
+    &.t-n-sm {
       border-top: none !important;
     }
 
-    &.r_n-sm {
+    &.r-n-sm {
       border-right: none !important;
     }
 
-    &.b_n-sm {
+    &.b-n-sm {
       border-bottom: none !important;
     }
 
-    &.l_n-sm {
+    &.l-n-sm {
       border-left: none !important;
     }
 
-    &.tr_n-sm {
+    &.tr-n-sm {
       border-top: none !important;
       border-right: none !important;
     }
 
-    &.tb_n-sm {
+    &.tb-n-sm {
       border-top: none !important;
       border-bottom: none !important;
     }
 
-    &.tl_n-sm {
+    &.tl-n-sm {
       border-top: none !important;
       border-left: none !important;
     }
 
-    &.lr_n-sm {
+    &.lr-n-sm {
       border-left: none !important;
       border-right: none !important;
     }
 
-    &.rb_n-sm {
+    &.rb-n-sm {
       border-right: none !important;
       border-bottom: none !important;
     }
 
-    &.bl_n-sm {
+    &.bl-n-sm {
       border-bottom: none !important;
       border-left: none !important;
     }
@@ -585,28 +585,28 @@
       border-style: solid;
     }
 
-    &.t_#{$solid}-sm {
+    &.t-#{$solid}-sm {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: solid;
     }
 
-    &.r_#{$solid}-sm {
+    &.r-#{$solid}-sm {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: solid;
     }
 
-    &.b_#{$solid}-sm {
+    &.b-#{$solid}-sm {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: solid;
     }
 
-    &.l_#{$solid}-sm {
+    &.l-#{$solid}-sm {
       border-top: none;
       border-right: none !important;
       border-bottom: none !important;
@@ -619,28 +619,28 @@
       border-style: dashed;
     }
 
-    &.t_#{$dashed}-sm {
+    &.t-#{$dashed}-sm {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dashed;
     }
 
-    &.r_#{$dashed}-sm {
+    &.r-#{$dashed}-sm {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dashed;
     }
 
-    &.b_#{$dashed}-sm {
+    &.b-#{$dashed}-sm {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dashed;
     }
 
-    &.l_#{$dashed}-sm {
+    &.l-#{$dashed}-sm {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -653,28 +653,28 @@
       border-style: dotted;
     }
 
-    &.t_#{$dotted}-sm {
+    &.t-#{$dotted}-sm {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dotted;
     }
 
-    &.r_#{$dotted}-sm {
+    &.r-#{$dotted}-sm {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dotted;
     }
 
-    &.b_#{$dotted}-sm {
+    &.b-#{$dotted}-sm {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dotted;
     }
 
-    &.l_#{$dotted}-sm {
+    &.l-#{$dotted}-sm {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -684,7 +684,7 @@
 
   .#{$border} {
     @each $key, $value in $border-width-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include border-width-variant($value);
       }
     }
@@ -704,48 +704,48 @@
       border: none !important;
     }
 
-    &.t_n-xs {
+    &.t-n-xs {
       border-top: none !important;
     }
 
-    &.r_n-xs {
+    &.r-n-xs {
       border-right: none !important;
     }
 
-    &.b_n-xs {
+    &.b-n-xs {
       border-bottom: none !important;
     }
 
-    &.l_n-xs {
+    &.l-n-xs {
       border-left: none !important;
     }
 
-    &.tr_n-xs {
+    &.tr-n-xs {
       border-top: none !important;
       border-right: none !important;
     }
 
-    &.tb_n-xs {
+    &.tb-n-xs {
       border-top: none !important;
       border-bottom: none !important;
     }
 
-    &.tl_n-xs {
+    &.tl-n-xs {
       border-top: none !important;
       border-left: none !important;
     }
 
-    &.lr_n-xs {
+    &.lr-n-xs {
       border-left: none !important;
       border-right: none !important;
     }
 
-    &.rb_n-xs {
+    &.rb-n-xs {
       border-right: none !important;
       border-bottom: none !important;
     }
 
-    &.bl_n-xs {
+    &.bl-n-xs {
       border-bottom: none !important;
       border-left: none !important;
     }
@@ -756,28 +756,28 @@
       border-style: solid;
     }
 
-    &.t_#{$solid}-xs {
+    &.t-#{$solid}-xs {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: solid;
     }
 
-    &.r_#{$solid}-xs {
+    &.r-#{$solid}-xs {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: solid;
     }
 
-    &.b_#{$solid}-xs {
+    &.b-#{$solid}-xs {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: solid;
     }
 
-    &.l_#{$solid}-xs {
+    &.l-#{$solid}-xs {
       border-top: none;
       border-right: none !important;
       border-bottom: none !important;
@@ -790,28 +790,28 @@
       border-style: dashed;
     }
 
-    &.t_#{$dashed}-xs {
+    &.t-#{$dashed}-xs {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dashed;
     }
 
-    &.r_#{$dashed}-xs {
+    &.r-#{$dashed}-xs {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dashed;
     }
 
-    &.b_#{$dashed}-xs {
+    &.b-#{$dashed}-xs {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dashed;
     }
 
-    &.l_#{$dashed}-xs {
+    &.l-#{$dashed}-xs {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -824,28 +824,28 @@
       border-style: dotted;
     }
 
-    &.t_#{$dotted}-xs {
+    &.t-#{$dotted}-xs {
       border-right: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-top-style: dotted;
     }
 
-    &.r_#{$dotted}-xs {
+    &.r-#{$dotted}-xs {
       border-top: none !important;
       border-bottom: none !important;
       border-left: none !important;
       border-right-style: dotted;
     }
 
-    &.b_#{$dotted}-xs {
+    &.b-#{$dotted}-xs {
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-bottom-style: dotted;
     }
 
-    &.l_#{$dotted}-xs {
+    &.l-#{$dotted}-xs {
       border-top: none !important;
       border-right: none !important;
       border-bottom: none !important;
@@ -855,7 +855,7 @@
 
   .#{$border} {
     @each $key, $value in $border-width-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include border-width-variant($value);
       }
     }

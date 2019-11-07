@@ -1,0 +1,170 @@
+//heading
+
+.#{$heading} {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  &.default {
+    > *:first-child {
+      position: relative;
+      display: inline-block;
+    }
+
+    > *:first-child::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 3px;
+      background: #1e88e5;
+    }
+  }
+}
+
+//default-color
+
+.#{$heading} {
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value)
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+}
+
+//through
+
+.#{$heading} {
+  &.through {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      position: relative;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &::before {
+      margin-left: -100%;
+      right: 10px;
+    }
+
+    &::after {
+      margin-right: -100%;
+      left: 10px;
+    }
+
+    &.through-#{$left} {
+      text-align: right;
+    }
+
+    &.through-#{$right} {
+      text-align: left;
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$heading} {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value)
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$heading} {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value)
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$heading} {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value)
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$heading} {
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value)
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

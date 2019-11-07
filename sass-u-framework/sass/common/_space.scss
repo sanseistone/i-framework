@@ -2,7 +2,7 @@
 
 .#{$space} {
   @each $key, $value in $space-size-series {
-    &_#{$key} {
+    &-#{$key} {
       @include space-size-variant($value,$value,$value,$value);
     }
   }
@@ -14,7 +14,7 @@
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$space} {
     @each $key, $value in $space-size-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include space-size-variant($value,$value,$value,$value);
       }
     }
@@ -25,7 +25,7 @@
   //Large devices (desktops, 768px and 992px)
   .#{$space} {
     @each $key, $value in $space-size-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include space-size-variant($value,$value,$value,$value);
       }
     }
@@ -36,7 +36,7 @@
   //Medium devices (tablets, 576px and 768px)
   .#{$space} {
     @each $key, $value in $space-size-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include space-size-variant($value,$value,$value,$value);
       }
     }
@@ -47,7 +47,7 @@
   //Small devices (landscape phones, max-width 576px)
   .#{$space} {
     @each $key, $value in $space-size-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include space-size-variant($value,$value,$value,$value);
       }
     }

@@ -2,7 +2,7 @@
 
 .#{$font} {
   @each $key, $value in $font-family-series {
-    &_#{$key} {
+    &-#{$key} {
       @include font-family-variant($value);
     }
   }
@@ -12,7 +12,7 @@
 
 .#{$font} {
   @each $key, $value in $font-size-series {
-    &_#{$key} {
+    &-#{$key} {
       @include font-size-variant($value);
     }
   }
@@ -21,8 +21,8 @@
 //font-size-rem
 
 .#{$font} {
-  @each $key, $value in $rem-size-series {
-    &_#{$key} {
+  @each $key, $value in $rem-text-size-series {
+    &-#{$key} {
       @include font-size-variant($value);
     }
   }
@@ -32,7 +32,7 @@
 
 .#{$font} {
   @each $key, $value in $font-weight-series {
-    &_#{$key} {
+    &-#{$key} {
       @include font-weight-variant($value);
     }
   }
@@ -57,15 +57,15 @@
 //letter-spacing
 
 .#{$letter-spacing} {
-  &_tight {
+  &-tight {
     letter-spacing: -0.05em;
   }
 
-  &_normal {
+  &-normal {
     letter-spacing: 0;
   }
 
-  &_wide {
+  &-wide {
     letter-spacing: 0.05em;
   }
 }
@@ -105,7 +105,7 @@
     text-decoration: underline;
   }
 
-  &_n {
+  &-n {
     text-decoration: none;
   }
 }
@@ -121,7 +121,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.subpixel_antialiased {
+.subpixel-antialiased {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: auto;
 }
@@ -144,7 +144,7 @@
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$font} {
     @each $key, $value in $font-family-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include font-family-variant($value);
       }
     }
@@ -152,15 +152,15 @@
 
   .#{$font} {
     @each $key, $value in $font-size-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include font-size-variant($value);
       }
     }
   }
 
   .#{$font} {
-    @each $key, $value in $rem-size-series {
-      &_#{$key}-lg {
+    @each $key, $value in $rem-text-size-series {
+      &-#{$key}-lg {
         @include font-size-variant($value);
       }
     }
@@ -168,7 +168,7 @@
 
   .#{$font} {
     @each $key, $value in $font-weight-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include font-weight-variant($value);
       }
     }
@@ -191,15 +191,15 @@
   }
 
   .#{$letter-spacing} {
-    &_tight-lg {
+    &-tight-lg {
       letter-spacing: -0.05em;
     }
 
-    &_normal-lg {
+    &-normal-lg {
       letter-spacing: 0;
     }
 
-    &_wide-lg {
+    &-wide-lg {
       letter-spacing: 0.05em;
     }
   }
@@ -229,11 +229,11 @@
   }
 
   .#{$underline} {
-    &_lg {
+    &-lg {
       text-decoration: underline;
     }
 
-    &_n-lg {
+    &-n-lg {
       text-decoration: none;
     }
   }
@@ -247,7 +247,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .subpixel_antialiased-lg {
+  .subpixel-antialiased-lg {
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: auto;
   }
@@ -269,7 +269,7 @@
   //Large devices (desktops, 768px and 992px)
   .#{$font} {
     @each $key, $value in $font-family-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include font-family-variant($value);
       }
     }
@@ -277,15 +277,15 @@
 
   .#{$font} {
     @each $key, $value in $font-size-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include font-size-variant($value);
       }
     }
   }
 
   .#{$font} {
-    @each $key, $value in $rem-size-series {
-      &_#{$key}-md {
+    @each $key, $value in $rem-text-size-series {
+      &-#{$key}-md {
         @include font-size-variant($value);
       }
     }
@@ -293,7 +293,7 @@
 
   .#{$font} {
     @each $key, $value in $font-weight-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include font-weight-variant($value);
       }
     }
@@ -316,15 +316,15 @@
   }
 
   .#{$letter-spacing} {
-    &_tight-md {
+    &-tight-md {
       letter-spacing: -0.05em;
     }
 
-    &_normal-md {
+    &-normal-md {
       letter-spacing: 0;
     }
 
-    &_wide-md {
+    &-wide-md {
       letter-spacing: 0.05em;
     }
   }
@@ -354,11 +354,11 @@
   }
 
   .#{$underline} {
-    &_md {
+    &-md {
       text-decoration: underline;
     }
 
-    &_n-md {
+    &-n-md {
       text-decoration: none;
     }
   }
@@ -372,7 +372,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .subpixel_antialiased-md {
+  .subpixel-antialiased-md {
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: auto;
   }
@@ -394,7 +394,7 @@
   //Medium devices (tablets, 576px and 768px)
   .#{$font} {
     @each $key, $value in $font-family-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include font-family-variant($value);
       }
     }
@@ -402,15 +402,15 @@
 
   .#{$font} {
     @each $key, $value in $font-size-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include font-size-variant($value);
       }
     }
   }
 
   .#{$font} {
-    @each $key, $value in $rem-size-series {
-      &_#{$key}-sm {
+    @each $key, $value in $rem-text-size-series {
+      &-#{$key}-sm {
         @include font-size-variant($value);
       }
     }
@@ -418,7 +418,7 @@
 
   .#{$font} {
     @each $key, $value in $font-weight-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include font-weight-variant($value);
       }
     }
@@ -441,15 +441,15 @@
   }
 
   .#{$letter-spacing} {
-    &_tight-sm {
+    &-tight-sm {
       letter-spacing: -0.05em;
     }
 
-    &_normal-sm {
+    &-normal-sm {
       letter-spacing: 0;
     }
 
-    &_wide-sm {
+    &-wide-sm {
       letter-spacing: 0.05em;
     }
   }
@@ -479,11 +479,11 @@
   }
 
   .#{$underline} {
-    &_sm {
+    &-sm {
       text-decoration: underline;
     }
 
-    &_n-sm {
+    &-n-sm {
       text-decoration: none;
     }
   }
@@ -497,7 +497,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .subpixel_antialiased-sm {
+  .subpixel-antialiased-sm {
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: auto;
   }
@@ -519,7 +519,7 @@
   //Small devices (landscape phones, max-width 576px)
   .#{$font} {
     @each $key, $value in $font-family-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include font-family-variant($value);
       }
     }
@@ -527,15 +527,15 @@
 
   .#{$font} {
     @each $key, $value in $font-size-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include font-size-variant($value);
       }
     }
   }
 
   .#{$font} {
-    @each $key, $value in $rem-size-series {
-      &_#{$key}-xs {
+    @each $key, $value in $rem-text-size-series {
+      &-#{$key}-xs {
         @include font-size-variant($value);
       }
     }
@@ -543,7 +543,7 @@
 
   .#{$font} {
     @each $key, $value in $font-weight-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include font-weight-variant($value);
       }
     }
@@ -566,15 +566,15 @@
   }
 
   .#{$letter-spacing} {
-    &_tight-xs {
+    &-tight-xs {
       letter-spacing: -0.05em;
     }
 
-    &_normal-xs {
+    &-normal-xs {
       letter-spacing: 0;
     }
 
-    &_wide-xs {
+    &-wide-xs {
       letter-spacing: 0.05em;
     }
   }
@@ -604,11 +604,11 @@
   }
 
   .#{$underline} {
-    &_xs {
+    &-xs {
       text-decoration: underline;
     }
 
-    &_n-xs {
+    &-n-xs {
       text-decoration: none;
     }
   }
@@ -622,7 +622,7 @@
     -moz-osx-font-xsoothing: grayscale;
   }
 
-  .subpixel_antialiased-xs {
+  .subpixel-antialiased-xs {
     -webkit-font-xsoothing: inherit;
     -moz-osx-font-xsoothing: auto;
   }

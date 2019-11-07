@@ -148,121 +148,121 @@
 
 .#{$heading} {
   @each $key, $value in $red-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $pink-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $purple-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $blue-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $teal-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $green-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $lime-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $amber-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $orange-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $brown-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $grey-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    &.#{$key}_o {
+    &.#{$key}-o {
       @include heading-bg-variant-o($value,$value);
     }
   }
@@ -297,11 +297,11 @@
       left: 10px;
     }
 
-    &.through_#{$left} {
+    &.through-#{$left} {
       text-align: right;
     }
 
-    &.through_#{$right} {
+    &.through-#{$right} {
       text-align: left;
     }
   }
@@ -435,121 +435,121 @@
 
   .#{$heading} {
     @each $key, $value in $red-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $pink-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $purple-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-purple-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $indigo-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-blue-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $cyan-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $teal-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $green-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-green-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $lime-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $yellow-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $amber-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $orange-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-orange-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $brown-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $grey-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-grey-series {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $namespace-color {
-      &.#{$key}_o-lg {
+      &.#{$key}-o-lg {
         @include heading-bg-variant-o($value,$value);
       }
     }
@@ -682,121 +682,121 @@
 
   .#{$heading} {
     @each $key, $value in $red-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $pink-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $purple-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-purple-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $indigo-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-blue-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $cyan-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $teal-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $green-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-green-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $lime-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $yellow-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $amber-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $orange-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-orange-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $brown-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $grey-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-grey-series {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $namespace-color {
-      &.#{$key}_o-md {
+      &.#{$key}-o-md {
         @include heading-bg-variant-o($value,$value);
       }
     }
@@ -929,121 +929,121 @@
 
   .#{$heading} {
     @each $key, $value in $red-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $pink-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $purple-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-purple-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $indigo-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-blue-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $cyan-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $teal-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $green-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-green-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $lime-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $yellow-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $amber-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $orange-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-orange-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $brown-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $grey-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-grey-series {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $namespace-color {
-      &.#{$key}_o-sm {
+      &.#{$key}-o-sm {
         @include heading-bg-variant-o($value,$value);
       }
     }
@@ -1176,121 +1176,121 @@
 
   .#{$heading} {
     @each $key, $value in $red-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $pink-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $purple-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-purple-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $indigo-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-blue-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $cyan-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $teal-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $green-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $light-green-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $lime-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $yellow-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $amber-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $orange-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $deep-orange-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $brown-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $grey-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $blue-grey-series {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }
 
     @each $key, $value in $namespace-color {
-      &.#{$key}_o-xs {
+      &.#{$key}-o-xs {
         @include heading-bg-variant-o($value,$value);
       }
     }

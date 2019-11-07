@@ -15,13 +15,13 @@ $display-series: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $display-series: map_merge(
                 (
-                        "d_block": $display-block,
-                        "d_inline_block": $display-inline-block,
-                        "d_inline": $display-inline,
-                        "d_table": $display-table,
-                        "d_table_row": $display-table-row,
-                        "d_table_cell": $display-table-cell,
-                        "d_inline_table": $display-inline-table,
+                        "d-block": $display-block,
+                        "d-inline-block": $display-inline-block,
+                        "d-inline": $display-inline,
+                        "d-table": $display-table,
+                        "d-table-row": $display-table-row,
+                        "d-table-cell": $display-table-cell,
+                        "d-inline-table": $display-inline-table,
                         "show": $display-show,
                         "hide": $display-hide,
                 ),

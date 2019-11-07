@@ -1,0 +1,135 @@
+//background-color
+
+[class^="bg-"].default {
+  background-color: $color-default;
+}
+
+.#{$background-transparent} {
+  background-color: transparent;
+}
+
+.#{$background-white} {
+  background-color: $color-f;
+}
+
+.#{$background-black} {
+  color: $color-f;
+  background-color: $color-0;
+}
+
+@each $key, $value in $namespace-color {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$background-transparent}-lg {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-lg {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-lg {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$background-transparent}-md {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-md {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-md {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$background-transparent}-sm {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-sm {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-sm {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$background-transparent}-xs {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-xs {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-xs {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

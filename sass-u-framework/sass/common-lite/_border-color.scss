@@ -1,0 +1,132 @@
+//border-color
+
+[class^="border-"].default {
+  border-color: $color-default;
+}
+
+.#{$border} {
+  .#{$border-transparent} {
+    border-color: transparent;
+  }
+
+  .#{$border-white} {
+    border-color: $color-f;
+  }
+
+  .#{$border-black} {
+    border-color: $color-0;
+  }
+}
+
+@each $key, $value in $namespace-color {
+  .#{$border}-#{$key} {
+    @include border-variant($value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$border-transparent}-lg {
+    border-color: transparent;
+  }
+
+  .#{$border-white}-lg {
+    border-color: $color-f;
+  }
+
+  .#{$border-black}-lg {
+    border-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$border}-#{$key}-lg {
+      @include border-variant($value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$border-transparent}-md {
+    border-color: transparent;
+  }
+
+  .#{$border-white}-md {
+    border-color: $color-f;
+  }
+
+  .#{$border-black}-md {
+    border-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$border}-#{$key}-md {
+      @include border-variant($value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$border-transparent}-sm {
+    border-color: transparent;
+  }
+
+  .#{$border-white}-sm {
+    border-color: $color-f;
+  }
+
+  .#{$border-black}-sm {
+    border-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$border}-#{$key}-sm {
+      @include border-variant($value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$border-transparent}-xs {
+    border-color: transparent;
+  }
+
+  .#{$border-white}-xs {
+    border-color: $color-f;
+  }
+
+  .#{$border-black}-xs {
+    border-color: $color-0;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$border}-#{$key}-xs {
+      @include border-variant($value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

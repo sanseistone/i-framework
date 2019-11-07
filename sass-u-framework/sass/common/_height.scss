@@ -2,7 +2,7 @@
 
 .#{$height} {
   @each $key, $value in $height-percent-series {
-    &_#{$key} {
+    &-#{$key} {
       @include height-percent-variant($value);
     }
   }
@@ -12,7 +12,7 @@
 
 .#{$height} {
   @each $key, $value in $height-pixel-series {
-    &_#{$key} {
+    &-#{$key} {
       @include height-pixel-variant($value);
     }
   }
@@ -22,7 +22,7 @@
 
 .#{$height} {
   @each $key, $value in $rem-size-series {
-    &_#{$key} {
+    &-#{$key} {
       @include height-rem-variant($value);
     }
   }
@@ -32,7 +32,7 @@
 
 .#{$max-height} {
   @each $key, $value in $max-height-series {
-    &_#{$key} {
+    &-#{$key} {
       @include max-height-variant($value);
     }
   }
@@ -42,7 +42,7 @@
 
 .#{$min-height} {
   @each $key, $value in $min-height-series {
-    &_#{$key} {
+    &-#{$key} {
       @include min-height-variant($value);
     }
   }
@@ -54,7 +54,7 @@
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$height} {
     @each $key, $value in $height-percent-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include height-percent-variant($value);
       }
     }
@@ -62,7 +62,7 @@
 
   .#{$height} {
     @each $key, $value in $height-pixel-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include height-pixel-variant($value);
       }
     }
@@ -70,7 +70,7 @@
 
   .#{$max-height} {
     @each $key, $value in $max-height-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include max-height-variant($value);
       }
     }
@@ -78,7 +78,7 @@
 
   .#{$min-height} {
     @each $key, $value in $min-height-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include min-height-variant($value);
       }
     }
@@ -89,7 +89,7 @@
   //Large devices (desktops, 768px and 992px)
   .#{$height} {
     @each $key, $value in $height-percent-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include height-percent-variant($value);
       }
     }
@@ -97,7 +97,7 @@
 
   .#{$height} {
     @each $key, $value in $height-pixel-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include height-pixel-variant($value);
       }
     }
@@ -105,7 +105,7 @@
 
   .#{$max-height} {
     @each $key, $value in $max-height-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include max-height-variant($value);
       }
     }
@@ -113,7 +113,7 @@
 
   .#{$min-height} {
     @each $key, $value in $min-height-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include min-height-variant($value);
       }
     }
@@ -124,7 +124,7 @@
   //Medium devices (tablets, 576px and 768px)
   .#{$height} {
     @each $key, $value in $height-percent-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include height-percent-variant($value);
       }
     }
@@ -132,7 +132,7 @@
 
   .#{$height} {
     @each $key, $value in $height-pixel-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include height-pixel-variant($value);
       }
     }
@@ -140,7 +140,7 @@
 
   .#{$max-height} {
     @each $key, $value in $max-height-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include max-height-variant($value);
       }
     }
@@ -148,7 +148,7 @@
 
   .#{$min-height} {
     @each $key, $value in $min-height-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include min-height-variant($value);
       }
     }
@@ -159,7 +159,7 @@
   //Small devices (landscape phones, max-width 576px)
   .#{$height} {
     @each $key, $value in $height-percent-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include height-percent-variant($value);
       }
     }
@@ -167,7 +167,7 @@
 
   .#{$height} {
     @each $key, $value in $height-pixel-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include height-pixel-variant($value);
       }
     }
@@ -175,7 +175,7 @@
 
   .#{$max-height} {
     @each $key, $value in $max-height-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include max-height-variant($value);
       }
     }
@@ -183,7 +183,7 @@
 
   .#{$min-height} {
     @each $key, $value in $min-height-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include min-height-variant($value);
       }
     }

@@ -1,0 +1,6 @@
+//这里是混合宏预设集合
+
+//icon-color
+@mixin icon-variant($color) {
+  color: $color;
+}

@@ -1,0 +1,1259 @@
+//heading
+
+.#{$heading} {
+  position: relative;
+  @include button-default;
+
+  &.default {
+    > *:first-child {
+      position: relative;
+      display: inline-block;
+    }
+
+    > *:first-child::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 3px;
+      background: #1e88e5;
+    }
+  }
+}
+
+//default-color
+
+.#{$heading} {
+  @each $key, $value in $red-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    &.#{$key} {
+      @include heading-bg-variant($value,$value);
+    }
+  }
+}
+
+.#{$heading} {
+  @each $key, $value in $red-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    &.#{$key}-o {
+      @include heading-bg-variant-o($value,$value);
+    }
+  }
+}
+
+//through
+
+.#{$heading} {
+  &.through {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      position: relative;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &::before {
+      margin-left: -100%;
+      right: 10px;
+    }
+
+    &::after {
+      margin-right: -100%;
+      left: 10px;
+    }
+
+    &.through-#{$left} {
+      text-align: right;
+    }
+
+    &.through-#{$right} {
+      text-align: left;
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-lg {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+  }
+
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-o-lg {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-md {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+  }
+
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-o-md {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-sm {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+  }
+
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-o-sm {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-xs {
+        @include heading-bg-variant($value,$value);
+      }
+    }
+  }
+
+  .#{$heading} {
+    @each $key, $value in $red-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $pink-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $purple-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $indigo-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $cyan-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $teal-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $green-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $light-green-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $lime-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $yellow-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $amber-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $orange-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $brown-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $grey-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-o-xs {
+        @include heading-bg-variant-o($value,$value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

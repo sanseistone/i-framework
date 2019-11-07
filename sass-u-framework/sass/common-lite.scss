@@ -11,65 +11,61 @@
 @import "variables/index";
 @import "mixins/index";
 
-//01
+//01 Display
 @import "common/display";
 @import "common/container";
+@import "common/overflow";
 
-//02
-@import "common/icon";
-@import "common-lite/heading-lite";
-@import "common-lite/link-lite";
+//02 Modules
+@import "common-lite/icon";
+@import "common-lite/heading";
+@import "common-lite/link";
 @import "common/text";
 
-//02
+//03 Elements
 //@import "common/color";
 @import "common/img";
-@import "common-lite/list-lite";
-@import "common-lite/form-lite";
+@import "common-lite/list";
+@import "common-lite/form";
 @import "common/table";
 
-//03
+//04 Layout
 @import "common/position";
 @import "common/float";
 @import "common/flex";
 @import "common/grid";
 @import "common/transform";
 
-//04
-//@import "common/width";
+//05 Box
 @import "common/width";
 @import "common/height";
-@import "common-lite/padding-lite";
-@import "common-lite/margin-lite";
+//@import "common-lite/padding";
+//@import "common-lite/margin";
 
-//05
+//06 Grid
 @import "common/column";
 @import "common/average";
 //@import "common/col";
-@import "common/col";
 @import "common/space";
 
-//06
+//07 Font
 @import "common/font";
-@import "common-lite/font-color-lite";
-@import "common-lite/line-height-lite";
+@import "common-lite/font-color";
+@import "common-lite/line-height";
 
-//07
+//08 Border
 @import "common/border";
-@import "common-lite/border-color-lite";
+@import "common-lite/border-color";
 @import "common/radius";
 
-//08
+//09 Button
 @import "common/button";
-@import "common-lite/button-color-lite";
+@import "common-lite/button-color";
 
-//09
+//10 Background
 @import "common/background";
-@import "common-lite/background-color-lite";
+@import "common-lite/background-color";
 @import "common/transparent";
 
-//10
-@import "common/overflow";
-
-//11
+//11 Default
 @import "common/pseudo-class";

@@ -1,0 +1,427 @@
+///variables
+//这里是所有关于class名称的变量集合
+
+//font
+$font-family-default: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-default: 1rem !default;
+$line-height-default: 1.5 !default;
+
+//common
+$none: "n" !default;
+$static: "static" !default;
+$fixed: "fixed" !default;
+$absolute: "absolute" !default;
+$relative: "relative" !default;
+$sticky: "sticky" !default;
+$base: "base" !default;
+$top: "t" !default;
+$right: "r" !default;
+$bottom: "b" !default;
+$left: "l" !default;
+$center: "c" !default;
+$middle: "m" !default;
+$justify: "j" !default;
+$default: "default" !default;
+$normal: "normal" !default;
+$half: "half" !default;
+$full: "full" !default;
+$hover: "hover" !default;
+$active: "active" !default;
+$focus: "focus" !default;
+$focus-within: "focus-within" !default;
+$visited: “visited” !default;
+$clear-fix: "clearfix" !default;
+
+//display
+$opacity: "opacity" !default; //_display.scss
+$z-index: "z" !default; //_display.scss
+$box-shadow: "shadow" !default; //_display.scss
+
+//container
+$container: "container" !default; //_container.scss
+$container-fluid: "container-fluid" !default; //_container.scss
+//$grid: "grid" !default;  //_container.scss  //_average.scss
+$layout: "layout" !default; //_container.scss  //_average.scss
+$row: "row" !default; //_container.scss  //_average.scss
+$wrapper: "wrapper" !default; //_container.scss
+$package: "package" !default; //_container.scss
+
+//icon
+$fa: "fa" !default; //_icon.scss
+$icon: "icon" !default; //_icon.scss
+
+//heading
+$heading: "heading" !default; //_heading.scss
+
+//text
+$text: "text" !default; //_text.scss  //_font.scss
+$align: "align" !default; //_text.scss
+$white-space: "whitespace" !default; //_text.scss
+$break: "break" !default; //_text.scss
+$single-lines: "single" !default; //_text.scss
+$multiple-lines: "lines" !default; //_text.scss
+
+//image
+$image: "img" !default; //_img.scss
+
+//ul-li
+$list: "list" !default; //_list.scss
+$horizontal: "horizontal" !default; //_list.scss
+$vertical: "vertical" !default; //_list.scss
+$box: "box" !default; //_list.scss
+
+//form
+$form-item: "form-item" !default; //_form.scss
+$form-control: "form" !default; //_form.scss
+
+//table
+$border-collapse: "border-collapse" !default; //_table.scss
+$border-separate: "border-separate" !default; //_table.scss
+$table-auto: "table-auto" !default; //_table.scss
+$table-fixed: "table-fixed" !default; //_table.scss
+
+//position
+$position: "pin" !default; //position.scss
+$position-top: "pin-t" !default; //position.scss
+$position-top-out: "pin-to" !default; //position.scss
+$position-right: "pin-r" !default; //position.scss
+$position-right-out: "pin-ro" !default; //position.scss
+$position-bottom: "pin-b" !default; //position.scss
+$position-bottom-out: "pin-bo" !default; //position.scss
+$position-left: "pin-l" !default; //position.scss
+$position-left-out: "pin-lo" !default; //position.scss
+$position-x-axis: "pin-x" !default; //position.scss
+$position-y-axis: "pin-y" !default; //position.scss
+
+//float
+$float: "float" !default; //_float.scss
+
+//flex
+$flex-order: "order" !default; //_flex.scss  //_col.scss
+
+//transform
+$rotate: "rotate" !default; //_transform.scss
+$scale: "scale" !default; //_transform.scss
+
+//width
+$width: "w" !default; //_width.scss
+$width-offset: "w-offset" !default; //_width.scss
+$width-push: "w-push" !default; //_width.scss
+$width-pull: "w-pull" !default; //_width.scss
+$max-width: "max-w" !default; //_width.scss
+$min-width: "min-w" !default; //_width.scss
+
+//height
+$height: "h" !default; //_height.scss
+$max-height: "max-h" !default; //_height.scss
+$min-height: "min-h" !default; //_height.scss
+
+//padding
+$group-padding: "gp" !default; //_padding.scss
+$group-padding-top: "gpt" !default; //_padding.scss
+$group-padding-right: "gpr" !default; //_padding.scss
+$group-padding-bottom: "gpb" !default; //_padding.scss
+$group-padding-left: "gpl" !default; //_padding.scss
+$group-padding-x-axis: "gpx" !default; //_padding.scss
+$group-padding-y-axis: "gpy" !default; //_padding.scss
+$padding: "p" !default; //_padding.scss
+$padding-top: "pt" !default; //_padding.scss
+$padding-right: "pr" !default; //_padding.scss
+$padding-bottom: "pb" !default; //_padding.scss
+$padding-left: "pl" !default; //_padding.scss
+$padding-x-axis: "px" !default; //_padding.scss
+$padding-y-axis: "py" !default; //_padding.scss
+
+//margin
+$group-margin: "gm" !default; //_margin.scss
+$group-margin-top: "gmt" !default; //_margin.scss
+$group-margin-right: "gmr" !default; //_margin.scss
+$group-margin-bottom: "gmb" !default; //_margin.scss
+$group-margin-left: "gml" !default; //_margin.scss
+$group-margin-x-axis: "gmx" !default; //_margin.scss
+$group-margin-y-axis: "gmy" !default; //_margin.scss
+$margin: "m" !default; //_margin.scss
+$margin-top: "mt" !default; //_margin.scss
+$margin-right: "mr" !default; //_margin.scss
+$margin-bottom: "mb" !default; //_margin.scss
+$margin-left: "ml" !default; //_margin.scss
+$margin-x-axis: "mx" !default; //_margin.scss
+$margin-y-axis: "my" !default; //_margin.scss
+$margin-out-top: "mot" !default; //_margin.scss
+$margin-out-right: "mor" !default; //_margin.scss
+$margin-out-bottom: "mob" !default; //_margin.scss
+$margin-out-left: "mol" !default; //_margin.scss
+$margin-out-x-axis: "mox" !default; //_margin.scss
+$margin-out-y-axis: "moy" !default; //_margin.scss
+
+//column
+$column-count: "column" !default; //_column.scss
+
+//average
+$average: "average" !default; //_average.scss
+
+//row-column
+$column: "col" !default; //_col.scss
+$column-offset: "col-offset" !default; //_col.scss
+$column-push: "col-push" !default; //_col.scss
+$column-pull: "col-pull" !default; //_col.scss
+
+//space
+$space: "space" !default; //_space.scss
+$all: "all" !default; //_space.scss  //_line-height.scss
+
+//font
+$font: "font" !default; //_font.scss
+$rem: "rem" !default; //_font.scss
+$bold: "bold" !default; //_font.scss
+$initial: "initial" !default; //_font.scss
+$lighter: "lighter" !default; //_font.scss
+$italic: "italic" !default; //_font.scss
+$roman: "roman" !default; //_font.scss
+$letter-spacing: "letter" !default; //_font.scss
+$uppercase: "upper" !default; //_font.scss
+$lowercase: "lower" !default; //_font.scss
+$capitalize: "capitalize" !default; //_font.scss
+$normal-case: "normal-case" !default; //_font.scss
+$underline: "underline" !default; //_font.scss
+$line-through: "line-through" !default; //_font.scss
+$cursor-pointer: "pointer" !default; //_font.scss
+$cursor-hand: "hand" !default; //_font.scss
+$cursor-help: "help" !default; //_font.scss
+
+//line-height
+$line-height: "line" !default; //_line-height.scss
+
+//border
+$border: "border" !default; //_border.scss  //_border-color.scss
+$solid: "solid" !default; //_border.scss  //_list.scss
+$dashed: "dashed" !default; //_border.scss  //_list.scss
+$dotted: "dotted" !default; //_border.scss  //_list.scss
+
+//radius
+$border-radius: "radius" !default; //_radius.scss
+
+//button
+$button: "btn" !default; //_button.scss
+
+//background
+$background: "bg" !default; //_background.scss
+$background-position: "bg" !default; //_background.scss
+$background-size: "bg" !default; //_background.scss
+$background-repeat: "bg-repeat" !default; //_background.scss
+$background-origin: "bg-origin" !default; //_background.scss
+$background-clip: "bg-clip" !default; //_background.scss
+$background-attachment: "bg" !default; //_background.scss
+$background-image: "bg-image" !default; //_background.scss
+
+//transparent
+$white-fill: "white" !default; //_transparent.scss
+$black-fill: "black" !default; //_transparent.scss
+
+//overflow
+$overflow: "over" !default; //_overflow.scss
+$scrolling: "scrolling" !default; //_overflow.scss
+
+//font-color
+$font-white: "font-white" !default; //_font-color.scss
+$font-black: "font-black" !default; //_font-color.scss
+$font-red: "font-red" !default; //_font-color.scss
+$font-pink: "font-pink" !default; //_font-color.scss
+$font-purple: "font-purple" !default; //_font-color.scss
+$font-deep-purple: "font-d-purple" !default; //_font-color.scss
+$font-indigo: "font-indigo" !default; //_font-color.scss
+$font-blue: "font-blue" !default; //_font-color.scss
+$font-light-blue: "font-l-blue" !default; //_font-color.scss
+$font-cyan: "font-cyan" !default; //_font-color.scss
+$font-teal: "font-teal" !default; //_font-color.scss
+$font-green: "font-green" !default; //_font-color.scss
+$font-light-green: "font-l-green" !default; //_font-color.scss
+$font-lime: "font-lime" !default; //_font-color.scss
+$font-yellow: "font-yellow" !default; //_font-color.scss
+$font-amber: "font-amber" !default; //_font-color.scss
+$font-orange: "font-orange" !default; //_font-color.scss
+$font-deep-orange: "font-d-orange" !default; //_font-color.scss
+$font-brown: "font-brown" !default; //_font-color.scss
+$font-grey: "font-grey" !default; //_font-color.scss
+$font-blue-grey: "font-blue-grey" !default; //_font-color.scss
+
+//border-color
+$border-transparent: "border-transparent" !default; //_border-color.scss
+$border-white: "border-white" !default; //_border-color.scss
+$border-black: "border-black" !default; //_border-color.scss
+$border-red: "border-red" !default; //_border-color.scss
+$border-pink: "border-pink" !default; //_border-color.scss
+$border-purple: "border-purple" !default; //_border-color.scss
+$border-deep-purple: "border-d-purple" !default; //_border-color.scss
+$border-indigo: "border-indigo" !default; //_border-color.scss
+$border-blue: "border-blue" !default; //_border-color.scss
+$border-light-blue: "border-l-blue" !default; //_border-color.scss
+$border-cyan: "border-cyan" !default; //_border-color.scss
+$border-teal: "border-teal" !default; //_border-color.scss
+$border-green: "border-green" !default; //_border-color.scss
+$border-light-green: "border-l-green" !default; //_border-color.scss
+$border-lime: "border-lime" !default; //_border-color.scss
+$border-yellow: "border-yellow" !default; //_border-color.scss
+$border-amber: "border-amber" !default; //_border-color.scss
+$border-orange: "border-orange" !default; //_border-color.scss
+$border-deep-orange: "border-d-orange" !default; //_border-color.scss
+$border-brown: "border-brown" !default; //_border-color.scss
+$border-grey: "border-grey" !default; //_border-color.scss
+$border-blue-grey: "border-blue-grey" !default; //_border-color.scss
+
+//button-color
+$button-transparent: "btn-transparent" !default; //_button.scss
+$button-white: "btn-white" !default; //_button.scss
+$button-black: "btn-black" !default; //_button.scss
+$button-red: "btn-red" !default; //_button.scss
+$button-pink: "btn-pink" !default; //_button.scss
+$button-purple: "btn-purple" !default; //_button.scss
+$button-deep-purple: "btn-d-purple" !default; //_button.scss
+$button-indigo: "btn-indigo" !default; //_button.scss
+$button-blue: "btn-blue" !default; //_button.scss
+$button-light-blue: "btn-l-blue" !default; //_button.scss
+$button-cyan: "btn-cyan" !default; //_button.scss
+$button-teal: "btn-teal" !default; //_button.scss
+$button-green: "btn-green" !default; //_button.scss
+$button-light-green: "btn-l-green" !default; //_button.scss
+$button-lime: "btn-lime" !default; //_button.scss
+$button-yellow: "btn-yellow" !default; //_button.scss
+$button-amber: "btn-amber" !default; //_button.scss
+$button-orange: "btn-orange" !default; //_button.scss
+$button-deep-orange: "btn-d-orange" !default; //_button.scss
+$button-brown: "btn-brown" !default; //_button.scss
+$button-grey: "btn-grey" !default; //_button.scss
+$button-blue-grey: "btn-blue-grey" !default; //_button.scss
+
+//background-color
+$background-color: "bg" !default; //_background-color.scss
+$background-transparent: "bg-transparent" !default; //_background-color.scss
+$background-white: "bg-white" !default; //_background-color.scss
+$background-black: "bg-black" !default; //_background-color.scss
+$background-red: "bg-red" !default; //_background-color.scss
+$background-pink: "bg-pink" !default; //_background-color.scss
+$background-purple: "bg-purple" !default; //_background-color.scss
+$background-deep-purple: "bg-d-purple" !default; //_background-color.scss
+$background-indigo: "bg-indigo" !default; //_background-color.scss
+$background-blue: "bg-blue" !default; //_background-color.scss
+$background-light-blue: "bg-l-blue" !default; //_background-color.scss
+$background-cyan: "bg-cyan" !default; //_background-color.scss
+$background-teal: "bg-teal" !default; //_background-color.scss
+$background-green: "bg-green" !default; //_background-color.scss
+$background-light-green: "bg-l-green" !default; //_background-color.scss
+$background-lime: "bg-lime" !default; //_background-color.scss
+$background-yellow: "bg-yellow" !default; //_background-color.scss
+$background-amber: "bg-amber" !default; //_background-color.scss
+$background-orange: "bg-orange" !default; //_background-color.scss
+$background-deep-orange: "bg-d-orange" !default; //_background-color.scss
+$background-brown: "bg-brown" !default; //_background-color.scss
+$background-grey: "bg-grey" !default; //_background-color.scss
+$background-blue-grey: "bg-blue-grey" !default; //_background-color.scss
+
+//namespace-color
+$namespace-white: "white" !default;
+$namespace-black: "black" !default;
+$namespace-red: "red" !default;
+$namespace-pink: "pink" !default;
+$namespace-purple: "purple" !default;
+$namespace-deep-purple: "d-purple" !default;
+$namespace-indigo: "indigo" !default;
+$namespace-blue: "blue" !default;
+$namespace-light-blue: "l-blue" !default;
+$namespace-cyan: "cyan" !default;
+$namespace-teal: "teal" !default;
+$namespace-green: "green" !default;
+$namespace-light-green: "l-green" !default;
+$namespace-lime: "lime" !default;
+$namespace-yellow: "yellow" !default;
+$namespace-amber: "amber" !default;
+$namespace-orange: "orange" !default;
+$namespace-deep-orange: "d-orange" !default;
+$namespace-brown: "brown" !default;
+$namespace-grey: "grey" !default;
+$namespace-blue-grey: "blue-grey" !default;
+
+//font-size-pixel
+$font-size-12: "font-12" !default; //_font.scss
+$font-size-14: "font-14" !default; //_font.scss
+$font-size-16: "font-16" !default; //_font.scss
+$font-size-18: "font-18" !default; //_font.scss
+$font-size-20: "font-20" !default; //_font.scss
+$font-size-22: "font-22" !default; //_font.scss
+$font-size-24: "font-24" !default; //_font.scss
+$font-size-26: "font-26" !default; //_font.scss
+$font-size-28: "font-28" !default; //_font.scss
+$font-size-30: "font-30" !default; //_font.scss
+$font-size-32: "font-32" !default; //_font.scss
+$font-size-34: "font-34" !default; //_font.scss
+$font-size-36: "font-36" !default; //_font.scss
+$font-size-38: "font-38" !default; //_font.scss
+$font-size-40: "font-40" !default; //_font.scss
+$font-size-42: "font-42" !default; //_font.scss
+$font-size-44: "font-44" !default; //_font.scss
+$font-size-46: "font-46" !default; //_font.scss
+$font-size-48: "font-48" !default; //_font.scss
+$font-size-50: "font-50" !default; //_font.scss
+$font-size-52: "font-52" !default; //_font.scss
+$font-size-54: "font-54" !default; //_font.scss
+$font-size-56: "font-56" !default; //_font.scss
+$font-size-58: "font-58" !default; //_font.scss
+$font-size-60: "font-60" !default; //_font.scss
+
+//font-size-rem
+$font-r025: "font-r025" !default; //_font.scss
+$font-r050: "font-r050" !default; //_font.scss
+$font-r075: "font-r075" !default; //_font.scss
+$font-r0875: "font-r0875" !default; //_font.scss
+$font-r100: "font-r100" !default; //_font.scss
+$font-r125: "font-r125" !default; //_font.scss
+$font-r150: "font-r150" !default; //_font.scss
+$font-r175: "font-r175" !default; //_font.scss
+$font-r200: "font-r200" !default; //_font.scss
+$font-r225: "font-r225" !default; //_font.scss
+$font-r250: "font-r250" !default; //_font.scss
+$font-r275: "font-r275" !default; //_font.scss
+$font-r300: "font-r300" !default; //_font.scss
+$font-r325: "font-r325" !default; //_font.scss
+$font-r350: "font-r350" !default; //_font.scss
+$font-r375: "font-r375" !default; //_font.scss
+$font-r400: "font-r400" !default; //_font.scss
+$font-r425: "font-r425" !default; //_font.scss
+$font-r450: "font-r450" !default; //_font.scss
+$font-r475: "font-r475" !default; //_font.scss
+$font-r500: "font-r500" !default; //_font.scss
+$font-r525: "font-r525" !default; //_font.scss
+$font-r550: "font-r550" !default; //_font.scss
+$font-r575: "font-r575" !default; //_font.scss
+$font-r600: "font-r600" !default; //_font.scss
+
+//font-size
+$text-size-xs: "text-xs" !default; //_font.scss
+$text-size-sm: "text-sm" !default; //_font.scss
+$text-size-base: "text-base" !default; //_font.scss
+$text-size-md: "text-md" !default; //_font.scss
+$text-size-lg: "text-lg" !default; //_font.scss
+$text-size-xl: "text-xl" !default; //_font.scss
+$text-size-2xl: "text-2xl" !default; //_font.scss
+$text-size-3xl: "text-3xl" !default; //_font.scss
+$text-size-4xl: "text-4xl" !default; //_font.scss
+$text-size-5xl: "text-5xl" !default; //_font.scss
+$text-size-6xl: "text-6xl" !default; //_font.scss
+$text-size-7xl: "text-7xl" !default; //_font.scss
+$text-size-8xl: "text-8xl" !default; //_font.scss
+$text-size-9xl: "text-9xl" !default; //_font.scss
+$text-size-xxl: "text-xxl" !default; //_font.scss
+
+//column
+$one: "one" !default;
+$two: "two" !default;
+$three: "three" !default;
+$four: "four" !default;
+$five: "five" !default;
+$six: "six" !default;
+$seven: "seven" !default;
+$eight: "eight" !default;
+$nine: "nine" !default;
+$ten: "ten" !default;
+$eleven: "eleven" !default;
+$twelve: "twelve" !default;

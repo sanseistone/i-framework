@@ -8,17 +8,17 @@
 [class*="#{$width}-"]:after,
 [class*="#{$space}-"]:before,
 [class*="#{$space}-"]:after,
-[class*="#{$clear-fix}_"]:before,
-[class*="#{$clear-fix}_"]:after {
+[class*="#{$clear-fix}-"]:before,
+[class*="#{$clear-fix}-"]:after {
   display: table;
   content: " ";
 }
 
 [class*="#{$container}"]:after,
-[class*="#{$column}_"]:after,
-[class*="#{$width}_"]:after,
-[class*="#{$space}_"]:after,
-[class*="#{$clear-fix}_"]:after {
+[class*="#{$column}-"]:after,
+[class*="#{$width}-"]:after,
+[class*="#{$space}-"]:after,
+[class*="#{$clear-fix}-"]:after {
   clear: both;
 }
 
@@ -32,6 +32,19 @@
 
 .#{$layout}:after,
 .#{$row}:after {
+  clear: both;
+}
+
+.#{$wrapper}:before,
+.#{$wrapper}:after,
+.#{$package}:before,
+.#{$package}:after {
+  display: table;
+  content: "";
+}
+
+.#{$wrapper}:after,
+.#{$package}:after {
   clear: both;
 }
 

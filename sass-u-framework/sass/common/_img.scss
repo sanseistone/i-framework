@@ -1,17 +1,17 @@
 //img
 
 .#{$image} {
-  &_full {
+  &-full {
     width: 100%;
     height: auto;
   }
 
-  &_wide {
+  &-wide {
     width: auto;
     height: 100%;
   }
 
-  &_group > img {
+  &-group > img {
     margin-bottom: 10px;
   }
 }
@@ -26,12 +26,12 @@ img:hover.scale,
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$image} {
-    &_full-lg {
+    &-full-lg {
       width: 100%;
       height: auto;
     }
 
-    &_wide-lg {
+    &-wide-lg {
       width: auto;
       height: 100%;
     }
@@ -41,12 +41,12 @@ img:hover.scale,
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .#{$image} {
-    &_full-md {
+    &-full-md {
       width: 100%;
       height: auto;
     }
 
-    &_wide-md {
+    &-wide-md {
       width: auto;
       height: 100%;
     }
@@ -56,12 +56,12 @@ img:hover.scale,
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
   .#{$image} {
-    &_full-sm {
+    &-full-sm {
       width: 100%;
       height: auto;
     }
 
-    &_wide-sm {
+    &-wide-sm {
       width: auto;
       height: 100%;
     }
@@ -71,12 +71,12 @@ img:hover.scale,
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .#{$image} {
-    &_full-xs {
+    &-full-xs {
       width: 100%;
       height: auto;
     }
 
-    &_wide-xs {
+    &-wide-xs {
       width: auto;
       height: 100%;
     }

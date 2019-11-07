@@ -34,6 +34,7 @@
 [class*="#{$fa}-vk"] {
   color: $vk;
 }
+
 .#{$icon} {
   & {
     font-family: "Font Awesome 5 Pro";
@@ -379,22 +380,590 @@
   font-weight: 900;
 }
 
+//fa
+
+@each $key, $value in $red-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $green-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  [class*="#{$fa}"].#{$key} {
+    @include icon-variant($value);
+  }
+}
+
 //responsive-pc
 
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
+  @each $key, $value in $red-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    [class*="#{$fa}"].#{$key}-lg {
+      @include icon-variant($value);
+    }
+  }
 }
 
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
+  @each $key, $value in $red-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    [class*="#{$fa}"].#{$key}-md {
+      @include icon-variant($value);
+    }
+  }
 }
 
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
+  @each $key, $value in $red-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    [class*="#{$fa}"].#{$key}-sm {
+      @include icon-variant($value);
+    }
+  }
 }
 
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
+  @each $key, $value in $red-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    [class*="#{$fa}"].#{$key}-xs {
+      @include icon-variant($value);
+    }
+  }
 }
 
 //responsive-mobile

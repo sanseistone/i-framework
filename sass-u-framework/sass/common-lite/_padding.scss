@@ -1,0 +1,652 @@
+//.g-p
+
+.#{$group-padding} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-p-variant($value);
+    }
+  }
+}
+
+//.g-pt
+
+.#{$group-padding-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pt-variant($value);
+    }
+  }
+}
+
+//.g-pr
+
+.#{$group-padding-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pr-variant($value);
+    }
+  }
+}
+
+//.g-pb
+
+.#{$group-padding-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pb-variant($value);
+    }
+  }
+}
+
+//.g-pl
+
+.#{$group-padding-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pl-variant($value);
+    }
+  }
+}
+
+//.g-px
+
+.#{$group-padding-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-px-variant($value, $value);
+    }
+  }
+}
+
+//.g-py
+
+.#{$group-padding-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-py-variant($value, $value);
+    }
+  }
+}
+
+//padding
+
+.#{$padding} {
+  &-all-0,
+  &-all-0 > *,
+  &-all-0 * {
+    padding: 0;
+  }
+
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include padding-pixel-variant($value);
+    }
+  }
+}
+
+//padding-top
+
+.#{$padding-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pt-variant($value);
+    }
+  }
+}
+
+//padding-right
+
+.#{$padding-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pr-variant($value);
+    }
+  }
+}
+
+//padding-bottom
+
+.#{$padding-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pb-variant($value);
+    }
+  }
+}
+
+//padding-left
+
+.#{$padding-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pl-variant($value);
+    }
+  }
+}
+
+//padding-x
+
+.#{$padding-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-px-variant($value, $value);
+    }
+  }
+}
+
+//padding-y
+
+.#{$padding-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-py-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-p-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-lg,
+    &-all-0-lg > *,
+    &-all-0-lg * {
+      padding: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-p-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-md,
+    &-all-0-md > *,
+    &-all-0-md * {
+      padding: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-p-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-sm,
+    &-all-0-sm > *,
+    &-all-0-sm * {
+      padding: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-p-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-xs,
+    &-all-0-xs > *,
+    &-all-0-xs * {
+      padding: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pt-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pr-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pb-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

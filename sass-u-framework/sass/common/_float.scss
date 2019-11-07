@@ -1,15 +1,15 @@
 //float
 
 .#{$float} {
-  &_l {
+  &-l {
     float: left;
   }
 
-  &_r {
+  &-r {
     float: right;
   }
 
-  &_n {
+  &-n {
     float: none;
   }
 }
@@ -19,15 +19,15 @@
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$float} {
-    &_l-lg {
+    &-l-lg {
       float: left;
     }
 
-    &_r-lg {
+    &-r-lg {
       float: right;
     }
 
-    &_n-lg {
+    &-n-lg {
       float: none;
     }
   }
@@ -36,15 +36,15 @@
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .#{$float} {
-    &_l-md {
+    &-l-md {
       float: left;
     }
 
-    &_r-md {
+    &-r-md {
       float: right;
     }
 
-    &_n-md {
+    &-n-md {
       float: none;
     }
   }
@@ -53,15 +53,15 @@
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
   .#{$float} {
-    &_l-sm {
+    &-l-sm {
       float: left;
     }
 
-    &_r-sm {
+    &-r-sm {
       float: right;
     }
 
-    &_n-sm {
+    &-n-sm {
       float: none;
     }
   }
@@ -70,15 +70,15 @@
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .#{$float} {
-    &_l-xs {
+    &-l-xs {
       float: left;
     }
 
-    &_r-xs {
+    &-r-xs {
       float: right;
     }
 
-    &_n-xs {
+    &-n-xs {
       float: none;
     }
   }

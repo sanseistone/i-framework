@@ -1,0 +1,924 @@
+//.g-m
+
+.#{$group-margin} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-m-variant($value);
+    }
+  }
+}
+
+//.g-mt
+
+.#{$group-margin-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mt-variant($value);
+    }
+  }
+}
+
+//.g-mr
+
+.#{$group-margin-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mr-variant($value);
+    }
+  }
+}
+
+//.g-mb
+
+.#{$group-margin-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mb-variant($value);
+    }
+  }
+}
+
+//.g-ml
+
+.#{$group-margin-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-ml-variant($value);
+    }
+  }
+}
+
+//.g-mx
+
+.#{$group-margin-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mx-variant($value, $value);
+    }
+  }
+}
+
+//.g-my
+
+.#{$group-margin-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-my-variant($value, $value);
+    }
+  }
+}
+
+//margin
+
+.#{$margin} {
+  &-center {
+    margin: 0 auto;
+  }
+
+  &-all-0,
+  &-all-0 > *,
+  &-all-0 * {
+    margin: 0;
+  }
+
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include margin-pixel-variant($value);
+    }
+  }
+}
+
+//margin-top
+
+.#{$margin-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mt-variant($value);
+    }
+  }
+}
+
+//margin-right
+
+.#{$margin-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mr-variant($value);
+    }
+  }
+}
+
+//margin-bottom
+
+.#{$margin-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mb-variant($value);
+    }
+  }
+}
+
+//margin-left
+
+.#{$margin-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-ml-variant($value);
+    }
+  }
+}
+
+//margin-x
+
+.#{$margin-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mx-variant($value, $value);
+    }
+  }
+}
+
+//margin-y
+
+.#{$margin-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-my-variant($value, $value);
+    }
+  }
+}
+
+//margin-out-top
+
+.#{$margin-out-top} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ot-variant($value);
+    }
+  }
+}
+
+//margin-out-right
+
+.#{$margin-out-right} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-or-variant($value);
+    }
+  }
+}
+
+//margin-out-bottom
+
+.#{$margin-out-bottom} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ob-variant($value);
+    }
+  }
+}
+
+//margin-out-left
+
+.#{$margin-out-left} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ol-variant($value);
+    }
+  }
+}
+
+//margin-out-x
+
+.#{$margin-out-x-axis} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ox-variant($value, $value);
+    }
+  }
+}
+
+//margin-out-y
+
+.#{$margin-out-y-axis} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-oy-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-m-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-lg {
+      margin: 0 auto;
+    }
+
+    &-all-0-lg,
+    &-all-0-lg > *,
+    &-all-0-lg * {
+      margin: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-m-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-md {
+      margin: 0 auto;
+    }
+
+    &-all-0-md,
+    &-all-0-md > *,
+    &-all-0-md * {
+      margin: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-m-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-sm {
+      margin: 0 auto;
+    }
+
+    &-all-0-sm,
+    &-all-0-sm > *,
+    &-all-0-sm * {
+      margin: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-m-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-xs {
+      margin: 0 auto;
+    }
+
+    &-all-0-xs,
+    &-all-0-xs > *,
+    &-all-0-xs * {
+      margin: 0;
+    }
+
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mt-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mr-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mb-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-ml-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mx-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-my-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

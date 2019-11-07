@@ -1,19 +1,27 @@
 //width-percent
 
-.#{$layout} > [class^="w_"],
-.#{$row} > [class^="w_"] {
+.#{$layout} > [class^="w-"],
+.#{$row} > [class^="w-"] {
   position: relative;
-  min-height: 1px;
-  /*float: left;*/
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.#{$layout} > [class^="w-"],
+.#{$row} > [class^="w-"] {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
 //width-percent
 
 .#{$width} {
   @each $key, $value in $width-grid-series {
-    &_#{$key} {
+    &-#{$key} {
       @include width-flex-grid-variant($value);
     }
   }
@@ -23,7 +31,7 @@
 
 .#{$width-offset} {
   @each $key, $value in $width-offset-series {
-    &_#{$key} {
+    &-#{$key} {
       @include width-flex-offset-variant($value);
     }
   }
@@ -33,7 +41,7 @@
 
 .#{$width} {
   @each $key, $value in $width-pixel-series {
-    &_#{$key} {
+    &-#{$key} {
       @include width-pixel-variant($value);
     }
   }
@@ -42,21 +50,21 @@
 //other
 
 .#{$max-width} {
-  &_full {
+  &-full {
     max-width: 100%;
   }
 }
 
 .#{$min-width} {
-  &_0 {
+  &-0 {
     min-width: 0;
   }
 
-  &_full {
+  &-full {
     min-width: 100%;
   }
 
-  &_screen {
+  &-screen {
     min-width: 100vw;
   }
 }
@@ -67,7 +75,7 @@
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$width} {
     @each $key, $value in $width-grid-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include width-flex-grid-variant($value);
       }
     }
@@ -75,7 +83,7 @@
 
   .#{$width-offset} {
     @each $key, $value in $width-offset-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include width-flex-offset-variant($value);
       }
     }
@@ -83,28 +91,28 @@
 
   .#{$width} {
     @each $key, $value in $width-pixel-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include width-pixel-variant($value);
       }
     }
   }
 
   .#{$max-width} {
-    &_full-lg {
+    &-full-lg {
       max-width: 100%;
     }
   }
 
   .#{$min-width} {
-    &_0-lg {
+    &-0-lg {
       min-width: 0;
     }
 
-    &_full-lg {
+    &-full-lg {
       min-width: 100%;
     }
 
-    &_screen-lg {
+    &-screen-lg {
       min-width: 100vw;
     }
   }
@@ -114,7 +122,7 @@
   //Large devices (desktops, 768px and 992px)
   .#{$width} {
     @each $key, $value in $width-grid-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include width-flex-grid-variant($value);
       }
     }
@@ -122,7 +130,7 @@
 
   .#{$width-offset} {
     @each $key, $value in $width-offset-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include width-flex-offset-variant($value);
       }
     }
@@ -130,28 +138,28 @@
 
   .#{$width} {
     @each $key, $value in $width-pixel-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include width-pixel-variant($value);
       }
     }
   }
 
   .#{$max-width} {
-    &_full-md {
+    &-full-md {
       max-width: 100%;
     }
   }
 
   .#{$min-width} {
-    &_0-md {
+    &-0-md {
       min-width: 0;
     }
 
-    &_full-md {
+    &-full-md {
       min-width: 100%;
     }
 
-    &_screen-md {
+    &-screen-md {
       min-width: 100vw;
     }
   }
@@ -161,7 +169,7 @@
   //Medium devices (tablets, 576px and 768px)
   .#{$width} {
     @each $key, $value in $width-grid-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include width-flex-grid-variant($value);
       }
     }
@@ -169,7 +177,7 @@
 
   .#{$width-offset} {
     @each $key, $value in $width-offset-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include width-flex-offset-variant($value);
       }
     }
@@ -177,28 +185,28 @@
 
   .#{$width} {
     @each $key, $value in $width-pixel-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include width-pixel-variant($value);
       }
     }
   }
 
   .#{$max-width} {
-    &_full-sm {
+    &-full-sm {
       max-width: 100%;
     }
   }
 
   .#{$min-width} {
-    &_0-sm {
+    &-0-sm {
       min-width: 0;
     }
 
-    &_full-sm {
+    &-full-sm {
       min-width: 100%;
     }
 
-    &_screen-sm {
+    &-screen-sm {
       min-width: 100vw;
     }
   }
@@ -208,7 +216,7 @@
   //Small devices (landscape phones, max-width 576px)
   .#{$width} {
     @each $key, $value in $width-grid-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include width-flex-grid-variant($value);
       }
     }
@@ -216,7 +224,7 @@
 
   .#{$width-offset} {
     @each $key, $value in $width-offset-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include width-flex-offset-variant($value);
       }
     }
@@ -224,28 +232,28 @@
 
   .#{$width} {
     @each $key, $value in $width-pixel-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include width-pixel-variant($value);
       }
     }
   }
 
   .#{$max-width} {
-    &_full-xs {
+    &-full-xs {
       max-width: 100%;
     }
   }
 
   .#{$min-width} {
-    &_0-xs {
+    &-0-xs {
       min-width: 0;
     }
 
-    &_full-xs {
+    &-full-xs {
       min-width: 100%;
     }
 
-    &_screen-xs {
+    &-screen-xs {
       min-width: 100vw;
     }
   }

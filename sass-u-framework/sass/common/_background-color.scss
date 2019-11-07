@@ -1,6 +1,6 @@
 //background-color
 
-[class^="bg_"].default {
+[class^="bg-"].default {
   background-color: $color-default;
 }
 
@@ -18,121 +18,121 @@
 }
 
 @each $key, $value in $red-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $pink-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $purple-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $deep-purple-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $indigo-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $blue-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $light-blue-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $cyan-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $teal-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $green-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $light-green-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $lime-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $yellow-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $amber-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $orange-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $deep-orange-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $brown-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $grey-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $blue-grey-series {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
 
 @each $key, $value in $namespace-color {
-  .#{$background}_#{$key} {
+  .#{$background}-#{$key} {
     @include bg-variant($value);
   }
 }
@@ -155,121 +155,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$background}_#{$key}-lg {
+    .#{$background}-#{$key}-lg {
       @include bg-variant($value);
     }
   }
@@ -291,121 +291,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$background}_#{$key}-md {
+    .#{$background}-#{$key}-md {
       @include bg-variant($value);
     }
   }
@@ -427,121 +427,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$background}_#{$key}-sm {
+    .#{$background}-#{$key}-sm {
       @include bg-variant($value);
     }
   }
@@ -563,121 +563,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$background}_#{$key}-xs {
+    .#{$background}-#{$key}-xs {
       @include bg-variant($value);
     }
   }

@@ -8,24 +8,24 @@
 
 .#{$position} {
   @each $key, $value in $position-round-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-round-variant($value, $value, $value, $value);
     }
   }
 
-  &_center {
+  &-center {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  &_x_center {
+  &-x-center {
     /*top: inherit;*/
     left: 50%;
     transform: translateX(-50%);
   }
 
-  &_y_center {
+  &-y-center {
     top: 50%;
     /*left: inherit;*/
     transform: translateY(-50%);
@@ -34,7 +34,7 @@
 
 .#{$position-top} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-top-variant($value);
     }
   }
@@ -42,7 +42,7 @@
 
 .#{$position-top-out} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-top-out-variant($value);
     }
   }
@@ -50,7 +50,7 @@
 
 .#{$position-right} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-right-variant($value);
     }
   }
@@ -58,7 +58,7 @@
 
 .#{$position-right-out} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-right-out-variant($value);
     }
   }
@@ -66,7 +66,7 @@
 
 .#{$position-bottom} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-bottom-variant($value);
     }
   }
@@ -74,7 +74,7 @@
 
 .#{$position-bottom-out} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-bottom-out-variant($value);
     }
   }
@@ -82,7 +82,7 @@
 
 .#{$position-left} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-left-variant($value);
     }
   }
@@ -90,7 +90,7 @@
 
 .#{$position-left-out} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-left-out-variant($value);
     }
   }
@@ -98,7 +98,7 @@
 
 .#{$position-x-axis} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-x-axis-variant($value, $value);
     }
   }
@@ -106,7 +106,7 @@
 
 .#{$position-y-axis} {
   @each $key, $value in $position-series {
-    &_#{$key} {
+    &-#{$key} {
       @include position-y-axis-variant($value, $value);
     }
   }
@@ -124,24 +124,24 @@
 
   .#{$position} {
     @each $key, $value in $position-round-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-round-variant($value, $value, $value, $value);
       }
     }
 
-    &_center-lg {
+    &-center-lg {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    &_x_center-lg {
+    &-x-center-lg {
       /*top: inherit;*/
       left: 50%;
       transform: translateX(-50%);
     }
 
-    &_y_center-lg {
+    &-y-center-lg {
       top: 50%;
       /*left: inherit;*/
       transform: translateY(-50%);
@@ -150,7 +150,7 @@
 
   .#{$position-top} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-top-variant($value);
       }
     }
@@ -158,7 +158,7 @@
 
   .#{$position-top-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-top-out-variant($value);
       }
     }
@@ -166,7 +166,7 @@
 
   .#{$position-right} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-right-variant($value);
       }
     }
@@ -174,7 +174,7 @@
 
   .#{$position-right-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-right-out-variant($value);
       }
     }
@@ -182,7 +182,7 @@
 
   .#{$position-bottom} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-bottom-variant($value);
       }
     }
@@ -190,7 +190,7 @@
 
   .#{$position-bottom-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-bottom-out-variant($value);
       }
     }
@@ -198,7 +198,7 @@
 
   .#{$position-left} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-left-variant($value);
       }
     }
@@ -206,7 +206,7 @@
 
   .#{$position-left-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-left-out-variant($value);
       }
     }
@@ -214,7 +214,7 @@
 
   .#{$position-x-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-x-axis-variant($value, $value);
       }
     }
@@ -222,7 +222,7 @@
 
   .#{$position-y-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include position-y-axis-variant($value, $value);
       }
     }
@@ -239,24 +239,24 @@
 
   .#{$position} {
     @each $key, $value in $position-round-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-round-variant($value, $value, $value, $value);
       }
     }
 
-    &_center-md {
+    &-center-md {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    &_x_center-md {
+    &-x-center-md {
       /*top: inherit;*/
       left: 50%;
       transform: translateX(-50%);
     }
 
-    &_y_center-md {
+    &-y-center-md {
       top: 50%;
       /*left: inherit;*/
       transform: translateY(-50%);
@@ -265,7 +265,7 @@
 
   .#{$position-top} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-top-variant($value);
       }
     }
@@ -273,7 +273,7 @@
 
   .#{$position-top-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-top-out-variant($value);
       }
     }
@@ -281,7 +281,7 @@
 
   .#{$position-right} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-right-variant($value);
       }
     }
@@ -289,7 +289,7 @@
 
   .#{$position-right-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-right-out-variant($value);
       }
     }
@@ -297,7 +297,7 @@
 
   .#{$position-bottom} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-bottom-variant($value);
       }
     }
@@ -305,7 +305,7 @@
 
   .#{$position-bottom-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-bottom-out-variant($value);
       }
     }
@@ -313,7 +313,7 @@
 
   .#{$position-left} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-left-variant($value);
       }
     }
@@ -321,7 +321,7 @@
 
   .#{$position-left-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-left-out-variant($value);
       }
     }
@@ -329,7 +329,7 @@
 
   .#{$position-x-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-x-axis-variant($value, $value);
       }
     }
@@ -337,7 +337,7 @@
 
   .#{$position-y-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include position-y-axis-variant($value, $value);
       }
     }
@@ -354,24 +354,24 @@
 
   .#{$position} {
     @each $key, $value in $position-round-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-round-variant($value, $value, $value, $value);
       }
     }
 
-    &_center-sm {
+    &-center-sm {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    &_x_center-sm {
+    &-x-center-sm {
       /*top: inherit;*/
       left: 50%;
       transform: translateX(-50%);
     }
 
-    &_y_center-sm {
+    &-y-center-sm {
       top: 50%;
       /*left: inherit;*/
       transform: translateY(-50%);
@@ -380,7 +380,7 @@
 
   .#{$position-top} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-top-variant($value);
       }
     }
@@ -388,7 +388,7 @@
 
   .#{$position-top-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-top-out-variant($value);
       }
     }
@@ -396,7 +396,7 @@
 
   .#{$position-right} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-right-variant($value);
       }
     }
@@ -404,7 +404,7 @@
 
   .#{$position-right-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-right-out-variant($value);
       }
     }
@@ -412,7 +412,7 @@
 
   .#{$position-bottom} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-bottom-variant($value);
       }
     }
@@ -420,7 +420,7 @@
 
   .#{$position-bottom-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-bottom-out-variant($value);
       }
     }
@@ -428,7 +428,7 @@
 
   .#{$position-left} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-left-variant($value);
       }
     }
@@ -436,7 +436,7 @@
 
   .#{$position-left-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-left-out-variant($value);
       }
     }
@@ -444,7 +444,7 @@
 
   .#{$position-x-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-x-axis-variant($value, $value);
       }
     }
@@ -452,7 +452,7 @@
 
   .#{$position-y-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include position-y-axis-variant($value, $value);
       }
     }
@@ -469,24 +469,24 @@
 
   .#{$position} {
     @each $key, $value in $position-round-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-round-variant($value, $value, $value, $value);
       }
     }
 
-    &_center-xs {
+    &-center-xs {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    &_x_center-xs {
+    &-x-center-xs {
       /*top: inherit;*/
       left: 50%;
       transform: translateX(-50%);
     }
 
-    &_y_center-xs {
+    &-y-center-xs {
       top: 50%;
       /*left: inherit;*/
       transform: translateY(-50%);
@@ -495,7 +495,7 @@
 
   .#{$position-top} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-top-variant($value);
       }
     }
@@ -503,7 +503,7 @@
 
   .#{$position-top-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-top-out-variant($value);
       }
     }
@@ -511,7 +511,7 @@
 
   .#{$position-right} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-right-variant($value);
       }
     }
@@ -519,7 +519,7 @@
 
   .#{$position-right-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-right-out-variant($value);
       }
     }
@@ -527,7 +527,7 @@
 
   .#{$position-bottom} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-bottom-variant($value);
       }
     }
@@ -535,7 +535,7 @@
 
   .#{$position-bottom-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-bottom-out-variant($value);
       }
     }
@@ -543,7 +543,7 @@
 
   .#{$position-left} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-left-variant($value);
       }
     }
@@ -551,7 +551,7 @@
 
   .#{$position-left-out} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-left-out-variant($value);
       }
     }
@@ -559,7 +559,7 @@
 
   .#{$position-x-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-x-axis-variant($value, $value);
       }
     }
@@ -567,7 +567,7 @@
 
   .#{$position-y-axis} {
     @each $key, $value in $position-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include position-y-axis-variant($value, $value);
       }
     }

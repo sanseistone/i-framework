@@ -1,23 +1,23 @@
 //text-align
 
 .#{$text} {
-  &_#{$left},
-  &_#{$left} > * {
+  &-#{$left},
+  &-#{$left} > * {
     text-align: left;
   }
 
-  &_#{$center},
-  &_#{$center} > * {
+  &-#{$center},
+  &-#{$center} > * {
     text-align: center;
   }
 
-  &_#{$right},
-  &_#{$right} > * {
+  &-#{$right},
+  &-#{$right} > * {
     text-align: right;
   }
 
-  &_#{$justify},
-  &_#{$justify} > * {
+  &-#{$justify},
+  &-#{$justify} > * {
     text-align: justify;
   }
 }
@@ -25,27 +25,27 @@
 //vertical-align
 
 .#{$align} {
-  &_#{$base} {
+  &-#{$base} {
     vertical-align: baseline;
   }
 
-  &_#{$top} {
+  &-#{$top} {
     vertical-align: top;
   }
 
-  &_#{$middle} {
+  &-#{$middle} {
     vertical-align: middle;
   }
 
-  &_#{$bottom} {
+  &-#{$bottom} {
     vertical-align: bottom;
   }
 
-  &_t_#{$top} {
+  &-t-#{$top} {
     vertical-align: text-top;
   }
 
-  &_t_#{$bottom} {
+  &-t-#{$bottom} {
     vertical-align: text-bottom;
   }
 }
@@ -53,23 +53,23 @@
 //white-space
 
 .#{$white-space} {
-  &_#{$normal} {
+  &-#{$normal} {
     white-space: normal;
   }
 
-  &_nowrap {
+  &-nowrap {
     white-space: nowrap;
   }
 
-  &_pre {
+  &-pre {
     white-space: pre;
   }
 
-  &_pre_line {
+  &-pre-line {
     white-space: pre-line;
   }
 
-  &_pre_wrap {
+  &-pre-wrap {
     white-space: pre-wrap;
   }
 }
@@ -77,11 +77,11 @@
 //word-wrap
 
 .#{$break} {
-  &_words {
+  &-words {
     word-wrap: break-word;
   }
 
-  &_normal {
+  &-normal {
     word-wrap: normal;
   }
 }
@@ -154,81 +154,81 @@
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$text} {
-    &_#{$left}-lg,
-    &_#{$left}-lg > * {
+    &-#{$left}-lg,
+    &-#{$left}-lg > * {
       text-align: left;
     }
 
-    &_#{$center}-lg,
-    &_#{$center}-lg > * {
+    &-#{$center}-lg,
+    &-#{$center}-lg > * {
       text-align: center;
     }
 
-    &_#{$right}-lg,
-    &_#{$right}-lg > * {
+    &-#{$right}-lg,
+    &-#{$right}-lg > * {
       text-align: right;
     }
 
-    &_#{$justify}-lg,
-    &_#{$justify}-lg > * {
+    &-#{$justify}-lg,
+    &-#{$justify}-lg > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &_#{$base}-lg {
+    &-#{$base}-lg {
       vertical-align: baseline;
     }
 
-    &_#{$top}-lg {
+    &-#{$top}-lg {
       vertical-align: top;
     }
 
-    &_#{$middle}-lg {
+    &-#{$middle}-lg {
       vertical-align: middle;
     }
 
-    &_#{$bottom}-lg {
+    &-#{$bottom}-lg {
       vertical-align: bottom;
     }
 
-    &_t_#{$top}-lg {
+    &-t-#{$top}-lg {
       vertical-align: text-top;
     }
 
-    &_t_#{$bottom}-lg {
+    &-t-#{$bottom}-lg {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &_#{$normal}-lg {
+    &-#{$normal}-lg {
       white-space: normal;
     }
 
-    &_nowrap-lg {
+    &-nowrap-lg {
       white-space: nowrap;
     }
 
-    &_pre_lg {
+    &-pre-lg {
       white-space: pre;
     }
 
-    &_pre_line-lg {
+    &-pre-line-lg {
       white-space: pre-line;
     }
 
-    &_pre_wrap-lg {
+    &-pre-wrap-lg {
       white-space: pre-wrap;
     }
   }
 
   .#{$break} {
-    &_words-lg {
+    &-words-lg {
       word-wrap: break-word;
     }
 
-    &_normal-lg {
+    &-normal-lg {
       word-wrap: normal;
     }
   }
@@ -290,81 +290,81 @@
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .#{$text} {
-    &_#{$left}-md,
-    &_#{$left}-md > * {
+    &-#{$left}-md,
+    &-#{$left}-md > * {
       text-align: left;
     }
 
-    &_#{$center}-md,
-    &_#{$center}-md > * {
+    &-#{$center}-md,
+    &-#{$center}-md > * {
       text-align: center;
     }
 
-    &_#{$right}-md,
-    &_#{$right}-md > * {
+    &-#{$right}-md,
+    &-#{$right}-md > * {
       text-align: right;
     }
 
-    &_#{$justify}-md,
-    &_#{$justify}-md > * {
+    &-#{$justify}-md,
+    &-#{$justify}-md > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &_#{$base}-md {
+    &-#{$base}-md {
       vertical-align: baseline;
     }
 
-    &_#{$top}-md {
+    &-#{$top}-md {
       vertical-align: top;
     }
 
-    &_#{$middle}-md {
+    &-#{$middle}-md {
       vertical-align: middle;
     }
 
-    &_#{$bottom}-md {
+    &-#{$bottom}-md {
       vertical-align: bottom;
     }
 
-    &_t_#{$top}-md {
+    &-t-#{$top}-md {
       vertical-align: text-top;
     }
 
-    &_t_#{$bottom}-md {
+    &-t-#{$bottom}-md {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &_#{$normal}-md {
+    &-#{$normal}-md {
       white-space: normal;
     }
 
-    &_nowrap-md {
+    &-nowrap-md {
       white-space: nowrap;
     }
 
-    &_pre_md {
+    &-pre-md {
       white-space: pre;
     }
 
-    &_pre_line-md {
+    &-pre-line-md {
       white-space: pre-line;
     }
 
-    &_pre_wrap-md {
+    &-pre-wrap-md {
       white-space: pre-wrap;
     }
   }
 
   .#{$break} {
-    &_words-md {
+    &-words-md {
       word-wrap: break-word;
     }
 
-    &_normal-md {
+    &-normal-md {
       word-wrap: normal;
     }
   }
@@ -426,81 +426,81 @@
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
   .#{$text} {
-    &_#{$left}-sm,
-    &_#{$left}-sm > * {
+    &-#{$left}-sm,
+    &-#{$left}-sm > * {
       text-align: left;
     }
 
-    &_#{$center}-sm,
-    &_#{$center}-sm > * {
+    &-#{$center}-sm,
+    &-#{$center}-sm > * {
       text-align: center;
     }
 
-    &_#{$right}-sm,
-    &_#{$right}-sm > * {
+    &-#{$right}-sm,
+    &-#{$right}-sm > * {
       text-align: right;
     }
 
-    &_#{$justify}-sm,
-    &_#{$justify}-sm > * {
+    &-#{$justify}-sm,
+    &-#{$justify}-sm > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &_#{$base}-sm {
+    &-#{$base}-sm {
       vertical-align: baseline;
     }
 
-    &_#{$top}-sm {
+    &-#{$top}-sm {
       vertical-align: top;
     }
 
-    &_#{$middle}-sm {
+    &-#{$middle}-sm {
       vertical-align: middle;
     }
 
-    &_#{$bottom}-sm {
+    &-#{$bottom}-sm {
       vertical-align: bottom;
     }
 
-    &_t_#{$top}-sm {
+    &-t-#{$top}-sm {
       vertical-align: text-top;
     }
 
-    &_t_#{$bottom}-sm {
+    &-t-#{$bottom}-sm {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &_#{$normal}-sm {
+    &-#{$normal}-sm {
       white-space: normal;
     }
 
-    &_nowrap-sm {
+    &-nowrap-sm {
       white-space: nowrap;
     }
 
-    &_pre_sm {
+    &-pre-sm {
       white-space: pre;
     }
 
-    &_pre_line-sm {
+    &-pre-line-sm {
       white-space: pre-line;
     }
 
-    &_pre_wrap-sm {
+    &-pre-wrap-sm {
       white-space: pre-wrap;
     }
   }
 
   .#{$break} {
-    &_words-sm {
+    &-words-sm {
       word-wrap: break-word;
     }
 
-    &_normal-sm {
+    &-normal-sm {
       word-wrap: normal;
     }
   }
@@ -562,81 +562,81 @@
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .#{$text} {
-    &_#{$left}-xs,
-    &_#{$left}-xs > * {
+    &-#{$left}-xs,
+    &-#{$left}-xs > * {
       text-align: left;
     }
 
-    &_#{$center}-xs,
-    &_#{$center}-xs > * {
+    &-#{$center}-xs,
+    &-#{$center}-xs > * {
       text-align: center;
     }
 
-    &_#{$right}-xs,
-    &_#{$right}-xs > * {
+    &-#{$right}-xs,
+    &-#{$right}-xs > * {
       text-align: right;
     }
 
-    &_#{$justify}-xs,
-    &_#{$justify}-xs > * {
+    &-#{$justify}-xs,
+    &-#{$justify}-xs > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &_#{$base}-xs {
+    &-#{$base}-xs {
       vertical-align: baseline;
     }
 
-    &_#{$top}-xs {
+    &-#{$top}-xs {
       vertical-align: top;
     }
 
-    &_#{$middle}-xs {
+    &-#{$middle}-xs {
       vertical-align: middle;
     }
 
-    &_#{$bottom}-xs {
+    &-#{$bottom}-xs {
       vertical-align: bottom;
     }
 
-    &_t_#{$top}-xs {
+    &-t-#{$top}-xs {
       vertical-align: text-top;
     }
 
-    &_t_#{$bottom}-xs {
+    &-t-#{$bottom}-xs {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &_#{$normal}-xs {
+    &-#{$normal}-xs {
       white-space: normal;
     }
 
-    &_nowrap-xs {
+    &-nowrap-xs {
       white-space: nowrap;
     }
 
-    &_pre_xs {
+    &-pre-xs {
       white-space: pre;
     }
 
-    &_pre_line-xs {
+    &-pre-line-xs {
       white-space: pre-line;
     }
 
-    &_pre_wrap-xs {
+    &-pre-wrap-xs {
       white-space: pre-wrap;
     }
   }
 
   .#{$break} {
-    &_words-xs {
+    &-words-xs {
       word-wrap: break-word;
     }
 
-    &_normal-xs {
+    &-normal-xs {
       word-wrap: normal;
     }
   }

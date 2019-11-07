@@ -1,0 +1,675 @@
+//background-color
+
+[class^="bg-"].default {
+  background-color: $color-default;
+}
+
+.#{$background-transparent} {
+  background-color: transparent;
+}
+
+.#{$background-white} {
+  background-color: $color-f;
+}
+
+.#{$background-black} {
+  color: $color-f;
+  background-color: $color-0;
+}
+
+@each $key, $value in $red-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$background-transparent}-lg {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-lg {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-lg {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$background-transparent}-md {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-md {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-md {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$background-transparent}-sm {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-sm {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-sm {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$background-transparent}-xs {
+    background-color: transparent;
+  }
+
+  .#{$background-white}-xs {
+    background-color: $color-f;
+  }
+
+  .#{$background-black}-xs {
+    color: $color-f;
+    background-color: $color-0;
+  }
+
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -1,6 +1,6 @@
 //color
 
-[class^="font_"].default {
+[class^="font-"].default {
   color: $color-default;
 }
 
@@ -15,121 +15,121 @@
 }
 
 @each $key, $value in $red-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $pink-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $purple-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $deep-purple-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $indigo-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $blue-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $light-blue-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $cyan-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $teal-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $green-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $light-green-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $lime-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $yellow-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $amber-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $orange-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $deep-orange-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $brown-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $grey-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $blue-grey-series {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
 
 @each $key, $value in $namespace-color {
-  .#{$font}_#{$key} {
+  .#{$font}-#{$key} {
     @include font-variant($value);
   }
 }
@@ -149,121 +149,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$font}_#{$key}-lg {
+    .#{$font}-#{$key}-lg {
       @include font-variant($value);
     }
   }
@@ -282,121 +282,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$font}_#{$key}-md {
+    .#{$font}-#{$key}-md {
       @include font-variant($value);
     }
   }
@@ -415,121 +415,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$font}_#{$key}-sm {
+    .#{$font}-#{$key}-sm {
       @include font-variant($value);
     }
   }
@@ -548,121 +548,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$font}_#{$key}-xs {
+    .#{$font}-#{$key}-xs {
       @include font-variant($value);
     }
   }

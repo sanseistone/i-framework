@@ -1,0 +1,126 @@
+//color
+
+[class^="font-"].default {
+  color: $color-default;
+}
+
+.#{$font} {
+  .#{$font-white} {
+    color: $color-f;
+  }
+
+  .#{$font-black} {
+    color: $color-0;
+  }
+}
+
+@each $key, $value in $namespace-color {
+  .#{$font}-#{$key} {
+    @include font-variant($value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$font} {
+    .#{$font-white}-lg {
+      color: $color-f;
+    }
+
+    .#{$font-black}-lg {
+      color: $color-0;
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$font}-#{$key}-lg {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$font}-#{$key}-lg {
+      @include font-variant($value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$font} {
+    .#{$font-white}-md {
+      color: $color-f;
+    }
+
+    .#{$font-black}-md {
+      color: $color-0;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$font}-#{$key}-md {
+      @include font-variant($value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$font} {
+    .#{$font-white}-sm {
+      color: $color-f;
+    }
+
+    .#{$font-black}-sm {
+      color: $color-0;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$font}-#{$key}-sm {
+      @include font-variant($value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$font} {
+    .#{$font-white}-xs {
+      color: $color-f;
+    }
+
+    .#{$font-black}-xs {
+      color: $color-0;
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$font}-#{$key}-xs {
+      @include font-variant($value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -20,7 +20,7 @@
 
 .#{$opacity} {
   @each $key, $value in $opacity-series {
-    &_#{$key} {
+    &-#{$key} {
       @include opacity-variant($value);
     }
   }
@@ -30,7 +30,7 @@
 
 .#{$z-index} {
   @each $key, $value in $z-index-series {
-    &_#{$key} {
+    &-#{$key} {
       @include z-index-variant($value);
     }
   }
@@ -40,7 +40,7 @@
 
 .#{$box-shadow} {
   @each $key, $value in $box-shadow-series {
-    &_#{$key} {
+    &-#{$key} {
       @include box-shadow-variant($value);
     }
   }
@@ -66,7 +66,7 @@
 
   .#{$opacity} {
     @each $key, $value in $opacity-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include opacity-variant($value);
       }
     }
@@ -74,7 +74,7 @@
 
   .#{$z-index} {
     @each $key, $value in $z-index-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include z-index-variant($value);
       }
     }
@@ -82,7 +82,7 @@
 
   .#{$box-shadow} {
     @each $key, $value in $box-shadow-series {
-      &_#{$key}-lg {
+      &-#{$key}-lg {
         @include box-shadow-variant($value);
       }
     }
@@ -107,7 +107,7 @@
 
   .#{$opacity} {
     @each $key, $value in $opacity-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include opacity-variant($value);
       }
     }
@@ -115,7 +115,7 @@
 
   .#{$z-index} {
     @each $key, $value in $z-index-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include z-index-variant($value);
       }
     }
@@ -123,7 +123,7 @@
 
   .#{$box-shadow} {
     @each $key, $value in $box-shadow-series {
-      &_#{$key}-md {
+      &-#{$key}-md {
         @include box-shadow-variant($value);
       }
     }
@@ -148,7 +148,7 @@
 
   .#{$opacity} {
     @each $key, $value in $opacity-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include opacity-variant($value);
       }
     }
@@ -156,7 +156,7 @@
 
   .#{$z-index} {
     @each $key, $value in $z-index-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include z-index-variant($value);
       }
     }
@@ -164,7 +164,7 @@
 
   .#{$box-shadow} {
     @each $key, $value in $box-shadow-series {
-      &_#{$key}-sm {
+      &-#{$key}-sm {
         @include box-shadow-variant($value);
       }
     }
@@ -189,7 +189,7 @@
 
   .#{$opacity} {
     @each $key, $value in $opacity-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include opacity-variant($value);
       }
     }
@@ -197,7 +197,7 @@
 
   .#{$z-index} {
     @each $key, $value in $z-index-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include z-index-variant($value);
       }
     }
@@ -205,7 +205,7 @@
 
   .#{$box-shadow} {
     @each $key, $value in $box-shadow-series {
-      &_#{$key}-xs {
+      &-#{$key}-xs {
         @include box-shadow-variant($value);
       }
     }

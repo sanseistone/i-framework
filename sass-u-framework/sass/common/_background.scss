@@ -1,53 +1,53 @@
 //background
 
 .#{$background-position} {
-  &_t {
+  &-t {
     background-position: top;
   }
 
-  &_r {
+  &-r {
     background-position: right;
   }
 
-  &_rb {
+  &-rb {
     background-position: right bottom;
   }
 
-  &_rt {
+  &-rt {
     background-position: right top;
   }
 
-  &_b {
+  &-b {
     background-position: bottom;
   }
 
-  &_l {
+  &-l {
     background-position: left;
   }
 
-  &_lb {
+  &-lb {
     background-position: left bottom;
   }
 
-  &_lt {
+  &-lt {
     background-position: left top;
   }
 
-  &_c {
+  &-c {
     background-position: center;
   }
 }
 
 .#{$background-size} {
-  &_auto {
+  &-auto {
     background-size: auto;
   }
 
-  &_cover {
+  &-cover {
     background-size: cover;
   }
 
-  &_contain {
+  &-contain {
     background-size: contain;
   }
 }
@@ -57,63 +57,63 @@
     background-repeat: repeat;
   }
 
-  &_x {
+  &-x {
     background-repeat: repeat-x;
   }
 
-  &_y {
+  &-y {
     background-repeat: repeat-y;
   }
 
-  &_no {
+  &-no {
     background-repeat: no-repeat;
   }
 }
 
 .#{$background-origin} {
-  &_border {
+  &-border {
     background-origin: border-box;
   }
 
-  &_content {
+  &-content {
     background-origin: content-box;
   }
 
-  &_padding {
+  &-padding {
     background-origin: padding-box;
   }
 }
 
 .#{$background-clip} {
-  &_border {
+  &-border {
     background-clip: border-box;
   }
 
-  &_content {
+  &-content {
     background-clip: content-box;
   }
 
-  &_padding {
+  &-padding {
     background-clip: padding-box;
   }
 }
 
 .#{$background-attachment} {
-  &_scroll {
+  &-scroll {
     background-attachment: scroll;
   }
 
-  &_fixed {
+  &-fixed {
     background-attachment: fixed;
   }
 
-  &_local {
+  &-local {
     background-attachment: local;
   }
 }
 
 .#{$background-image} {
-  &_n {
+  &-n {
     background-image: none;
   }
 }
@@ -123,119 +123,119 @@
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$background-position} {
-    &_t-lg {
+    &-t-lg {
       background-position: top;
     }
 
-    &_r-lg {
+    &-r-lg {
       background-position: right;
     }
 
-    &_rb-lg {
+    &-rb-lg {
       background-position: right bottom;
     }
 
-    &_rt-lg {
+    &-rt-lg {
       background-position: right top;
     }
 
-    &_b-lg {
+    &-b-lg {
       background-position: bottom;
     }
 
-    &_l-lg {
+    &-l-lg {
       background-position: left;
     }
 
-    &_lb-lg {
+    &-lb-lg {
       background-position: left bottom;
     }
 
-    &_lt-lg {
+    &-lt-lg {
       background-position: left top;
     }
 
-    &_c-lg {
+    &-c-lg {
       background-position: center;
     }
   }
 
   .#{$background-size} {
-    &_auto-lg {
+    &-auto-lg {
       background-size: auto;
     }
 
-    &_cover-lg {
+    &-cover-lg {
       background-size: cover;
     }
 
-    &_contain-lg {
+    &-contain-lg {
       background-size: contain;
     }
   }
 
   .#{$background-repeat} {
-    &_lg {
+    &-lg {
       background-repeat: repeat;
     }
 
-    &_x-lg {
+    &-x-lg {
       background-repeat: repeat-x;
     }
 
-    &_y-lg {
+    &-y-lg {
       background-repeat: repeat-y;
     }
 
-    &_no-lg {
+    &-no-lg {
       background-repeat: no-repeat;
     }
   }
 
   .#{$background-origin} {
-    &_border-lg {
+    &-border-lg {
       background-origin: border-box;
     }
 
-    &_content-lg {
+    &-content-lg {
       background-origin: content-box;
     }
 
-    &_padding-lg {
+    &-padding-lg {
       background-origin: padding-box;
     }
   }
 
   .#{$background-clip} {
-    &_border-lg {
+    &-border-lg {
       background-clip: border-box;
     }
 
-    &_content-lg {
+    &-content-lg {
       background-clip: content-box;
     }
 
-    &_padding-lg {
+    &-padding-lg {
       background-clip: padding-box;
     }
   }
 
   .#{$background-attachment} {
-    &_scroll-lg {
+    &-scroll-lg {
       background-attachment: scroll;
     }
 
-    &_fixed-lg {
+    &-fixed-lg {
       background-attachment: fixed;
     }
 
-    &_local-lg {
+    &-local-lg {
       background-attachment: local;
     }
   }
 
   .#{$background-image} {
-    &_n-lg {
+    &-n-lg {
       background-image: none;
     }
   }
@@ -244,119 +244,119 @@
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .#{$background-position} {
-    &_t-md {
+    &-t-md {
       background-position: top;
     }
 
-    &_r-md {
+    &-r-md {
       background-position: right;
     }
 
-    &_rb-md {
+    &-rb-md {
       background-position: right bottom;
     }
 
-    &_rt-md {
+    &-rt-md {
       background-position: right top;
     }
 
-    &_b-md {
+    &-b-md {
       background-position: bottom;
     }
 
-    &_l-md {
+    &-l-md {
       background-position: left;
     }
 
-    &_lb-md {
+    &-lb-md {
       background-position: left bottom;
     }
 
-    &_lt-md {
+    &-lt-md {
       background-position: left top;
     }
 
-    &_c-md {
+    &-c-md {
       background-position: center;
     }
   }
 
   .#{$background-size} {
-    &_auto-md {
+    &-auto-md {
       background-size: auto;
     }
 
-    &_cover-md {
+    &-cover-md {
       background-size: cover;
     }
 
-    &_contain-md {
+    &-contain-md {
       background-size: contain;
     }
   }
 
   .#{$background-repeat} {
-    &_md {
+    &-md {
       background-repeat: repeat;
     }
 
-    &_x-md {
+    &-x-md {
       background-repeat: repeat-x;
     }
 
-    &_y-md {
+    &-y-md {
       background-repeat: repeat-y;
     }
 
-    &_no-md {
+    &-no-md {
       background-repeat: no-repeat;
     }
   }
 
   .#{$background-origin} {
-    &_border-md {
+    &-border-md {
       background-origin: border-box;
     }
 
-    &_content-md {
+    &-content-md {
       background-origin: content-box;
     }
 
-    &_padding-md {
+    &-padding-md {
       background-origin: padding-box;
     }
   }
 
   .#{$background-clip} {
-    &_border-md {
+    &-border-md {
       background-clip: border-box;
     }
 
-    &_content-md {
+    &-content-md {
       background-clip: content-box;
     }
 
-    &_padding-md {
+    &-padding-md {
       background-clip: padding-box;
     }
   }
 
   .#{$background-attachment} {
-    &_scroll-md {
+    &-scroll-md {
       background-attachment: scroll;
     }
 
-    &_fixed-md {
+    &-fixed-md {
       background-attachment: fixed;
     }
 
-    &_local-md {
+    &-local-md {
       background-attachment: local;
     }
   }
 
   .#{$background-image} {
-    &_n-md {
+    &-n-md {
       background-image: none;
     }
   }
@@ -365,119 +365,119 @@
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
   .#{$background-position} {
-    &_t-sm {
+    &-t-sm {
       background-position: top;
     }
 
-    &_r-sm {
+    &-r-sm {
       background-position: right;
     }
 
-    &_rb-sm {
+    &-rb-sm {
       background-position: right bottom;
     }
 
-    &_rt-sm {
+    &-rt-sm {
       background-position: right top;
     }
 
-    &_b-sm {
+    &-b-sm {
       background-position: bottom;
     }
 
-    &_l-sm {
+    &-l-sm {
       background-position: left;
     }
 
-    &_lb-sm {
+    &-lb-sm {
       background-position: left bottom;
     }
 
-    &_lt-sm {
+    &-lt-sm {
       background-position: left top;
     }
 
-    &_c-sm {
+    &-c-sm {
       background-position: center;
     }
   }
 
   .#{$background-size} {
-    &_auto-sm {
+    &-auto-sm {
       background-size: auto;
     }
 
-    &_cover-sm {
+    &-cover-sm {
       background-size: cover;
     }
 
-    &_contain-sm {
+    &-contain-sm {
       background-size: contain;
     }
   }
 
   .#{$background-repeat} {
-    &_sm {
+    &-sm {
       background-repeat: repeat;
     }
 
-    &_x-sm {
+    &-x-sm {
       background-repeat: repeat-x;
     }
 
-    &_y-sm {
+    &-y-sm {
       background-repeat: repeat-y;
     }
 
-    &_no-sm {
+    &-no-sm {
       background-repeat: no-repeat;
     }
   }
 
   .#{$background-origin} {
-    &_border-sm {
+    &-border-sm {
       background-origin: border-box;
     }
 
-    &_content-sm {
+    &-content-sm {
       background-origin: content-box;
     }
 
-    &_padding-sm {
+    &-padding-sm {
       background-origin: padding-box;
     }
   }
 
   .#{$background-clip} {
-    &_border-sm {
+    &-border-sm {
       background-clip: border-box;
     }
 
-    &_content-sm {
+    &-content-sm {
       background-clip: content-box;
     }
 
-    &_padding-sm {
+    &-padding-sm {
       background-clip: padding-box;
     }
   }
 
   .#{$background-attachment} {
-    &_scroll-sm {
+    &-scroll-sm {
       background-attachment: scroll;
     }
 
-    &_fixed-sm {
+    &-fixed-sm {
       background-attachment: fixed;
     }
 
-    &_local-sm {
+    &-local-sm {
       background-attachment: local;
     }
   }
 
   .#{$background-image} {
-    &_n-sm {
+    &-n-sm {
       background-image: none;
     }
   }
@@ -486,119 +486,119 @@
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .#{$background-position} {
-    &_t-xs {
+    &-t-xs {
       background-position: top;
     }
 
-    &_r-xs {
+    &-r-xs {
       background-position: right;
     }
 
-    &_rb-xs {
+    &-rb-xs {
       background-position: right bottom;
     }
 
-    &_rt-xs {
+    &-rt-xs {
       background-position: right top;
     }
 
-    &_b-xs {
+    &-b-xs {
       background-position: bottom;
     }
 
-    &_l-xs {
+    &-l-xs {
       background-position: left;
     }
 
-    &_lb-xs {
+    &-lb-xs {
       background-position: left bottom;
     }
 
-    &_lt-xs {
+    &-lt-xs {
       background-position: left top;
     }
 
-    &_c-xs {
+    &-c-xs {
       background-position: center;
     }
   }
 
   .#{$background-size} {
-    &_auto-xs {
+    &-auto-xs {
       background-size: auto;
     }
 
-    &_cover-xs {
+    &-cover-xs {
       background-size: cover;
     }
 
-    &_contain-xs {
+    &-contain-xs {
       background-size: contain;
     }
   }
 
   .#{$background-repeat} {
-    &_xs {
+    &-xs {
       background-repeat: repeat;
     }
 
-    &_x-xs {
+    &-x-xs {
       background-repeat: repeat-x;
     }
 
-    &_y-xs {
+    &-y-xs {
       background-repeat: repeat-y;
     }
 
-    &_no-xs {
+    &-no-xs {
       background-repeat: no-repeat;
     }
   }
 
   .#{$background-origin} {
-    &_border-xs {
+    &-border-xs {
       background-origin: border-box;
     }
 
-    &_content-xs {
+    &-content-xs {
       background-origin: content-box;
     }
 
-    &_padding-xs {
+    &-padding-xs {
       background-origin: padding-box;
     }
   }
 
   .#{$background-clip} {
-    &_border-xs {
+    &-border-xs {
       background-clip: border-box;
     }
 
-    &_content-xs {
+    &-content-xs {
       background-clip: content-box;
     }
 
-    &_padding-xs {
+    &-padding-xs {
       background-clip: padding-box;
     }
   }
 
   .#{$background-attachment} {
-    &_scroll-xs {
+    &-scroll-xs {
       background-attachment: scroll;
     }
 
-    &_fixed-xs {
+    &-fixed-xs {
       background-attachment: fixed;
     }
 
-    &_local-xs {
+    &-local-xs {
       background-attachment: local;
     }
   }
 
   .#{$background-image} {
-    &_n-xs {
+    &-n-xs {
       background-image: none;
     }
   }

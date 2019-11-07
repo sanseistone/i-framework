@@ -1,39 +1,39 @@
 //white-fill
 
 .#{$white-fill} {
-  &_a1 {
+  &-a1 {
     background: rgba(255, 255, 255, .1);
   }
 
-  &_a2 {
+  &-a2 {
     background: rgba(255, 255, 255, .2);
   }
 
-  &_a3 {
+  &-a3 {
     background: rgba(255, 255, 255, .3);
   }
 
-  &_a4 {
+  &-a4 {
     background: rgba(255, 255, 255, .4);
   }
 
-  &_a5 {
+  &-a5 {
     background: rgba(255, 255, 255, .5);
   }
 
-  &_a6 {
+  &-a6 {
     background: rgba(255, 255, 255, .6);
   }
 
-  &_a7 {
+  &-a7 {
     background: rgba(255, 255, 255, .7);
   }
 
-  &_a8 {
+  &-a8 {
     background: rgba(255, 255, 255, .8);
   }
 
-  &_a9 {
+  &-a9 {
     background: rgba(255, 255, 255, .9);
   }
 }
@@ -41,39 +41,39 @@
 //black-fill
 
 .#{$black-fill} {
-  &_a1 {
+  &-a1 {
     background: rgba(0, 0, 0, .1);
   }
 
-  &_a2 {
+  &-a2 {
     background: rgba(0, 0, 0, .2);
   }
 
-  &_a3 {
+  &-a3 {
     background: rgba(0, 0, 0, .3);
   }
 
-  &_a4 {
+  &-a4 {
     background: rgba(0, 0, 0, .4);
   }
 
-  &_a5 {
+  &-a5 {
     background: rgba(0, 0, 0, .5);
   }
 
-  &_a6 {
+  &-a6 {
     background: rgba(0, 0, 0, .6);
   }
 
-  &_a7 {
+  &-a7 {
     background: rgba(0, 0, 0, .7);
   }
 
-  &_a8 {
+  &-a8 {
     background: rgba(0, 0, 0, .8);
   }
 
-  &_a9 {
+  &-a9 {
     background: rgba(0, 0, 0, .9);
   }
 }
@@ -83,77 +83,77 @@
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
   .#{$white-fill} {
-    &_a1-lg {
+    &-a1-lg {
       background: rgba(255, 255, 255, .1);
     }
 
-    &_a2-lg {
+    &-a2-lg {
       background: rgba(255, 255, 255, .2);
     }
 
-    &_a3-lg {
+    &-a3-lg {
       background: rgba(255, 255, 255, .3);
     }
 
-    &_a4-lg {
+    &-a4-lg {
       background: rgba(255, 255, 255, .4);
     }
 
-    &_a5-lg {
+    &-a5-lg {
       background: rgba(255, 255, 255, .5);
     }
 
-    &_a6-lg {
+    &-a6-lg {
       background: rgba(255, 255, 255, .6);
     }
 
-    &_a7-lg {
+    &-a7-lg {
       background: rgba(255, 255, 255, .7);
     }
 
-    &_a8-lg {
+    &-a8-lg {
       background: rgba(255, 255, 255, .8);
     }
 
-    &_a9-lg {
+    &-a9-lg {
       background: rgba(255, 255, 255, .9);
     }
   }
 
   .#{$black-fill} {
-    &_a1-lg {
+    &-a1-lg {
       background: rgba(0, 0, 0, .1);
     }
 
-    &_a2-lg {
+    &-a2-lg {
       background: rgba(0, 0, 0, .2);
     }
 
-    &_a3-lg {
+    &-a3-lg {
       background: rgba(0, 0, 0, .3);
     }
 
-    &_a4-lg {
+    &-a4-lg {
       background: rgba(0, 0, 0, .4);
     }
 
-    &_a5-lg {
+    &-a5-lg {
       background: rgba(0, 0, 0, .5);
     }
 
-    &_a6-lg {
+    &-a6-lg {
       background: rgba(0, 0, 0, .6);
     }
 
-    &_a7-lg {
+    &-a7-lg {
       background: rgba(0, 0, 0, .7);
     }
 
-    &_a8-lg {
+    &-a8-lg {
       background: rgba(0, 0, 0, .8);
     }
 
-    &_a9-lg {
+    &-a9-lg {
       background: rgba(0, 0, 0, .9);
     }
   }
@@ -162,77 +162,77 @@
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .#{$white-fill} {
-    &_a1-md {
+    &-a1-md {
       background: rgba(255, 255, 255, .1);
     }
 
-    &_a2-md {
+    &-a2-md {
       background: rgba(255, 255, 255, .2);
     }
 
-    &_a3-md {
+    &-a3-md {
       background: rgba(255, 255, 255, .3);
     }
 
-    &_a4-md {
+    &-a4-md {
       background: rgba(255, 255, 255, .4);
     }
 
-    &_a5-md {
+    &-a5-md {
       background: rgba(255, 255, 255, .5);
     }
 
-    &_a6-md {
+    &-a6-md {
       background: rgba(255, 255, 255, .6);
     }
 
-    &_a7-md {
+    &-a7-md {
       background: rgba(255, 255, 255, .7);
     }
 
-    &_a8-md {
+    &-a8-md {
       background: rgba(255, 255, 255, .8);
     }
 
-    &_a9-md {
+    &-a9-md {
       background: rgba(255, 255, 255, .9);
     }
   }
 
   .#{$black-fill} {
-    &_a1-md {
+    &-a1-md {
       background: rgba(0, 0, 0, .1);
     }
 
-    &_a2-md {
+    &-a2-md {
       background: rgba(0, 0, 0, .2);
     }
 
-    &_a3-md {
+    &-a3-md {
       background: rgba(0, 0, 0, .3);
     }
 
-    &_a4-md {
+    &-a4-md {
       background: rgba(0, 0, 0, .4);
     }
 
-    &_a5-md {
+    &-a5-md {
       background: rgba(0, 0, 0, .5);
     }
 
-    &_a6-md {
+    &-a6-md {
       background: rgba(0, 0, 0, .6);
     }
 
-    &_a7-md {
+    &-a7-md {
       background: rgba(0, 0, 0, .7);
     }
 
-    &_a8-md {
+    &-a8-md {
       background: rgba(0, 0, 0, .8);
     }
 
-    &_a9-md {
+    &-a9-md {
       background: rgba(0, 0, 0, .9);
     }
   }
@@ -241,77 +241,77 @@
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
   .#{$white-fill} {
-    &_a1-sm {
+    &-a1-sm {
       background: rgba(255, 255, 255, .1);
     }
 
-    &_a2-sm {
+    &-a2-sm {
       background: rgba(255, 255, 255, .2);
     }
 
-    &_a3-sm {
+    &-a3-sm {
       background: rgba(255, 255, 255, .3);
     }
 
-    &_a4-sm {
+    &-a4-sm {
       background: rgba(255, 255, 255, .4);
     }
 
-    &_a5-sm {
+    &-a5-sm {
       background: rgba(255, 255, 255, .5);
     }
 
-    &_a6-sm {
+    &-a6-sm {
       background: rgba(255, 255, 255, .6);
     }
 
-    &_a7-sm {
+    &-a7-sm {
       background: rgba(255, 255, 255, .7);
     }
 
-    &_a8-sm {
+    &-a8-sm {
       background: rgba(255, 255, 255, .8);
     }
 
-    &_a9-sm {
+    &-a9-sm {
       background: rgba(255, 255, 255, .9);
     }
   }
 
   .#{$black-fill} {
-    &_a1-sm {
+    &-a1-sm {
       background: rgba(0, 0, 0, .1);
     }
 
-    &_a2-sm {
+    &-a2-sm {
       background: rgba(0, 0, 0, .2);
     }
 
-    &_a3-sm {
+    &-a3-sm {
       background: rgba(0, 0, 0, .3);
     }
 
-    &_a4-sm {
+    &-a4-sm {
       background: rgba(0, 0, 0, .4);
     }
 
-    &_a5-sm {
+    &-a5-sm {
       background: rgba(0, 0, 0, .5);
     }
 
-    &_a6-sm {
+    &-a6-sm {
       background: rgba(0, 0, 0, .6);
     }
 
-    &_a7-sm {
+    &-a7-sm {
       background: rgba(0, 0, 0, .7);
     }
 
-    &_a8-sm {
+    &-a8-sm {
       background: rgba(0, 0, 0, .8);
     }
 
-    &_a9-sm {
+    &-a9-sm {
       background: rgba(0, 0, 0, .9);
     }
   }
@@ -320,77 +320,77 @@
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .#{$white-fill} {
-    &_a1-xs {
+    &-a1-xs {
       background: rgba(255, 255, 255, .1);
     }
 
-    &_a2-xs {
+    &-a2-xs {
       background: rgba(255, 255, 255, .2);
     }
 
-    &_a3-xs {
+    &-a3-xs {
       background: rgba(255, 255, 255, .3);
     }
 
-    &_a4-xs {
+    &-a4-xs {
       background: rgba(255, 255, 255, .4);
     }
 
-    &_a5-xs {
+    &-a5-xs {
       background: rgba(255, 255, 255, .5);
     }
 
-    &_a6-xs {
+    &-a6-xs {
       background: rgba(255, 255, 255, .6);
     }
 
-    &_a7-xs {
+    &-a7-xs {
       background: rgba(255, 255, 255, .7);
     }
 
-    &_a8-xs {
+    &-a8-xs {
       background: rgba(255, 255, 255, .8);
     }
 
-    &_a9-xs {
+    &-a9-xs {
       background: rgba(255, 255, 255, .9);
     }
   }
 
   .#{$black-fill} {
-    &_a1-xs {
+    &-a1-xs {
       background: rgba(0, 0, 0, .1);
     }
 
-    &_a2-xs {
+    &-a2-xs {
       background: rgba(0, 0, 0, .2);
     }
 
-    &_a3-xs {
+    &-a3-xs {
       background: rgba(0, 0, 0, .3);
     }
 
-    &_a4-xs {
+    &-a4-xs {
       background: rgba(0, 0, 0, .4);
     }
 
-    &_a5-xs {
+    &-a5-xs {
       background: rgba(0, 0, 0, .5);
     }
 
-    &_a6-xs {
+    &-a6-xs {
       background: rgba(0, 0, 0, .6);
     }
 
-    &_a7-xs {
+    &-a7-xs {
       background: rgba(0, 0, 0, .7);
     }
 
-    &_a8-xs {
+    &-a8-xs {
       background: rgba(0, 0, 0, .8);
     }
 
-    &_a9-xs {
+    &-a9-xs {
       background: rgba(0, 0, 0, .9);
     }
   }

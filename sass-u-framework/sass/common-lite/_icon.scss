@@ -1,0 +1,421 @@
+//social
+
+[class*="#{$fa}-envelope"] {
+  color: $envelope;
+}
+
+[class*="#{$fa}-facebook"] {
+  color: $facebook;
+}
+
+[class*="#{$fa}-twitter"] {
+  color: $twitter;
+}
+
+[class*="#{$fa}-google-plus"] {
+  color: $google-plus;
+}
+
+[class*="#{$fa}-youtube"] {
+  color: $youtube;
+}
+
+[class*="#{$fa}-pinterest"] {
+  color: $pinterest;
+}
+
+[class*="#{$fa}-vimeo"] {
+  color: $vimeo;
+}
+
+[class*="#{$fa}-instagram"] {
+  color: $instagram;
+}
+
+[class*="#{$fa}-vk"] {
+  color: $vk;
+}
+
+.#{$icon} {
+  & {
+    font-family: "Font Awesome 5 Pro";
+  }
+
+  &[class*="#{$left}"]::before,
+  &[class*="#{$left}"] > li::before {
+    padding-left: 3px;
+    padding-right: 5px;
+  }
+
+  &[class*="#{$right}"]::after,
+  &[class*="#{$right}"] > li::after {
+    padding-left: 5px;
+  }
+}
+
+//element-icon
+
+.home.#{$left}::before,
+.home.#{$right}::after {
+  content: "\f015";
+  font-weight: 900;
+}
+
+.search.#{$left}::before,
+.search.#{$right}::after {
+  content: "\f002";
+  font-weight: 900;
+}
+
+.tag.#{$left}::before,
+.tag.#{$right}::after {
+  content: "\f02b";
+  font-weight: 900;
+}
+
+.tags.#{$left}::before,
+.tags.#{$right}::after {
+  content: "\f02c";
+  font-weight: 900;
+}
+
+.sign-in.#{$left}::before,
+.sign-in.#{$right}::after {
+  content: "\f090";
+  font-weight: 900;
+}
+
+.sign-out.#{$left}::before,
+.sign-out.#{$right}::after {
+  content: "\f08b";
+  font-weight: 900;
+}
+
+.check.#{$left}::before,
+.check.#{$right}::after {
+  content: "\f00c";
+  font-weight: 900;
+}
+
+.cart.#{$left}::before,
+.cart.#{$right}::after {
+  content: "\f07a";
+  font-weight: 900;
+}
+
+.clock-o.#{$left}::before,
+.clock-o.#{$right}::after {
+  content: "\f017";
+  font-weight: 900;
+}
+
+.eye.#{$left}::before,
+.eye.#{$right}::after {
+  content: "\f06e";
+  font-weight: 900;
+}
+
+.angle-left.#{$left}::before,
+.angle-left.#{$right}::after {
+  content: "\f104";
+  font-weight: 900;
+}
+
+.angle-right.#{$left}::before,
+.angle-right.#{$right}::after {
+  content: "\f105";
+  font-weight: 900;
+}
+
+.chevron-circle-left.#{$left}::before,
+.chevron-circle-left.#{$right}::after {
+  content: "\f137";
+  font-weight: 900;
+}
+
+.chevron-circle-right.#{$left}::before,
+.chevron-circle-right.#{$right}::after {
+  content: "\f138";
+  font-weight: 900;
+}
+
+.caret-left.#{$left}::before,
+.caret-left.#{$right}::after {
+  content: "\f0d9";
+  font-weight: 900;
+}
+
+.caret-right.#{$left}::before,
+.caret-right.#{$right}::after {
+  content: "\f0da";
+  font-weight: 900;
+}
+
+.envelope.#{$left}::before,
+.envelope.#{$right}::after {
+  content: "\f0e0";
+  font-weight: 900;
+}
+
+.envelope-o.#{$left}::before,
+.envelope-o.#{$right}::after {
+  content: "\f003";
+  font-weight: 900;
+}
+
+.comment.#{$left}::before,
+.comment.#{$right}::after {
+  content: "\f075";
+  font-weight: 900;
+}
+
+.comment-o.#{$left}::before,
+.comment-o.#{$right}::after {
+  content: "\f0e5";
+  font-weight: 900;
+}
+
+.commenting.#{$left}::before,
+.commenting.#{$right}::after {
+  content: "\f0e5";
+  font-weight: 900;
+}
+
+.commenting-o.#{$left}::before,
+.commenting-o.#{$right}::after {
+  content: "\f27b";
+  font-weight: 900;
+}
+
+.thumbs-o-up.#{$left}::before,
+.thumbs-o-up.#{$right}::after {
+  content: "\f087";
+  font-weight: 900;
+}
+
+.edit.#{$left}::before,
+.edit.#{$right}::after {
+  content: "\f044";
+  font-weight: 900;
+}
+
+.edit.#{$left}::before,
+.edit.#{$right}::after {
+  content: "\f044";
+  font-weight: 900;
+}
+
+.image.#{$left}::before,
+.image.#{$right}::after {
+  content: "\f03e";
+  font-weight: 900;
+}
+
+.film.#{$left}::before,
+.film.#{$right}::after {
+  content: "\f008";
+  font-weight: 900;
+}
+
+//li-icon
+
+.home-#{$left} > li::before,
+.home-#{$right} > li::after {
+  content: "\f015";
+  font-weight: 900;
+}
+
+.search-#{$left} > li::before,
+.search-#{$right} > li::after {
+  content: "\f002";
+  font-weight: 900;
+}
+
+.tag-#{$left} > li::before,
+.tag-#{$right} > li::after {
+  content: "\f02b";
+  font-weight: 900;
+}
+
+.tags-#{$left} > li::before,
+.tags-#{$right} > li::after {
+  content: "\f02c";
+  font-weight: 900;
+}
+
+.sign-in-#{$left} > li::before,
+.sign-in-#{$right} > li::after {
+  content: "\f090";
+  font-weight: 900;
+}
+
+.sign-out-#{$left} > li::before,
+.sign-out-#{$right} > li::after {
+  content: "\f08b";
+  font-weight: 900;
+}
+
+.check-#{$left} > li::before,
+.check-#{$right} > li::after {
+  content: "\f00c";
+  font-weight: 900;
+}
+
+.cart-#{$left} > li::before,
+.cart-#{$right} > li::after {
+  content: "\f07a";
+  font-weight: 900;
+}
+
+.clock-o-#{$left} > li::before,
+.clock-o-#{$right} > li::after {
+  content: "\f017";
+  font-weight: 900;
+}
+
+.eye-#{$left} > li::before,
+.eye-#{$right} > li::after {
+  content: "\f06e";
+  font-weight: 900;
+}
+
+.angle-#{$left}-#{$left} > li::before,
+.angle-#{$left}-#{$right} > li::after {
+  content: "\f104";
+  font-weight: 900;
+}
+
+.angle-#{$right}-#{$left} > li::before,
+.angle-#{$right}-#{$right} > li::after {
+  content: "\f105";
+  font-weight: 900;
+}
+
+.chevron-circle-#{$left}-#{$left} > li::before,
+.chevron-circle-#{$left}-#{$right} > li::after {
+  content: "\f137";
+  font-weight: 900;
+}
+
+.chevron-circle-#{$right}-#{$left} > li::before,
+.chevron-circle-#{$right}-#{$right} > li::after {
+  content: "\f138";
+  font-weight: 900;
+}
+
+.caret-#{$left}-#{$left} > li::before,
+.caret-#{$left}-#{$right} > li::after {
+  content: "\f0d9";
+  font-weight: 900;
+}
+
+.caret-#{$right}-#{$left} > li::before,
+.caret-#{$right}-#{$right} > li::after {
+  content: "\f0da";
+  font-weight: 900;
+}
+
+.envelope-#{$left} > li::before,
+.envelope-#{$right} > li::after {
+  content: "\f0e0";
+  font-weight: 900;
+}
+
+.envelope-o-#{$left} > li::before,
+.envelope-o-#{$right} > li::after {
+  content: "\f003";
+  font-weight: 900;
+}
+
+.comment-#{$left} > li::before,
+.comment-#{$right} > li::after {
+  content: "\f075";
+  font-weight: 900;
+}
+
+.comment-o-#{$left} > li::before,
+.comment-o-#{$right} > li::after {
+  content: "\f0e5";
+  font-weight: 900;
+}
+
+.commenting-#{$left} > li::before,
+.commenting-#{$right} > li::after {
+  content: "\f0e5";
+  font-weight: 900;
+}
+
+.commenting-o-#{$left} > li::before,
+.commenting-o-#{$right} > li::after {
+  content: "\f27b";
+  font-weight: 900;
+}
+
+.thumbs-o-up-#{$left} > li::before,
+.thumbs-o-up-#{$right} > li::after {
+  content: "\f087";
+  font-weight: 900;
+}
+
+.edit-#{$left} > li::before,
+.edit-#{$right} > li::after {
+  content: "\f044";
+  font-weight: 900;
+}
+
+.edit-#{$left} > li::before,
+.edit-#{$right} > li::after {
+  content: "\f044";
+  font-weight: 900;
+}
+
+.image-#{$left} > li::before,
+.image-#{$right} > li::after {
+  content: "\f03e";
+  font-weight: 900;
+}
+
+.film-#{$left} > li::before,
+.film-#{$right} > li::after {
+  content: "\f008";
+  font-weight: 900;
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

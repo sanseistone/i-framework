@@ -1,6 +1,6 @@
 //border-color
 
-[class^="btn_"].default {
+[class^="btn-"].default {
   color: $color-f;
   border-color: $color-default;
   background-color: $color-default;
@@ -39,241 +39,241 @@
 }
 
 @each $key, $value in $red-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $pink-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $purple-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $deep-purple-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $indigo-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $blue-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $light-blue-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $cyan-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $teal-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $green-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $light-green-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $lime-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $yellow-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $amber-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $orange-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $deep-orange-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $brown-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $grey-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $blue-grey-series {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $namespace-color {
-  .#{$button}_#{$key} {
+  .#{$button}-#{$key} {
     @include button-variant($value, $value, $value);
   }
 }
 
 @each $key, $value in $red-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $pink-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $purple-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $deep-purple-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $indigo-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $blue-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $light-blue-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $cyan-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $teal-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $green-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $light-green-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $lime-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $yellow-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $amber-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $orange-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $deep-orange-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $brown-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $grey-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $blue-grey-series {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
 
 @each $key, $value in $namespace-color {
-  .#{$button}_#{$key}_o {
+  .#{$button}-#{$key}-o {
     @include button-variant-o($value, $value, $value);
   }
 }
@@ -295,241 +295,241 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}-lg {
+    .#{$button}-#{$key}-lg {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}_o-lg {
+    .#{$button}-#{$key}-o-lg {
       @include button-variant-o($value, $value, $value);
     }
   }
@@ -550,241 +550,241 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}-md {
+    .#{$button}-#{$key}-md {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}_o-md {
+    .#{$button}-#{$key}-o-md {
       @include button-variant-o($value, $value, $value);
     }
   }
@@ -805,241 +805,241 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}-sm {
+    .#{$button}-#{$key}-sm {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}_o-sm {
+    .#{$button}-#{$key}-o-sm {
       @include button-variant-o($value, $value, $value);
     }
   }
@@ -1060,241 +1060,241 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}-xs {
+    .#{$button}-#{$key}-xs {
       @include button-variant($value, $value, $value);
     }
   }
 
   @each $key, $value in $red-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$button}_#{$key}_o-xs {
+    .#{$button}-#{$key}-o-xs {
       @include button-variant-o($value, $value, $value);
     }
   }

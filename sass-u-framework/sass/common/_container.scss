@@ -18,12 +18,30 @@
 
 .#{$layout},
 .#{$row} {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.#{$layout},
+.#{$row} {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+}
+
+.#{$wrapper},
+.#{$package} {
+  position: relative;
+  width: 100%;
+}
+
+.#{$wrapper},
+.#{$package} {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 //responsive-pc

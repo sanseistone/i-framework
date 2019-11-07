@@ -1,0 +1,2103 @@
+//list
+
+.#{$list} {
+  & {
+    padding-left: 15px;
+  }
+
+  &.#{$box} > li {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid $color-d;
+    background-color: $color-f;
+  }
+
+  &.#{$box} > li + li {
+    margin-top: 10px;
+  }
+
+  &.#{$solid} > li {
+    padding: 10px 0;
+    border-bottom: 1px solid $color-d;
+  }
+
+  &.#{$dashed} > li {
+    padding: 10px 0;
+    border-bottom: 1px dashed $color-d;
+  }
+
+  &.#{$dotted} > li {
+    padding: 10px 0;
+    border-bottom: 1px dotted $color-d;
+  }
+
+  &-reset {
+    list-style: none;
+    padding: 0;
+  }
+
+}
+
+.#{$horizontal} {
+  & > li {
+    width: auto;
+    float: left;
+  }
+
+  &.#{$space} > li + li {
+    margin-left: 15px;
+  }
+}
+
+.#{$vertical} {
+  & > li {
+    width: 100%;
+    float: left;
+  }
+
+  &.#{$space} > li + li {
+    margin-top: 5px;
+  }
+}
+
+.#{$list} {
+  &.#{$solid} > li:last-child,
+  &.#{$dashed} > li:last-child,
+  &.#{$dotted} > li:last-child {
+    border-bottom: none;
+  }
+}
+
+//list link color
+
+@each $key, $value in $red-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$key} > li > a {
+    @include font-variant($value);
+  }
+}
+
+//list.hover color
+
+@each $key, $value in $red-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$hover}.#{$key} {
+    > li > a:hover,
+    > li > a:focus {
+      @include font-variant($value);
+    }
+  }
+}
+
+//list-style-type
+
+.disc {
+  list-style-type: disc;
+}
+
+.circle {
+  list-style-type: circle;
+}
+
+.square {
+  list-style-type: square;
+}
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.lower-roman {
+  list-style-type: lower-roman;
+}
+
+.upper-roman {
+  list-style-type: upper-roman;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.lower-greek {
+  list-style-type: lower-greek;
+}
+
+.lower-latin {
+  list-style-type: lower-latin;
+}
+
+.upper-latin {
+  list-style-type: upper-latin;
+}
+
+.hebrew {
+  list-style-type: hebrew;
+}
+
+.armenian {
+  list-style-type: armenian;
+}
+
+.georgian {
+  list-style-type: georgian;
+}
+
+.cjk-ideographic {
+  list-style-type: cjk-ideographic;
+}
+
+.hiragana {
+  list-style-type: hiragana;
+}
+
+.katakana {
+  list-style-type: katakana;
+}
+
+.hiragana-iroha {
+  list-style-type: hiragana-iroha;
+}
+
+.katakana-iroha {
+  list-style-type: katakana-iroha;
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$list} {
+    &.#{$box}-lg > li {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid $color-d;
+      background-color: $color-f;
+    }
+
+    &.#{$box}-lg > li + li {
+      margin-top: 10px;
+    }
+
+    &.#{$solid}-lg > li {
+      padding: 10px 0;
+      border-bottom: 1px solid $color-d;
+    }
+
+    &.#{$dashed}-lg > li {
+      padding: 10px 0;
+      border-bottom: 1px dashed $color-d;
+    }
+
+    &.#{$dotted}-lg > li {
+      padding: 10px 0;
+      border-bottom: 1px dotted $color-d;
+    }
+  }
+
+  .#{$horizontal}-lg {
+    & > li {
+      width: auto;
+      float: left;
+    }
+  }
+
+  .#{$vertical}-lg {
+    & > li {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$key}-lg > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$hover}.#{$key}-lg {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  .disc-lg {
+    list-style-type: disc;
+  }
+
+  .circle-lg {
+    list-style-type: circle;
+  }
+
+  .square-lg {
+    list-style-type: square;
+  }
+
+  .decimal-lg {
+    list-style-type: decimal;
+  }
+
+  .decimal-leading-zero-lg {
+    list-style-type: decimal-leading-zero;
+  }
+
+  .lower-roman-lg {
+    list-style-type: lower-roman;
+  }
+
+  .upper-roman-lg {
+    list-style-type: upper-roman;
+  }
+
+  .lower-alpha-lg {
+    list-style-type: lower-alpha;
+  }
+
+  .upper-alpha-lg {
+    list-style-type: upper-alpha;
+  }
+
+  .lower-greek-lg {
+    list-style-type: lower-greek;
+  }
+
+  .lower-latin-lg {
+    list-style-type: lower-latin;
+  }
+
+  .upper-latin-lg {
+    list-style-type: upper-latin;
+  }
+
+  .hebrew-lg {
+    list-style-type: hebrew;
+  }
+
+  .armenian-lg {
+    list-style-type: armenian;
+  }
+
+  .georgian-lg {
+    list-style-type: georgian;
+  }
+
+  .cjk-ideographic-lg {
+    list-style-type: cjk-ideographic;
+  }
+
+  .hiragana-lg {
+    list-style-type: hiragana;
+  }
+
+  .katakana-lg {
+    list-style-type: katakana;
+  }
+
+  .hiragana-iroha-lg {
+    list-style-type: hiragana-iroha;
+  }
+
+  .katakana-iroha-lg {
+    list-style-type: katakana-iroha;
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$list} {
+    &.#{$box}-md > li {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid $color-d;
+      background-color: $color-f;
+    }
+
+    &.#{$box}-md > li + li {
+      margin-top: 10px;
+    }
+
+    &.#{$solid}-md > li {
+      padding: 10px 0;
+      border-bottom: 1px solid $color-d;
+    }
+
+    &.#{$dashed}-md > li {
+      padding: 10px 0;
+      border-bottom: 1px dashed $color-d;
+    }
+
+    &.#{$dotted}-md > li {
+      padding: 10px 0;
+      border-bottom: 1px dotted $color-d;
+    }
+  }
+
+  .#{$horizontal}-md {
+    & > li {
+      width: auto;
+      float: left;
+    }
+  }
+
+  .#{$vertical}-md {
+    & > li {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$key}-md > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$hover}.#{$key}-md {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  .disc-md {
+    list-style-type: disc;
+  }
+
+  .circle-md {
+    list-style-type: circle;
+  }
+
+  .square-md {
+    list-style-type: square;
+  }
+
+  .decimal-md {
+    list-style-type: decimal;
+  }
+
+  .decimal-leading-zero-md {
+    list-style-type: decimal-leading-zero;
+  }
+
+  .lower-roman-md {
+    list-style-type: lower-roman;
+  }
+
+  .upper-roman-md {
+    list-style-type: upper-roman;
+  }
+
+  .lower-alpha-md {
+    list-style-type: lower-alpha;
+  }
+
+  .upper-alpha-md {
+    list-style-type: upper-alpha;
+  }
+
+  .lower-greek-md {
+    list-style-type: lower-greek;
+  }
+
+  .lower-latin-md {
+    list-style-type: lower-latin;
+  }
+
+  .upper-latin-md {
+    list-style-type: upper-latin;
+  }
+
+  .hebrew-md {
+    list-style-type: hebrew;
+  }
+
+  .armenian-md {
+    list-style-type: armenian;
+  }
+
+  .georgian-md {
+    list-style-type: georgian;
+  }
+
+  .cjk-ideographic-md {
+    list-style-type: cjk-ideographic;
+  }
+
+  .hiragana-md {
+    list-style-type: hiragana;
+  }
+
+  .katakana-md {
+    list-style-type: katakana;
+  }
+
+  .hiragana-iroha-md {
+    list-style-type: hiragana-iroha;
+  }
+
+  .katakana-iroha-md {
+    list-style-type: katakana-iroha;
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$list} {
+    &.#{$box}-sm > li {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid $color-d;
+      background-color: $color-f;
+    }
+
+    &.#{$box}-sm > li + li {
+      margin-top: 10px;
+    }
+
+    &.#{$solid}-sm > li {
+      padding: 10px 0;
+      border-bottom: 1px solid $color-d;
+    }
+
+    &.#{$dashed}-sm > li {
+      padding: 10px 0;
+      border-bottom: 1px dashed $color-d;
+    }
+
+    &.#{$dotted}-sm > li {
+      padding: 10px 0;
+      border-bottom: 1px dotted $color-d;
+    }
+  }
+
+  .#{$horizontal}-sm {
+    & > li {
+      width: auto;
+      float: left;
+    }
+  }
+
+  .#{$vertical}-sm {
+    & > li {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$key}-sm > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$hover}.#{$key}-sm {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  .disc-sm {
+    list-style-type: disc;
+  }
+
+  .circle-sm {
+    list-style-type: circle;
+  }
+
+  .square-sm {
+    list-style-type: square;
+  }
+
+  .decimal-sm {
+    list-style-type: decimal;
+  }
+
+  .decimal-leading-zero-sm {
+    list-style-type: decimal-leading-zero;
+  }
+
+  .lower-roman-sm {
+    list-style-type: lower-roman;
+  }
+
+  .upper-roman-sm {
+    list-style-type: upper-roman;
+  }
+
+  .lower-alpha-sm {
+    list-style-type: lower-alpha;
+  }
+
+  .upper-alpha-sm {
+    list-style-type: upper-alpha;
+  }
+
+  .lower-greek-sm {
+    list-style-type: lower-greek;
+  }
+
+  .lower-latin-sm {
+    list-style-type: lower-latin;
+  }
+
+  .upper-latin-sm {
+    list-style-type: upper-latin;
+  }
+
+  .hebrew-sm {
+    list-style-type: hebrew;
+  }
+
+  .armenian-sm {
+    list-style-type: armenian;
+  }
+
+  .georgian-sm {
+    list-style-type: georgian;
+  }
+
+  .cjk-ideographic-sm {
+    list-style-type: cjk-ideographic;
+  }
+
+  .hiragana-sm {
+    list-style-type: hiragana;
+  }
+
+  .katakana-sm {
+    list-style-type: katakana;
+  }
+
+  .hiragana-iroha-sm {
+    list-style-type: hiragana-iroha;
+  }
+
+  .katakana-iroha-sm {
+    list-style-type: katakana-iroha;
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$list} {
+    &.#{$box}-xs > li {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid $color-d;
+      background-color: $color-f;
+    }
+
+    &.#{$box}-xs > li + li {
+      margin-top: 10px;
+    }
+
+    &.#{$solid}-xs > li {
+      padding: 10px 0;
+      border-bottom: 1px solid $color-d;
+    }
+
+    &.#{$dashed}-xs > li {
+      padding: 10px 0;
+      border-bottom: 1px dashed $color-d;
+    }
+
+    &.#{$dotted}-xs > li {
+      padding: 10px 0;
+      border-bottom: 1px dotted $color-d;
+    }
+  }
+
+  .#{$horizontal}-xs {
+    & > li {
+      width: auto;
+      float: left;
+    }
+  }
+
+  .#{$vertical}-xs {
+    & > li {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$key}-xs > li > a {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $red-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $pink-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $purple-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-purple-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $indigo-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-blue-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $cyan-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $teal-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $green-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $light-green-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $lime-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $yellow-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $amber-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $orange-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $deep-orange-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $brown-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $grey-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  @each $key, $value in $blue-grey-series {
+    .#{$hover}.#{$key}-xs {
+      > li > a:hover,
+      > li > a:focus {
+        @include font-variant($value);
+      }
+    }
+  }
+
+  .disc-xs {
+    list-style-type: disc;
+  }
+
+  .circle-xs {
+    list-style-type: circle;
+  }
+
+  .square-xs {
+    list-style-type: square;
+  }
+
+  .decimal-xs {
+    list-style-type: decimal;
+  }
+
+  .decimal-leading-zero-xs {
+    list-style-type: decimal-leading-zero;
+  }
+
+  .lower-roman-xs {
+    list-style-type: lower-roman;
+  }
+
+  .upper-roman-xs {
+    list-style-type: upper-roman;
+  }
+
+  .lower-alpha-xs {
+    list-style-type: lower-alpha;
+  }
+
+  .upper-alpha-xs {
+    list-style-type: upper-alpha;
+  }
+
+  .lower-greek-xs {
+    list-style-type: lower-greek;
+  }
+
+  .lower-latin-xs {
+    list-style-type: lower-latin;
+  }
+
+  .upper-latin-xs {
+    list-style-type: upper-latin;
+  }
+
+  .hebrew-xs {
+    list-style-type: hebrew;
+  }
+
+  .armenian-xs {
+    list-style-type: armenian;
+  }
+
+  .georgian-xs {
+    list-style-type: georgian;
+  }
+
+  .cjk-ideographic-xs {
+    list-style-type: cjk-ideographic;
+  }
+
+  .hiragana-xs {
+    list-style-type: hiragana;
+  }
+
+  .katakana-xs {
+    list-style-type: katakana;
+  }
+
+  .hiragana-iroha-xs {
+    list-style-type: hiragana-iroha;
+  }
+
+  .katakana-iroha-xs {
+    list-style-type: katakana-iroha;
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

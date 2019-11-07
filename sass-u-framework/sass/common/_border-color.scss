@@ -1,6 +1,6 @@
 //border-color
 
-[class^="border_"].default {
+[class^="border-"].default {
   border-color: $color-default;
 }
 
@@ -19,121 +19,121 @@
 }
 
 @each $key, $value in $red-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $pink-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $purple-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $deep-purple-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $indigo-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $blue-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $light-blue-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $cyan-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $teal-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $green-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $light-green-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $lime-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $yellow-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $amber-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $orange-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $deep-orange-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $brown-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $grey-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $blue-grey-series {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
 
 @each $key, $value in $namespace-color {
-  .#{$border}_#{$key} {
+  .#{$border}-#{$key} {
     @include border-variant($value);
   }
 }
@@ -155,121 +155,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$border}_#{$key}-lg {
+    .#{$border}-#{$key}-lg {
       @include border-variant($value);
     }
   }
@@ -290,121 +290,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$border}_#{$key}-md {
+    .#{$border}-#{$key}-md {
       @include border-variant($value);
     }
   }
@@ -425,121 +425,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$border}_#{$key}-sm {
+    .#{$border}-#{$key}-sm {
       @include border-variant($value);
     }
   }
@@ -560,121 +560,121 @@
   }
 
   @each $key, $value in $red-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $pink-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $purple-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-purple-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $indigo-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-blue-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $cyan-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $teal-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $green-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $light-green-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $lime-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $yellow-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $amber-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $orange-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $deep-orange-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $brown-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $grey-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $blue-grey-series {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }
 
   @each $key, $value in $namespace-color {
-    .#{$border}_#{$key}-xs {
+    .#{$border}-#{$key}-xs {
       @include border-variant($value);
     }
   }

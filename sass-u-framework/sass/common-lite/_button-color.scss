@@ -1,0 +1,182 @@
+//border-color
+
+[class^="btn-"].default {
+  color: $color-f;
+  border-color: $color-default;
+  background-color: $color-default;
+}
+
+.#{$button-white} {
+  color: $color-3;
+  border-color: $color-3;
+  background-color: $color-f;
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+}
+
+.#{$button-black} {
+  color: $color-f;
+  border-color: $color-3;
+  background-color: $color-3;
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: $color-f;
+    border-color: $color-f;
+    background-color: $color-3;
+  }
+}
+
+@each $key, $value in $namespace-color {
+  .#{$button}-#{$key} {
+    @include button-variant($value, $value, $value);
+  }
+}
+
+@each $key, $value in $namespace-color {
+  .#{$button}-#{$key}-o {
+    @include button-variant-o($value, $value, $value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$button-white}-lg {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-lg {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-lg {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-o-lg {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  .#{$button-white}-md {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-md {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-md {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-o-md {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  .#{$button-white}-sm {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-sm {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-sm {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-o-sm {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$button-white}-xs {
+    color: $color-3;
+    border-color: $color-3;
+    background-color: $color-f;
+  }
+
+  .#{$button-black}-xs {
+    color: $color-f;
+    border-color: $color-3;
+    background-color: $color-3;
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-xs {
+      @include button-variant($value, $value, $value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    .#{$button}-#{$key}-o-xs {
+      @include button-variant-o($value, $value, $value);
+    }
+  }
+}
+
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}
