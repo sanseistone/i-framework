@@ -1,6 +1,92 @@
 @charset "utf-8";
 
-//sub-page
+//page-left
+.page-left {
+  position: sticky;
+  top: 55px;
+  height: calc(100vh - 55px);
+  padding-right: 15px;
+  border-right: 1px solid $color-d;
+
+  & .aside-search {
+    display: flex;
+    align-items: center;
+
+    & .search {
+      display: flex;
+      flex: 1;
+
+      & .form-control {
+        width: 100%;
+      }
+    }
+
+    & .aside-toggler {
+      display: none;
+    }
+  }
+
+  & .aside-menu {
+    display: block;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+
+    & .item {
+      & .title {
+        color: $color-3;
+        font-weight: bold;
+      }
+
+      &.active ul {
+        display: block;
+      }
+
+      & ul {
+        display: none;
+
+        & > li {
+          width: 100%;
+
+          > a {
+            color: $color-8;
+            font-size: .875rem;
+            padding: .35rem 0;
+          }
+
+          &.active > a {
+            color: $color-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+//page-middle
+.page-middle {
+  & [id*="block"] {
+    pointer-events: auto;
+
+    &:before {
+      display: block;
+      height: 6rem;
+      margin-top: -6rem;
+      content: "";
+    }
+  }
+}
+
+//page-right
+.page-right {
+  position: sticky;
+  top: 55px;
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+
+  & .section-nav {
+    border-left: 1px solid $color-d;
+  }
+}
 
 //responsive-pc
 @media (max-width: 1199px) {

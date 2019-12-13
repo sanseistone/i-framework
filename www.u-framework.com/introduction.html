@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>u-FrameWork - Getting started</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="u-FrameWork - Getting started">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="mr.koujun@gmail.com">
+    <!--<link rel="icon" href="favicon.ico">-->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- include style -->
+    <link rel="stylesheet" href="../../assets/css/plug-in-v4.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    <!-- users style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-default.css">
+
+</head>
+
+<body>
+<!--navbar s-->
+<nav class="navbar navbar-expand-lg sticky pin-t-0 z-100 bg-blue5">
+    <a class="navbar-brand" href="http://u-FrameWork.com/">u-FrameWork</a>
+    <button class="navbar-toggler font-white" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-between" id="main-navbar">
+        <div class="left">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="introduction.html">Documentation</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cooperation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">v4.0</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">v3.0</a>
+                        <a class="dropdown-item" href="#">v1.0</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-code-merge"></i> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">下载</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://sanseistone.com/">博客</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--navbar e-->
+
+<!--main s-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">
+            <div class="page-left">
+                <form class="aside-search py-2 mb-2 bd b-solid n-sm">
+                    <div class="search"><input class="form-control" type="text" placeholder="Search..."></div>
+                    <button class="btn aside-toggler" type="button" data-toggle="collapse" data-target="#aside-nav"
+                            aria-controls="aside-nav" aria-expanded="true" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </form>
+                <nav class="aside-menu gmb-10 py-15 collapse" id="aside-nav">
+                    <div class="item active">
+                        <a class="title" href="introduction.html">Getting started</a>
+                        <ul class="nav mb-20">
+                            <li class="active">
+                                <a href="introduction.html"> Introduction</a>
+                            </li>
+                            <li>
+                                <a href="variables.html"> variables.scss</a>
+                            </li>
+                            <li>
+                                <a href="color-scss.html"> color.scss</a>
+                            </li>
+                            <li>
+                                <a href="class.html"> class.scss</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="nav-tabs.html">Base</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="nav-tabs.html"> nav-tabs</a>
+                            </li>
+                            <li>
+                                <a href="pagination.html"> pagination</a>
+                            </li>
+                            <li>
+                                <a href="owl-carousel.html"> owl-carousel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="display.html">Display</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="display.html"> display</a>
+                            </li>
+                            <li>
+                                <a href="container.html"> container</a>
+                            </li>
+                            <li>
+                                <a href="overflow.html"> overflow</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="icon.html">Modules</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="icon.html"> icon</a>
+                            </li>
+                            <li>
+                                <a href="heading.html"> heading</a>
+                            </li>
+                            <li>
+                                <a href="link.html"> link</a>
+                            </li>
+                            <li>
+                                <a href="text.html"> text</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="color.html">Elements</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="color.html"> color</a>
+                            </li>
+                            <li>
+                                <a href="image.html"> img</a>
+                            </li>
+                            <li>
+                                <a href="list.html"> list</a>
+                            </li>
+                            <li>
+                                <a href="form.html"> form</a>
+                            </li>
+                            <li>
+                                <a href="table.html"> table</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="position.html">Layout</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="position.html"> position</a>
+                            </li>
+                            <li>
+                                <a href="float.html"> float</a>
+                            </li>
+                            <li>
+                                <a href="flex.html"> flex</a>
+                            </li>
+                            <li>
+                                <a href="grid.html"> grid</a>
+                            </li>
+                            <li>
+                                <a href="transform.html"> transform</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="width.html">Box</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="width.html"> width</a>
+                            </li>
+                            <li>
+                                <a href="height.html"> height</a>
+                            </li>
+                            <li>
+                                <a href="padding.html"> padding</a>
+                            </li>
+                            <li>
+                                <a href="margin.html"> margin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="column.html">Grid</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="column.html"> column</a>
+                            </li>
+                            <li>
+                                <a href="average.html"> average</a>
+                            </li>
+                            <li>
+                                <a href="col.html"> col</a>
+                            </li>
+                            <li>
+                                <a href="space.html"> space</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="font.html">Font</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="font.html"> font</a>
+                            </li>
+                            <li>
+                                <a href="font-color.html"> font-color</a>
+                            </li>
+                            <li>
+                                <a href="line-height.html"> line-height</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="border.html">Border</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="border.html"> border</a>
+                            </li>
+                            <li>
+                                <a href="border-color.html"> border-color</a>
+                            </li>
+                            <li>
+                                <a href="radius.html"> radius</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="button.html">Button</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="button.html"> button</a>
+                            </li>
+                            <li>
+                                <a href="button-color.html"> button-color</a>
+                            </li>
+                            <li>
+                                <a href="button-group.html"> button-group</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a class="title" href="background.html">Background</a>
+                        <ul class="nav mb-20">
+                            <li>
+                                <a href="background.html"> background</a>
+                            </li>
+                            <li>
+                                <a href="background-color.html"> background-color</a>
+                            </li>
+                            <li>
+                                <a href="transparent.html"> transparent</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="col-lg-2 hide-md order-last">
+            <div class="page-right">
+                234
+            </div>
+        </div>
+        <main class="col-lg-8 col-sm-12" role="main">
+            <div class="page-middle">
+                345
+            </div>
+        </main>
+    </div>
+</div>
+<!--main e-->
+
+<!-- include js -->
+<script src="assets/js/jQuery-v3.4.1.min.js"></script>
+<script src="assets/frame/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/plug-in/scrollup/dist/jquery.scrollUp.min.js"></script>
+<script src="assets/plug-in/slick/slick/slick.min.js"></script>
+<script src="assets/plug-in/owlcarousel2/dist/owl.carousel.min.js"></script>
+
+<!--custom.js-->
+<script src="assets/js/plugin.js"></script>
+
+<!--一键回到页面顶部-->
+<script>
+    $(function () {
+        $.scrollUp({
+            scrollSpeed: 200,
+            scrollImg: true
+        });
+    });
+</script>
+
+</body>
+
+</html>

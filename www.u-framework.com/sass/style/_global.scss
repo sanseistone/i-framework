@@ -13,14 +13,25 @@ body {}
 
 .container {}
 
-//header-bar
-.header-bar {}
-
 //header
 header {}
 
 //nav
-.navbar {}
+.navbar {
+  & .navbar-brand {
+    color: $color-f;
+  }
+
+  & .navbar-nav {
+    & .nav-item {
+      & .nav-link {
+        color: $color-f;
+        font-size: .875rem;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
 
 //breadcrumb
 .breadcrumb {}
