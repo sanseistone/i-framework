@@ -2,12 +2,12 @@
 <html lang="zh">
 
 <head>
-    <title>u-FrameWork - Getting started</title>
+    <title>u-FrameWork - Transform</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="u-FrameWork - Getting started">
+    <meta name="description" content="u-FrameWork - Transform">
     <meta name="keywords" content="keywords">
     <meta name="author" content="mr.koujun@gmail.com">
     <!--<link rel="icon" href="favicon.ico">-->
@@ -90,10 +90,10 @@
                     </button>
                 </form>
                 <nav class="aside-menu gmb-10 py-15 collapse" id="aside-nav">
-                    <div class="item active">
+                    <div class="item">
                         <a class="title" href="introduction.html">Getting started</a>
                         <ul class="nav mb-20">
-                            <li class="active">
+                            <li>
                                 <a href="introduction.html"> Introduction</a>
                             </li>
                             <li>
@@ -138,13 +138,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item active">
                         <a class="title" href="position.html">Position</a>
                         <ul class="nav mb-20">
                             <li>
                                 <a href="position.html"> position</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="transform.html"> transform</a>
                             </li>
                         </ul>
@@ -298,13 +298,13 @@
         <div class="col-lg-2 hide-md order-last">
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
-                    <li><a href="#item-01">u-FrameWork的由来</a></li>
-                    <li><a href="#item-02">版本迭代</a></li>
-                    <li><a href="#item-03">SCSS重构</a></li>
-                    <li><a href="#item-04">响应式</a></li>
-                    <li><a href="#item-05">flex和grid</a></li>
-                    <li><a href="#item-06">如何使用？</a></li>
-                    <li><a href="#item-07">精简版</a></li>
+                    <li><a href="#item-01">text</a></li>
+                    <li><a href="#item-02">text</a></li>
+                    <li><a href="#item-03">text</a></li>
+                    <li><a href="#item-04">text</a></li>
+                    <li><a href="#item-05">text</a></li>
+                    <li><a href="#item-06">text</a></li>
+                    <li><a href="#item-07">text</a></li>
                 </ul>
             </aside>
         </div>
@@ -312,97 +312,27 @@
             <main class="page-middle mb-5" role="main">
                 <div class="content" id="item-01">
                     <h1 class="title font-r150 bold">
-                        <span class="inline-block">u-FrameWork的由来</span>
+                        <span class="inline-block">title</span>
                     </h1>
                     <p class="font-grey font-light">
-                        关于u-FrameWork，是自己在工作中，一点点总结的，写成了一些模块化的样式集合，后来，随着项目的增加，需求不断的扩展，就打算将自己的样式集合整理成规范的文档供阅读。于是就参考了很多有名的大型框架，发现有很多理念不谋而合，然后就逐步的完善出一个小规模的样式集合。
-                        <br><br>html写得多了，最烦恼的其实是class命名，综合来看，最佳的解决方案，就是使用css的自然语法去命名，直观，简单，明了。
-                        <br>说到命名，简洁扼要的命名方式，可能大家的想法都是共通的，所以，诸多命名方式，也就不谋而合了。
-                        <br>现在，姑且把这个样式集合称之为"框架"吧！</p>
+                        text
+                    </p>
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">版本迭代</span>
-                    </p>
-                    <p class="font-grey font-light">最初并没有造轮子的想法，从诞生之日，就基于Bootstrap，版本1到版本3，基于Bootstrap3，版本4，基于Bootstrap4。
-                        <br>一开始，没有考虑过会增加到很多内容，因此，都是手动的编写的，按css不同的属性，区分了很多模块。
-                        <br>后来，累计多了，要考虑更多的应用场景了，需要维护的时候，才发现，修改的地方太多了，这样下去，根本不是一个框架该具备的模式，于是，又逐步的把版本4，全部用SCSS重构了一遍。</p>
-                </div>
-                <div class="content" id="item-03">
-                    <p class="title font-r125 bold">
-                        <span class="inline-block">SCSS重构</span>
+                        <span class="inline-block">title</span>
                     </p>
                     <p class="font-grey font-light">
-                        u-FrameWork框架，主要的内容就在于颜色体系，再加上对于常用命名的变量定义，于是，关键的两个SCSS文件产生了，就是color.scss和class.scss.
-                        <br>这两个文件对于任何愿意使用SCSS预处理css的人来说，都是可以派上用场的。
-                        <br>颜色体系可以应用于各种模块，class命名变量，都是唯一的，且尽可能的语义化，简洁明了。
-                        <br>另外，重点需要说明的是，关于function.scss函数文件，Bootstrap珠玉在前，我初来乍到，就不再费尽心思去编写了，直接使用了Bootstrap4的。
-                        <br>当然，作为SCSS的初学者，还是又很多不足的地方，不过，即便如此，我还是使用了，大量的混合宏。主要是针对不同的颜色体系。</p>
-                </div>
-                <div class="content" id="item-04">
-                    <p class="title font-r125 bold">
-                        <span class="inline-block">响应式</span>
+                        text
                     </p>
-                    <p class="font-grey font-light">目前，我的工作仍然以PC端设备为基础，因此，这套框架，区别于Bootstrap，是以PC端优先，自适应各端设备。
-                        <br>关于响应式样式的写法，有别于Bootstrap。
-                        <br><strong>如下所示：</strong></p>
                     <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">// responsive-pc
-
-@media (max-width: <code class="font-red">1199px</code>) {
-  //Extra large devices (large desktops, 992px and 1200px)
-  .d-block<code class="font-red">-lg</code> {
-    display: block;
-  }
-}
-
-@media (max-width: <code class="font-red">991px</code>) {
-  //Large devices (desktops, 768px and 992px)
-  .d-block<code class="font-red">-md</code> {
-    display: block;
-  }
-}
-
-@media (max-width: <code class="font-red">767px</code>) {
-  //Medium devices (tablets, 576px and 768px)
-  .d-block<code class="font-red">-sm</code> {
-    display: block;
-  }
-}
-
-@media (max-width: <code class="font-red">575px</code>) {
-  //Small devices (landscape phones, max-width 576px)
-  .d-block<code class="font-red">-xs</code> {
-    display: block;
-  }
-}</pre>
-                    </figure>
-                </div>
-                <div class="content" id="item-05">
-                    <h2 class="title font-r125 bold">
-                        <span class="inline-block">flex和grid</span>
-                    </h2>
-                    <p class="font-grey font-light">版本4区别于版本3，除了命名方式的简化，更主要的还是使用了flex布局。
-                        <br>另外，grid布局，暂时只有大概的思路，而且，内容繁多，加上还不够普及，因此，也没有深入的去写，版本4暂时忽略grid布局。</p>
-                </div>
-                <div class="content" id="item-06">
-                    <h2 class="title font-r125 bold">
-                        <span class="inline-block">如何使用？</span>
-                    </h2>
-                    <p class="font-grey font-light">很简单，直接按照正确的路径引入两个css文件即可。
-                        <br>需要说明的是，尽管基于Bootstrap，但是，仍然考虑到独立使用的场景，对于Bootstrap的依赖，仅限于基本的结构体系，各种插件等等。</p>
-                    <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">../assets/css/common.css
-../assets/css/base.css</pre>
-                    </figure>
-                </div>
-                <div class="content" id="item-07">
-                    <h2 class="title font-r125 bold">
-                        <span class="inline-block">精简版</span>
-                    </h2>
-                    <p class="font-grey font-light">删除了例如文字、按钮、背景等应用颜色体系的，元素的相关渐变色，只保留了十九种颜色的主色调应用。</p>
-                    <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">../assets/css/common-lite.css</pre>
+                        <pre class="mb-0">$percent-1: 1% !default;
+$number-1: 1 !default;
+$pixel-1: 1px !default;
+$rem-1: 1rem !default;
+$em-1: 1em !default;
+$auto: auto !default;
+$inherit: inherit !default;</pre>
                     </figure>
                 </div>
             </main>

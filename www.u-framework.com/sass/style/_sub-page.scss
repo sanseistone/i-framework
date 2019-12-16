@@ -64,13 +64,15 @@
 
 //page-middle
 .page-middle {
-  & [id*="block"] {
+  & [id*="item"] {
     pointer-events: auto;
 
     &:before {
       display: block;
-      height: 6rem;
-      margin-top: -6rem;
+      //height: 6rem;
+      //margin-top: -6rem;
+      height: 80px;
+      margin-top: -60px;
       content: "";
     }
   }

@@ -24,7 +24,7 @@ a:focus {
 }
 
 #scrollUp {
-  background-image: url('../img/top.png?1573626586');
+  background-image: url('../img/top.png?1576310316');
   bottom: 20px;
   right: 20px;
   width: 38px;
@@ -38,6 +38,10 @@ a:focus {
   color: white;
   font-size: .875rem;
   padding: .5rem 1rem;
+}
+
+.box .row > * {
+  margin-bottom: 1rem;
 }
 
 .page-left {
@@ -97,13 +101,13 @@ a:focus {
   color: #333333;
 }
 
-.page-middle [id*="block"] {
+.page-middle [id*="item"] {
   pointer-events: auto;
 }
-.page-middle [id*="block"]:before {
+.page-middle [id*="item"]:before {
   display: block;
-  height: 6rem;
-  margin-top: -6rem;
+  height: 80px;
+  margin-top: -60px;
   content: "";
 }
 
@@ -114,9 +118,8 @@ a:focus {
   height: calc(100vh - 55px);
   overflow-y: auto;
 }
-
-.box .row > * {
-  margin-bottom: 1rem;
+.page-right .section-nav {
+  border-left: 1px solid #dddddd;
 }
 
 .slide-list .slick-prev {
