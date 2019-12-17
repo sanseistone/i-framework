@@ -62,6 +62,18 @@
   }
 }
 
+//page-right
+.page-right {
+  position: sticky;
+  top: 55px;
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+
+  & .section-nav {
+    border-left: 1px solid $color-d;
+  }
+}
+
 //page-middle
 .page-middle {
   & [id*="item"] {
@@ -76,17 +88,13 @@
       content: "";
     }
   }
-}
 
-//page-right
-.page-right {
-  position: sticky;
-  top: 55px;
-  height: calc(100vh - 55px);
-  overflow-y: auto;
+  & code {
+    color: $color-3;
 
-  & .section-nav {
-    border-left: 1px solid $color-d;
+    > span {
+      color: $color-9;
+    }
   }
 }
 

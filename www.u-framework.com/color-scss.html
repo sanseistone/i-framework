@@ -298,13 +298,9 @@
         <div class="col-lg-2 hide-md order-last">
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
-                    <li><a href="#item-01">text</a></li>
-                    <li><a href="#item-02">text</a></li>
-                    <li><a href="#item-03">text</a></li>
-                    <li><a href="#item-04">text</a></li>
-                    <li><a href="#item-05">text</a></li>
-                    <li><a href="#item-06">text</a></li>
-                    <li><a href="#item-07">text</a></li>
+                    <li><a href="#item-01">颜色体系</a></li>
+                    <li><a href="#item-02">颜色变量预设</a></li>
+                    <li><a href="#item-03">黑到白的颜色变量</a></li>
                 </ul>
             </aside>
         </div>
@@ -312,27 +308,227 @@
             <main class="page-middle mb-5" role="main">
                 <div class="content" id="item-01">
                     <h1 class="title font-r150 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">颜色体系</span>
                     </h1>
-                    <p class="font-grey font-light">
-                        text
-                    </p>
+                    <p class="font-grey font-light">颜色体系非常庞杂，或者说，是因为我将之划分得很详细。
+                        <br>关于颜色体系的分类及由来，取自于App：<a href="#" class="font-red">Color Palette</a>。
+                        <br>一共十九种颜色，每种颜色除主色调外，另外衍生12至14种渐变色。
+                        <br>十九色系分别如下：</p>
+                    <figure class="p-3 bg-blue0">
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-red mr-2"></i>
+                            <code>$red: red; <span>// 红色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-pink mr-2"></i>
+                            <code>$pink: pink; <span>// 粉色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-purple mr-2"></i>
+                            <code>$purple: purple; <span>// 紫色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-d-purple mr-2"></i>
+                            <code>$deep-purple: darkmagenta; <span>// 深紫色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-indigo mr-2"></i>
+                            <code>$indigo: indigo; <span>// 靛蓝色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-blue mr-2"></i>
+                            <code>$blue: blue; <span>// 蓝色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-l-blue mr-2"></i>
+                            <code>$light-blue: lightblue; <span>// 淡蓝色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-cyan mr-2"></i>
+                            <code>$cyan: cyan; <span>// 青色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-teal mr-2"></i>
+                            <code>$teal: teal; <span>// 蓝绿色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-green mr-2"></i>
+                            <code>$green: green; <span>// 绿色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-l-green mr-2"></i>
+                            <code>$light-green: lightgreen; <span>// 淡绿色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-lime mr-2"></i>
+                            <code>$lime: lime; <span>// 石灰绿</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-yellow mr-2"></i>
+                            <code>$yellow: yellow; <span>// 黄色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-amber mr-2"></i>
+                            <code>$amber: #ffd740; <span>// 琥珀色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-orange mr-2"></i>
+                            <code>$orange: orange; <span>// 橙色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-d-orange mr-2"></i>
+                            <code>$deep-orange: darkorange; <span>// 深橙色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-brown mr-2"></i>
+                            <code>$brown: brown; <span>// 棕色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-grey mr-2"></i>
+                            <code>$grey: grey; <span>// 灰色</span></code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-blue-grey mr-2"></i>
+                            <code>$blue-grey: lightsteelblue; <span>// 淡钢蓝</span></code>
+                        </p>
+                    </figure>
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">颜色变量预设</span>
                     </p>
-                    <p class="font-grey font-light">
-                        text
-                    </p>
+                    <p class="font-grey font-light">并没有使用SCSS内置颜色函数lighten和darken，使用Color Palette的色值。
+                        <br>具体变量如下方式（仅列举红色系）：</p>
                     <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">$percent-1: 1% !default;
-$number-1: 1 !default;
-$pixel-1: 1px !default;
-$rem-1: 1rem !default;
-$em-1: 1em !default;
-$auto: auto !default;
-$inherit: inherit !default;</pre>
+                        <pre class="mb-0">$red: red;
+$red-0: #ffebee !default;
+$red-1: #ffcdd2 !default;
+$red-2: #ef9a9a !default;
+$red-3: #e57373 !default;
+$red-4: #ef5350 !default;
+$red-5: #f44336 !default;
+$red-6: #e53935 !default;
+$red-7: #d32f2f !default;
+$red-8: #c62828 !default;
+$red-9: #b71c1c !default;
+$red-a: #ff8a80 !default;
+$red-b: #ff5252 !default;
+$red-c: #ff1744 !default;
+$red-d: #d50000 !default;</pre>
+                    </figure>
+                </div>
+                <div class="content" id="item-03">
+                    <p class="title font-r125 bold">
+                        <span class="inline-block">黑到白的颜色变量</span>
+                    </p>
+                    <p class="font-grey font-light">基本的黑色到白色，由十六进制标准值构成。
+                        <br>除了black和white存在于不同应用场景，中间渐变变量仅用于预编译开发。</p>
+                    <figure class="p-3 bg-blue0">
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-black mr-2"></i>
+                            <code>$color-0: black !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color1 mr-2"></i>
+                            <code>$color-1: lighten($color-0, 6.7%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color2 mr-2"></i>
+                            <code>$color-2: lighten($color-0, 13.3%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color3 mr-2"></i>
+                            <code>$color-3: lighten($color-0, 20%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color4 mr-2"></i>
+                            <code>$color-4: lighten($color-0, 26.7%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color5 mr-2"></i>
+                            <code>$color-5: lighten($color-0, 33.3%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color6 mr-2"></i>
+                            <code>$color-6: lighten($color-0, 40%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color7 mr-2"></i>
+                            <code>$color-7: lighten($color-0, 46.7%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color8 mr-2"></i>
+                            <code>$color-8: lighten($color-0, 53.3%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-color9 mr-2"></i>
+                            <code>$color-9: lighten($color-0, 60%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colora mr-2"></i>
+                            <code>$color-a: lighten($color-0, 66.7%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colorb mr-2"></i>
+                            <code>$color-b: lighten($color-0, 73.3%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colorc mr-2"></i>
+                            <code>$color-c: lighten($color-0, 80%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colord mr-2"></i>
+                            <code>$color-d: lighten($color-0, 86.7%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colore mr-2"></i>
+                            <code>$color-e: lighten($color-0, 93.3%) !default;</code>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-circle font-colorf mr-2"></i>
+                            <code>$color-f: lighten($color-0, 100%) !default;</code>
+                        </p>
+                    </figure>
+                    <p class="font-grey font-light">具体用法如下：</p>
+                    <figure class="p-3 bg-blue0">
+                        <pre class="mb-0"><code>border: 1px solid <em class="font-red">$color-3</em>;</code></pre>
+                    </figure>
+                    <figure class="p-3 bg-blue0">
+                        <pre>$color-0: black !default;
+$color-1: lighten($color-0, 6.7%) !default;
+$color-2: lighten($color-0, 13.3%) !default;
+$color-3: lighten($color-0, 20%) !default;
+$color-4: lighten($color-0, 26.7%) !default;
+$color-5: lighten($color-0, 33.3%) !default;
+$color-6: lighten($color-0, 40%) !default;
+$color-7: lighten($color-0, 46.7%) !default;
+$color-8: lighten($color-0, 53.3%) !default;
+$color-9: lighten($color-0, 60%) !default;
+$color-a: lighten($color-0, 66.7%) !default;
+$color-b: lighten($color-0, 73.3%) !default;
+$color-c: lighten($color-0, 80%) !default;
+$color-d: lighten($color-0, 86.7%) !default;
+$color-e: lighten($color-0, 93.3%) !default;
+$color-f: lighten($color-0, 100%) !default;</pre>
+                    </figure>
+                    <p class="font-grey font-light">以上变量等同于以下：</p>
+                    <figure class="p-3 bg-blue0">
+                        <pre>$color-0: black !default;
+$color-1: #111 !default;
+$color-2: #222 !default;
+$color-3: #333 !default;
+$color-4: #444 !default;
+$color-5: #555 !default;
+$color-6: #666 !default;
+$color-7: #777 !default;
+$color-8: #888 !default;
+$color-9: #999 !default;
+$color-a: #aaa !default;
+$color-b: #bbb !default;
+$color-c: #ccc !default;
+$color-d: #ddd !default;
+$color-e: #eee !default;
+$color-f: white !default;</pre>
                     </figure>
                 </div>
             </main>

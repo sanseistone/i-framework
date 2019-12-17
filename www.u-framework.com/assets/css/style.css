@@ -101,16 +101,6 @@ a:focus {
   color: #333333;
 }
 
-.page-middle [id*="item"] {
-  pointer-events: auto;
-}
-.page-middle [id*="item"]:before {
-  display: block;
-  height: 80px;
-  margin-top: -60px;
-  content: "";
-}
-
 .page-right {
   position: -webkit-sticky;
   position: sticky;
@@ -120,6 +110,22 @@ a:focus {
 }
 .page-right .section-nav {
   border-left: 1px solid #dddddd;
+}
+
+.page-middle [id*="item"] {
+  pointer-events: auto;
+}
+.page-middle [id*="item"]:before {
+  display: block;
+  height: 80px;
+  margin-top: -60px;
+  content: "";
+}
+.page-middle code {
+  color: #333333;
+}
+.page-middle code > span {
+  color: #999999;
 }
 
 .slide-list .slick-prev {
