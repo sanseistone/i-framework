@@ -1855,6 +1855,16 @@ img {
   border-color: #1e88e5;
   background-color: #1e88e5;
 }
+.pagination.space > li + li {
+  margin-left: 4px;
+}
+.pagination.space > li > a {
+  border-radius: 0 !important;
+}
+.pagination.space > li > a, .pagination.space > li > span {
+  color: #333333;
+  border: 1px solid #999999;
+}
 .pagination.red > li > a, .pagination.red > li > span {
   color: #ff1744;
   border: 1px solid #ff1744;
@@ -2120,20 +2130,6 @@ img {
   color: white;
   border-color: #698998;
   background-color: #445a63;
-}
-.pagination.space > li {
-  display: inline-block;
-  float: left;
-}
-.pagination.space > li + li {
-  margin-left: 4px;
-}
-.pagination.space > li > a {
-  border-radius: 0 !important;
-}
-.pagination.space > li > a, .pagination.space > li > span {
-  color: #333333;
-  border: 1px solid #999999;
 }
 
 @media (max-width: 1199px) {

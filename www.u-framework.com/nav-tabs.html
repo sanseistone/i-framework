@@ -298,13 +298,9 @@
         <div class="col-lg-2 hide-md order-last">
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
-                    <li><a href="#item-01">text</a></li>
-                    <li><a href="#item-02">text</a></li>
-                    <li><a href="#item-03">text</a></li>
-                    <li><a href="#item-04">text</a></li>
-                    <li><a href="#item-05">text</a></li>
-                    <li><a href="#item-06">text</a></li>
-                    <li><a href="#item-07">text</a></li>
+                    <li><a href="#item-01">Nav-tabs</a></li>
+                    <li><a href="#item-02">如何使用？</a></li>
+                    <li><a href="#item-03">实例</a></li>
                 </ul>
             </aside>
         </div>
@@ -312,28 +308,112 @@
             <main class="page-middle mb-5" role="main">
                 <div class="content" id="item-01">
                     <h1 class="title font-r150 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">Nav-tabs</span>
                     </h1>
                     <p class="font-grey font-light">
-                        text
+                        对bootstrap的选项卡，增加了主题颜色。
                     </p>
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">如何使用？</span>
                     </p>
                     <p class="font-grey font-light">
-                        text
+                        颜色主题应用很简单，就是在ul的class里追加了颜色名称：
                     </p>
                     <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">$percent-1: 1% !default;
-$number-1: 1 !default;
-$pixel-1: 1px !default;
-$rem-1: 1rem !default;
-$em-1: 1em !default;
-$auto: auto !default;
-$inherit: inherit !default;</pre>
+                        <pre class="mb-0">class="nav nav-tabs <span class="underline">red</span>"</pre>
+                        <pre class="mb-0">class="nav nav-tabs <span class="underline">blue</span>"</pre>
                     </figure>
+                </div>
+                <div class="content" id="item-03">
+                    <p class="title font-r125 bold">
+                        <span class="inline-block">实例</span>
+                    </p>
+                    <p class="font-grey font-light">
+                        颜色主题应用很简单，就是在ul的class里追加了颜色名称：
+                    </p>
+                    <figure class="p-3 bg-blue0">
+                        <ul class="nav nav-tabs red" id="table-nav-example-01" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab-example-01" data-toggle="tab" href="#home-example-01" role="tab"
+                                   aria-controls="home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab-example-01" data-toggle="tab" href="#profile-example-01" role="tab"
+                                   aria-controls="profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab-example-01" data-toggle="tab" href="#contact-example-01" role="tab"
+                                   aria-controls="contact" aria-selected="false">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="table-content-example-01">
+                            <div class="tab-pane fade show active" id="home-example-01" role="tabpanel"
+                                 aria-labelledby="home-tab-example-01">...Home
+                            </div>
+                            <div class="tab-pane fade" id="profile-example-01" role="tabpanel" aria-labelledby="profile-tab-example-01">
+                                ...Profile
+                            </div>
+                            <div class="tab-pane fade" id="contact-example-01" role="tabpanel" aria-labelledby="contact-tab-example-01">
+                                ...Contact
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="p-3 bg-blue0">
+                        <ul class="nav nav-tabs blue" id="table-nav-example-02" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab-example-02" data-toggle="tab" href="#home-example-02" role="tab"
+                                   aria-controls="home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab-example-02" data-toggle="tab" href="#profile-example-02" role="tab"
+                                   aria-controls="profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab-example-02" data-toggle="tab" href="#contact-example-02" role="tab"
+                                   aria-controls="contact" aria-selected="false">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="table-content-example-02">
+                            <div class="tab-pane fade show active" id="home-example-02" role="tabpanel"
+                                 aria-labelledby="home-tab-example-02">...Home
+                            </div>
+                            <div class="tab-pane fade" id="profile-example-02" role="tabpanel" aria-labelledby="profile-tab-example-02">
+                                ...Profile
+                            </div>
+                            <div class="tab-pane fade" id="contact-example-02" role="tabpanel" aria-labelledby="contact-tab-example-02">
+                                ...Contact
+                            </div>
+                        </div>
+                    </figure>
+                    <textarea class="form-control bg-blue0" cols="30" rows="20">
+<ul class="nav nav-tabs red" id="myTab-01" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab-01" data-toggle="tab" href="#home-01" role="tab"
+           aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab-01" data-toggle="tab" href="#profile-01" role="tab"
+           aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab-01" data-toggle="tab" href="#contact-01" role="tab"
+           aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent-01">
+    <div class="tab-pane fade show active" id="home-01" role="tabpanel" aria-labelledby="home-tab-01">
+        ...Home
+    </div>
+    <div class="tab-pane fade" id="profile-01" role="tabpanel" aria-labelledby="profile-tab-01">
+        ...Profile
+    </div>
+    <div class="tab-pane fade" id="contact-01" role="tabpanel" aria-labelledby="contact-tab-01">
+        ...Contact
+    </div>
+</div>
+                            </textarea>
                 </div>
             </main>
         </div>

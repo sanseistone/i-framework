@@ -298,13 +298,9 @@
         <div class="col-lg-2 hide-md order-last">
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
-                    <li><a href="#item-01">text</a></li>
-                    <li><a href="#item-02">text</a></li>
-                    <li><a href="#item-03">text</a></li>
-                    <li><a href="#item-04">text</a></li>
-                    <li><a href="#item-05">text</a></li>
-                    <li><a href="#item-06">text</a></li>
-                    <li><a href="#item-07">text</a></li>
+                    <li><a href="#item-01">Pagination</a></li>
+                    <li><a href="#item-02">如何使用？</a></li>
+                    <li><a href="#item-03">实例</a></li>
                 </ul>
             </aside>
         </div>
@@ -312,28 +308,91 @@
             <main class="page-middle mb-5" role="main">
                 <div class="content" id="item-01">
                     <h1 class="title font-r150 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">Pagination</span>
                     </h1>
                     <p class="font-grey font-light">
-                        text
+                        对bootstrap的分页组件，增加了主题颜色。
                     </p>
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">如何使用？</span>
                     </p>
                     <p class="font-grey font-light">
-                        text
+                        追加颜色名称：
                     </p>
                     <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">$percent-1: 1% !default;
-$number-1: 1 !default;
-$pixel-1: 1px !default;
-$rem-1: 1rem !default;
-$em-1: 1em !default;
-$auto: auto !default;
-$inherit: inherit !default;</pre>
+                        <pre class="mb-0">class="pagination <span class="underline">red</span>"</pre>
+                        <pre class="mb-0">class="pagination <span class="underline">blue</span>"</pre>
                     </figure>
+                    <p class="font-grey font-light">
+                        同时追加间距（默认预设间距为4px，并取消圆角）：
+                    </p>
+                    <figure class="p-3 bg-blue0">
+                        <pre class="mb-0">class="pagination <span class="underline">red</span> <span class="underline">space</span>"</pre>
+                    </figure>
+                </div>
+                <div class="content" id="item-03">
+                    <p class="title font-r125 bold">
+                        <span class="inline-block">实例</span>
+                    </p>
+                    <p class="font-grey font-light">
+                        颜色主题应用很简单，就是在ul的class里追加了颜色名称：
+                    </p>
+                    <figure class="p-3 bg-blue0">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination red">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </figure>
+                    <figure class="p-3 bg-blue0">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination blue">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </figure>
+                    <figure class="p-3 bg-blue0">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination red space">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </figure>
+                    <textarea class="form-control bg-blue0" cols="30" rows="20">
+<nav aria-label="Page navigation">
+    <ul class="pagination red">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination red space">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+                            </textarea>
                 </div>
             </main>
         </div>
