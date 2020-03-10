@@ -298,13 +298,9 @@
         <div class="col-lg-2 hide-md order-last">
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
-                    <li><a href="#item-01">text</a></li>
-                    <li><a href="#item-02">text</a></li>
-                    <li><a href="#item-03">text</a></li>
-                    <li><a href="#item-04">text</a></li>
-                    <li><a href="#item-05">text</a></li>
-                    <li><a href="#item-06">text</a></li>
-                    <li><a href="#item-07">text</a></li>
+                    <li><a href="#item-01">Owl-Carousel</a></li>
+                    <li><a href="#item-02">如何使用？</a></li>
+                    <li><a href="#item-03">实例</a></li>
                 </ul>
             </aside>
         </div>
@@ -312,28 +308,87 @@
             <main class="page-middle mb-5" role="main">
                 <div class="content" id="item-01">
                     <h1 class="title font-r150 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">Owl-Carousel</span>
                     </h1>
                     <p class="font-grey font-light">
-                        text
+                        对此轮播插件的控制按钮增加了颜色主题。
                     </p>
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">title</span>
+                        <span class="inline-block">如何使用？</span>
                     </p>
                     <p class="font-grey font-light">
-                        text
+                        追加颜色名称：
                     </p>
                     <figure class="p-3 bg-blue0">
-                        <pre class="mb-0">$percent-1: 1% !default;
-$number-1: 1 !default;
-$pixel-1: 1px !default;
-$rem-1: 1rem !default;
-$em-1: 1em !default;
-$auto: auto !default;
-$inherit: inherit !default;</pre>
+                        <pre class="mb-0">class="owl-carousel owl-theme owl-example <span class="underline">red</span>"</pre>
+                        <pre class="mb-0">class="owl-carousel owl-theme owl-example <span class="underline">blue</span>"</pre>
                     </figure>
+                </div>
+                <div class="content" id="item-03">
+                    <p class="title font-r125 bold">
+                        <span class="inline-block">实例</span>
+                    </p>
+                    <p class="font-grey font-light">
+                        关于插件的具体用法，请参考此插件<a class="italic underline" href="http://owlcarousel2.github.io/OwlCarousel2/" target="_blank">官方网站</a>介绍。
+                    </p>
+                    <figure class="p-3 bg-blue0">
+                        <div class="owl-carousel owl-theme owl-example red">
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="p-3 bg-blue0">
+                        <div class="owl-carousel owl-theme owl-example blue">
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/500" alt="">
+                            </div>
+                        </div>
+                    </figure>
+                    <textarea class="form-control bg-blue0" cols="30" rows="20">
+<div class="owl-carousel owl-theme owl-example red">
+    <div class="item">
+        <img src="http://placehold.it/500" alt="">
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/500" alt="">
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/500" alt="">
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/500" alt="">
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/500" alt="">
+    </div>
+</div></textarea>
                 </div>
             </main>
         </div>
@@ -344,10 +399,35 @@ $inherit: inherit !default;</pre>
 <!-- include js -->
 <script src="assets/js/jQuery-v3.4.1.min.js"></script>
 <script src="assets/frame/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/plug-in/owlcarousel2/dist/owl.carousel.min.js"></script>
 <script src="assets/plug-in/scrollup/dist/jquery.scrollUp.min.js"></script>
 
 <!--custom.js-->
 <script src="assets/js/plugin.js"></script>
+
+<script>
+    $('.owl-example').owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 50000,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true
+            }
+        }
+    })
+</script>
 
 </body>
 
