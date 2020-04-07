@@ -299,9 +299,9 @@
             <aside class="page-right">
                 <ul class="list list-reset font-r0875 line-2 my-3 pl-3 section-nav">
                     <li><a href="#item-01">Display</a></li>
-                    <li><a href="#item-02">如何使用？</a></li>
-                    <li><a href="#item-03">实例</a></li>
-                    <li><a href="#item-04">代码</a></li>
+                    <li><a href="#item-02">How?</a></li>
+                    <li><a href="#item-03">Code</a></li>
+                    <!--<li><a href="#item-04">代码</a></li>-->
                 </ul>
             </aside>
         </div>
@@ -317,7 +317,7 @@
                 </div>
                 <div class="content" id="item-02">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">如何使用？</span>
+                        <span class="inline-block">How?</span>
                     </p>
                     <p class="font-grey font-light">
                         <!--text-->
@@ -388,16 +388,28 @@ class="shadow-n"</pre>
                 </div>
                 <div class="content" id="item-03">
                     <p class="title font-r125 bold">
-                        <span class="inline-block">实例</span>
+                        <span class="inline-block">Code</span>
                     </p>
                     <p class="font-grey font-light">
                         <!--在Base这个分类下，是对bootstrap的组件及其他插件进行了主题颜色扩展，以及修改了原样式。-->
                     </p>
-                    <figure class="p-3 bg-blue0"><code><span>//display</span></code>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">example for display:</span>
+                    </p>
+                    <figure class="p-3 bg-blue0">
                         <span class="block p-3 mb-2 bg-amber">span元素 display: block;</span>
                         <span class="inline-block p-3 bg-amber">span元素 display: inline-block;</span>
                     </figure>
-                    <figure class="p-3 bg-blue0"><code><span>//opacity</span></code>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">code:</span>
+                    </p>
+                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
+<span class="block">span元素 display: block;</span>
+<span class="inline-block">span元素 display: inline-block;</span></textarea>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">example for opacity:</span>
+                    </p>
+                    <figure class="p-3 bg-blue0">
                         <div class="gmr-20 gmb-15-sm">
                             <div class="inline-block w-95 h-95 opacity-30 bg-amber">opacity-30</div>
                             <div class="inline-block w-95 h-95 opacity-50 bg-amber">opacity-50</div>
@@ -405,7 +417,18 @@ class="shadow-n"</pre>
                             <div class="inline-block w-95 h-95 opacity-100 bg-amber">opacity-100</div>
                         </div>
                     </figure>
-                    <figure class="p-3 bg-blue0"><code><span>//z-index</span></code>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">code:</span>
+                    </p>
+                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
+<div class="opacity-30">opacity-30</div>
+<div class="opacity-50">opacity-50</div>
+<div class="opacity-80">opacity-80</div>
+<div class="opacity-100">opacity-100</div></textarea>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">example for z-index:</span>
+                    </p>
+                    <figure class="p-3 bg-blue0">
                         <div class="relative w-auto min-h-200">
                             <div class="absolute w-95 h-95 p-1 font-white bg-red z-10">z-10</div>
                             <div class="absolute pin-t-30 pin-l-80 w-95 h-95 p-1 font-white bg-blue z-20">z-20</div>
@@ -413,7 +436,18 @@ class="shadow-n"</pre>
                             <div class="absolute pin-t-90 pin-l-100 w-95 h-95 p-1 font-white bg-green z-40">z-40</div>
                         </div>
                     </figure>
-                    <figure class="p-3 bg-blue0"><code><span>//box-shadow</span></code>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">code:</span>
+                    </p>
+                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
+<div class="z-10">z-10</div>
+<div class="z-20">z-20</div>
+<div class="z-30">z-30</div>
+<div class="z-40">z-40</div></textarea>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">example for box-shadow:</span>
+                    </p>
+                    <figure class="p-3 bg-blue0">
                         <div class="block">
                             <div class="inline-block w-95 h-95 bg-amber shadow-xs">shadow-xs</div>
                             <div class="inline-block w-95 h-95 bg-amber shadow-sm">shadow-sm</div>
@@ -421,24 +455,9 @@ class="shadow-n"</pre>
                             <div class="inline-block w-95 h-95 bg-amber shadow-lg">shadow-lg</div>
                         </div>
                     </figure>
-                </div>
-                <div class="content" id="item-04">
-                    <p class="title font-r150 bold">
-                        <span class="inline-block">代码</span>
+                    <p class="title mb-2 font-r0875 bold">
+                        <span class="inline-block italic">code:</span>
                     </p>
-                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
-<span class="block">span元素 display: block;</span>
-<span class="inline-block">span元素 display: inline-block;</span></textarea>
-                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
-<div class="opacity-30">opacity-30</div>
-<div class="opacity-50">opacity-50</div>
-<div class="opacity-80">opacity-80</div>
-<div class="opacity-100">opacity-100</div></textarea>
-                    <textarea class="form-control mb-3 bg-blue0" cols="30" rows="5">
-<div class="z-10">z-10</div>
-<div class="z-20">z-20</div>
-<div class="z-30">z-30</div>
-<div class="z-40">z-40</div></textarea>
                     <textarea class="form-control bg-blue0" cols="30" rows="5">
 <div class="shadow-xs">shadow-xs</div>
 <div class="shadow-sm">shadow-sm</div>
