@@ -2,14 +2,23 @@
 
 /* ========== import s ========== */
 
-@import url("../plug-in/normalize/normalize.css");
-@import url("../frame/bootstrap/dist/css/bootstrap.min.css");
+@import url("../frame/bootstrap-4/dist/css/bootstrap.min.css");
 @import url("../fonts/fontawesome-pro/css/all.css");
-@import url("../plug-in/animate/animate.min.css");
+
+@import url("../plug-in/normalizecss/normalize.css");
+
+@import url("../plug-in/animatecss/animate.min.css");
+@import url("../plug-in/Chartjs/dist/Chart.min.css");
+@import url("../plug-in/fotorama/fotorama.css");
+@import url("../plug-in/Gallery/css/blueimp-gallery.min.css");
+@import url("../plug-in/Gallery/css/blueimp-gallery-indicator.css");
+@import url("../plug-in/Gallery/css/blueimp-gallery-video.css");
 @import url("../plug-in/lightbox2/dist/css/lightbox.min.css");
+@import url("../plug-in/Magnifierjs/magnifier.css");
 @import url("../plug-in/owlcarousel2/dist/assets/owl.carousel.min.css");
 @import url("../plug-in/owlcarousel2/dist/assets/owl.theme.default.min.css");
 @import url("../plug-in/slick/slick/slick.css");
 @import url("../plug-in/slick/slick/slick-theme.css");
+@import url("../plug-in/swiper/package/css/swiper.min.css");
 
 /* ========== import e ========== */

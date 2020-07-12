@@ -1,32 +1,18 @@
-# WOW.js [![Build Status](https://secure.travis-ci.org/graingert/WOW.svg?branch=master)](http://travis-ci.org/graingert/WOW)
-
-Temporary deprecation:
-======================
-
-wow.js is temporarily deprecated in favour of AOS (Animate on Scroll). Feel free to ignore the warning if you can't use AOS.
-
-Plans for 3.0 include:
-
-* Breaking out the shims into an optional module
-* Using the AOS approach for most functionality
-* Remain completely backwards compatible and a drop-in replacement for GPL wowjs, but issue warning on durations of higher granularity than 50ms
-or longer than 3s
-* Detect Firefox for Android as mobile.
-
+# WOW.js [![Build Status](https://secure.travis-ci.org/matthieua/WOW.svg?branch=master)](http://travis-ci.org/matthieua/WOW)
 
 Reveal CSS animation as you scroll down a page.
 By default, you can use it to trigger [animate.css](https://github.com/daneden/animate.css) animations.
 But you can easily change the settings to your favorite animation library.
 
 Advantages:
-- 100% MIT Licensed, not GPL keep your code yours.
-- Naturally Caffeine free
 - Smaller than other JavaScript parallax plugins, like Scrollorama (they do fantastic things, but can be too heavy for simple needs)
 - Super simple to install, and works with animate.css, so if you already use it, that will be very fast to setup
 - Fast execution and lightweight code: the browser will like it ;-)
 - You can change the settings - [see below](#advanced-usage)
 
-### [LIVE DEMO ➫](https://graingert.co.uk/WOW/)
+Follow [@mattaussaguel](//twitter.com/mattaussaguel) for updates as WOW evolves.
+
+### [LIVE DEMO ➫](http://mynameismatthieu.com/WOW/)
 
 ## Live examples
 - [MaterialUp](http://www.materialup.com)
@@ -35,27 +21,17 @@ Advantages:
 - [Microsoft Stories](http://www.microsoft.com/en-us/news/stories/garage/)
 
 
+## Version
+
+1.1.0
+
 ## Documentation
 
 It just take seconds to install and use WOW.js!
-[Read the documentation ➫](https://graingert.co.uk/WOW/docs.html)
+[Read the documentation ➫](http://mynameismatthieu.com/WOW/docs.html)
 
 ### Dependencies
 - [animate.css](https://github.com/daneden/animate.css)
-
-### Installation
-
-- Bower
-
-```bash
-   bower install wow-mit
-```
-
-- NPM
-
-```bash
-   npm install wow.js
-```
 
 ### Basic usage
 
@@ -94,9 +70,7 @@ var wow = new WOW(
     callback:     function(box) {
       // the callback is fired every time an animation is started
       // the argument that is passed in is the DOM node being animated
-    },
-    scrollContainer: null,    // optional scroll container selector, otherwise use window,
-    resetAnimation: true,     // reset animation on end (default is true)
+    }
   }
 );
 wow.init();
@@ -116,7 +90,7 @@ effects.
 
 ## Contribute
 
-The library is transpiled using Babel, please update `wow.js` file.
+The library is written in CoffeeScript, please update `wow.coffee` file.
 
 We use grunt to compile and minify the library:
 
@@ -136,20 +110,20 @@ Enjoy!
 
 ## Bug tracker
 
-If you find a bug, please report it [here on Github](https://github.com/graingert/WOW/issues)!
+If you find a bug, please report it [here on Github](https://github.com/matthieua/WOW/issues)!
 
 ## Developer
 
-Originally Developed by Matthieu Aussaguel, [mynameismatthieu.com](http://mynameismatthieu.com)
-Forked to remain under the MIT license by Thomas Grainger, https://graingert.co.uk
+Developed by Matthieu Aussaguel, [mynameismatthieu.com](http://mynameismatthieu.com)
 
-+ [Github Profile](//github.com/graingert)
++ [@mattaussaguel](//twitter.com/mattaussaguel)
++ [Github Profile](//github.com/matthieua)
 
 ## Contributors
 
 Thanks to everyone who has contributed to the project so far:
 
 - Attila Oláh - [@attilaolah](//twitter.com/attilaolah) - [Github Profile](//github.com/attilaolah)
-- [and many others](//github.com/graingert/WOW/graphs/contributors)
+- [and many others](//github.com/matthieua/WOW/graphs/contributors)
 
 Initiated and designed by [Vincent Le Moign](//www.webalys.com/), [@webalys](//twitter.com/webalys)
