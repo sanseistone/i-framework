@@ -6,14 +6,14 @@ Chart.js can be installed via npm or bower. It is recommended to get Chart.js th
 [![npm](https://img.shields.io/npm/dm/chart.js.svg?style=flat-square&maxAge=600)](https://npmjs.com/package/chart.js)
 
 ```bash
-npm install chart.js --save
+npm install plugin-chart.js --save
 ```
 
 ## Bower
 [![bower](https://img.shields.io/bower/v/chartjs.svg?style=flat-square&maxAge=600)](https://libraries.io/bower/chartjs)
 
 ```bash
-bower install chart.js --save
+bower install plugin-chart.js --save
 ```
 
 ## CDN
@@ -30,7 +30,7 @@ https://cdnjs.com/libraries/Chart.js
 
 Chart.js built files are also available through [jsDelivr](https://www.jsdelivr.com/):
 
-https://www.jsdelivr.com/package/npm/chart.js?path=dist
+https://www.jsdelivr.com/package/npm/plugin-chart.js?path=dist
 
 ## Github
 [![github](https://img.shields.io/github/release/chartjs/Chart.js.svg?style=flat-square&maxAge=600)](https://github.com/chartjs/Chart.js/releases/latest)

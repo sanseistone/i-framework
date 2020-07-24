@@ -14,14 +14,14 @@ Chart.js can be integrated with plain JavaScript or with different module loader
 ## Common JS
 
 ```javascript
-var Chart = require('chart.js');
+var Chart = require('plugin-chart.js');
 var myChart = new Chart(ctx, {...});
 ```
 
 ## Bundlers (Webpack, Rollup, etc.)
 
 ```javascript
-import Chart from 'chart.js';
+import Chart from 'plugin-chart.js';
 var myChart = new Chart(ctx, {...});
 ```
 
