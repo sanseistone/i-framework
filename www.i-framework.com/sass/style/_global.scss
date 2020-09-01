@@ -1,23 +1,13 @@
 @charset "utf-8";
-
-#scrollUp {
-  background-image: image-url('top.png');
-  bottom: 20px;
-  right: 20px;
-  width: 38px;
-  height: 38px;
-}
-
-//body
-body {}
-
-.container {}
-
-//header
 header {}
 
 //nav
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: $blue-5;
+
   & .navbar-brand {
     color: $color-f;
   }
@@ -35,38 +25,6 @@ header {}
 
 //breadcrumb
 .breadcrumb {}
-
-//box
-.box {
-  & .row > * {
-    margin-bottom: 1rem;
-  }
-}
-
-//box-01
-.box {
-  &.box-01 {}
-}
-
-//box-02
-.box {
-  &.box-02 {}
-}
-
-//box-03
-.box {
-  &.box-03 {}
-}
-
-//box-04
-.box {
-  &.box-04 {}
-}
-
-//box-05
-.box {
-  &.box-05 {}
-}
 
 //footer
 footer {}
