@@ -5,46 +5,6 @@ body {
   background: #f3f5f6;
 }
 
-//common style
-.form-control {
-  //transition: none;
-  border-radius: 0;
-
-  &:focus {
-    box-shadow: none;
-  }
-}
-
-.btn {
-  border-radius: 0;
-}
-
-.theme-link-h {
-  color: #1e2d7d;
-}
-
-.theme-link-l {
-  color: #00badb;
-}
-
-.theme-bg-h {
-  background: #1e2d7d;
-}
-
-.theme-bg-l {
-  background: #00badb;
-}
-
-.theme-btn-h {
-  background: #1e2d7d;
-  color: #fff;
-}
-
-.theme-btn-l {
-  background: #00badb;
-  color: #fff;
-}
-
 .title-box {
   & .title {
     margin: 0;
@@ -353,46 +313,6 @@ footer {}
 //responsive-pc
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
-}
-
-@media (max-width: 991px) {
-  //Large devices (desktops, 768px and 992px)
-  header {
-    //position: relative;
-    //top: inherit;
-    //z-index: 9999;
-
-    & .header-main {
-      padding: 10px 0 15px 0;
-    }
-
-    & .header-nav .navbar {
-      & .item {
-        &.account {
-          & .nav-link {
-            & [class*="fa"] {
-              display: block;
-            }
-
-            & .head {
-              display: none;
-            }
-
-            & .title {
-              > span {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .navbar {
-    min-height: 0;
-  }
-
   .extend-nav {
     & .aside-main {
       position: fixed;
@@ -507,6 +427,45 @@ footer {}
     & .container {
       display: none;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+  header {
+    //position: relative;
+    //top: inherit;
+    //z-index: 9999;
+
+    & .header-main {
+      padding: 10px 0 15px 0;
+    }
+
+    & .header-nav .navbar {
+      & .item {
+        &.account {
+          & .nav-link {
+            & [class*="fa"] {
+              display: block;
+            }
+
+            & .head {
+              display: none;
+            }
+
+            & .title {
+              > span {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    min-height: 0;
   }
 }
 

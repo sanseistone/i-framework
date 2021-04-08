@@ -23,6 +23,8 @@
       > li {
         & .nav-link {
           display: block;
+          line-height: 2rem;
+          padding: 0;
 
           &:before {
             content: "\f105";
