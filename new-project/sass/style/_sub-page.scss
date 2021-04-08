@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+//sub-page
+.accordion {
+  & [id*="heading-"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    cursor: pointer;
+  }
+
+  & .card-body {
+    padding: .25rem 1.25rem;
+
+    & .navbar-nav {
+      width: 100%;
+
+      > li + li {
+        border-top: 1px dotted $color-d;
+      }
+
+      > li {
+        & .nav-link {
+          display: block;
+
+          &:before {
+            content: "\f105";
+            display: inline-block;
+            padding-right: .5rem;
+            color: #00badb;
+            font-family: 'Font Awesome 5 Pro';
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:focus, &:hover {
+            color: #00badb;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive-pc
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
