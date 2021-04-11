@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .container-hot-sell {
-  & .row {
+  & .layout {
     & .average + .average {
       border-left: 1px solid $color-d;
     }
@@ -55,7 +55,7 @@
 }
 
 .container-brands {
-  & .row {
+  & .layout {
     border: 1px solid $color-d;
 
     & .average a {
@@ -64,7 +64,7 @@
     }
   }
 
-  & .row.six .average {
+  & .layout.six .average {
     &:nth-last-of-type(1),
     &:nth-last-of-type(2),
     &:nth-last-of-type(3),
@@ -94,7 +94,7 @@
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   .container-hot-sell {
-    & .row {
+    & .layout {
       & .average:nth-of-type(3n+1) {
         border-left: none;
       }
@@ -102,7 +102,7 @@
   }
 
   .container-brands {
-    & .row.three-md .average {
+    & .layout.three-md .average {
       &:nth-last-of-type(1),
       &:nth-last-of-type(2),
       &:nth-last-of-type(3),
@@ -138,7 +138,7 @@
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
   .container-hot-sell {
-    & .row {
+    & .layout {
       & .average:nth-of-type(3n+1) {
         border-left: 1px solid $color-d;
       }
@@ -150,7 +150,7 @@
   }
 
   .container-brands {
-    & .row.two-xs .average {
+    & .layout.two-xs .average {
       &:nth-last-of-type(1),
       &:nth-last-of-type(2),
       &:nth-last-of-type(3) {

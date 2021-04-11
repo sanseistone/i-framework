@@ -51,6 +51,17 @@
 
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
+  .container-main {
+    & .main-content {
+      margin: 0;
+      padding: 0;
+    }
+
+    & .main-aside {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 767px) {
