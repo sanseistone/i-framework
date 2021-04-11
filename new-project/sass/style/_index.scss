@@ -14,44 +14,40 @@
   padding: 5rem 15px;
 }
 
-.special-box {
-  & .left, & .right {
-    & .box {
-      height: calc(50% - 30px);
-      overflow: hidden;
-
-      > img {
-        width: 100%;
-      }
-    }
-
-    & .box:first-child {
-      margin-bottom: 30px;
-    }
-
-    & .box:last-child {
-      margin-top: 30px;
-    }
-  }
-}
-
 .special-category {
+  & .layout > * {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+
   & .box {
     position: relative;
     overflow: hidden;
-  }
+    min-height: 260px;
 
-  & .left, & .right {
-    & .box {
-      min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    > * {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 auto;
     }
   }
 
-  & .middle {
-    & .box {
-      min-height: 500px;
-    }
-  }
+  //& .left, & .right {
+  //  & .box {
+  //    min-height: 260px;
+  //  }
+  //}
+
+  //& .middle {
+  //  & .box {
+  //    min-height: 500px;
+  //  }
+  //}
 }
 
 .container-brands {
