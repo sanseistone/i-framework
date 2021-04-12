@@ -16,6 +16,7 @@
     <script src="assets/js/jQuery-v3.4.1.min.js"></script>
     <script src="assets/frame/bootstrap-4/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plug-in/slick/slick/slick.min.js"></script>
+    <script src="assets/plug-in/lightbox2/dist/js/lightbox.min.js"></script>
     <script src="assets/js/slider-user.js"></script>
     <script src="assets/plug-in/downCount/jquery.downCount.js"></script>
 </head>
@@ -583,9 +584,12 @@
                 <div class="product-meta mb-4">
                     <h1>JBL Go2 Portable Bluetooth Speaker</h1>
                 </div>
-                <div class="product-brand mb-1">
+                <div class="product-brand flex mb-1">
                     <a href="#" class="inline-block theme-link-l bold">Sony</a>
-                    <span class="inline-block ml-3 font-color6">SKU: SON-695219-XBR-55</span>
+                    <div class="block ml-3 italic">
+                        <span class="inline-block font-color6">Volume:</span>
+                        <span class="inline-block bold">123</span>
+                    </div>
                 </div>
                 <div class="product-review flex mb-4">
                     <div class="font-orange font-r0875">
@@ -1277,7 +1281,11 @@
             <div class="card-box">
                 <div class="title-box flex items-baseline justify-between mb-3 over-hidden">
                     <p class="mb-0">Customer Reviews</p>
-                    <p class="mb-0"><a href="#" class="arrow-link font-r100">Write a review <i class="fal fa-arrow-right arrow ml-2"></i></a></p>
+                    <p class="mb-0">
+                        <a href="#reviews-modal" class="arrow-link font-r100" data-toggle="modal">
+                            Write a review <i class="fal fa-arrow-right arrow ml-2"></i>
+                        </a>
+                    </p>
                 </div>
                 <div class="reviews-total flex items-baseline gmr-15 mb-3">
                     <div class="font-orange">
@@ -1289,7 +1297,138 @@
                     </div>
                     <div class="font-color6 font-r0875">Based on 3 reviews</div>
                 </div>
+                <hr>
                 <div class="content-box">
+                    <ul class="list list-reset dotted gmy-10">
+                        <li>
+                            <div class="mb-2 font-orange font-r0875">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="title theme-link-h bold">Awesome store!</p>
+                            <div class="summary">
+                                <p>I compared a lot of different online stores before purchasing my new tv, and Warehouse store was the cheapest one. And they shipped for free! I only have a minor criticism: the package was slightly damaged, but hopefully the product was in perfect condition.</p>
+                                <div class="layout seven five-sm four-xs space-15 gmb-15-sm mb-3">
+                                    <div class="average">
+                                        <a class="block" href="http://placehold.it/600x800" data-lightbox="reviews-pic" data-title="Title">
+                                            <img class="example-image" src="http://placehold.it/200x300" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="average">
+                                        <a class="block" href="http://placehold.it/600x800" data-lightbox="reviews-pic" data-title="Title">
+                                            <img class="example-image" src="http://placehold.it/200x300" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="average">
+                                        <a class="block" href="http://placehold.it/600x800" data-lightbox="reviews-pic" data-title="Title">
+                                            <img class="example-image" src="http://placehold.it/200x300" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="average">
+                                        <a class="block" href="http://placehold.it/600x800" data-lightbox="reviews-pic" data-title="Title">
+                                            <img class="example-image" src="http://placehold.it/200x300" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="average">
+                                        <a class="block" href="http://placehold.it/600x800" data-lightbox="reviews-pic" data-title="Title">
+                                            <img class="example-image" src="http://placehold.it/200x300" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="author font-color6 font-r0875 italic">
+                                    <span class="user">Admin</span>
+                                    <span class="date">2021-04-20</span>
+                                </div>
+                                <div><a href="#" class="inline-block theme-link-l font-r0875">Report as Inappropriate</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mb-2 font-orange font-r0875">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="title theme-link-h bold">Could be better</p>
+                            <div class="summary">
+                                <p>I compared a lot of different online stores before purchasing my new tv, and Warehouse store was the cheapest one. And they shipped for free! I only have a minor criticism: the package was slightly damaged, but hopefully the product was in perfect condition.</p>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="author font-color6 font-r0875 italic">
+                                    <span class="user">Admin</span>
+                                    <span class="date">2021-04-20</span>
+                                </div>
+                                <div><a href="#" class="inline-block theme-link-l font-r0875">Report as Inappropriate</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mb-2 font-orange font-r0875">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="title theme-link-h bold">Happy of my first purchase</p>
+                            <div class="summary">
+                                <p>I compared a lot of different online stores before purchasing my new tv, and Warehouse store was the cheapest one. And they shipped for free! I only have a minor criticism: the package was slightly damaged, but hopefully the product was in perfect condition.</p>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="author font-color6 font-r0875 italic">
+                                    <span class="user">Admin</span>
+                                    <span class="date">2021-04-20</span>
+                                </div>
+                                <div><a href="#" class="inline-block theme-link-l font-r0875">Report as Inappropriate</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal fade" id="reviews-modal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="title-box mb-3"><p class="mb-0 theme-link-h">Customer Reviews</p></div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputName">Name</label>
+                                        <input type="email" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword1">
+                                    </div>
+                                    <!--<div class="form-group">-->
+                                    <!--    <label for="inputPassword2">Password</label>-->
+                                    <!--    <input type="password" class="form-control" id="inputPassword2">-->
+                                    <!--</div>-->
+                                    <div class="form-group">
+                                        <label for="inputFile">Picture</label>
+                                        <input type="file" class="form-control" id="inputFile">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label" for="inputCheck">
+                                            <input type="checkbox" class="form-check-input" id="inputCheck">Check me out
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!--<button type="button" class="btn btn-primary">Submit</button>-->
+                                <input type="submit" class="btn btn-primary" value="Submit">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1367,8 +1506,15 @@
                     <p class="mb-0">Estimate shipping</p>
                 </div>
                 <div class="content-box">
+                    Example Text
                 </div>
+                <hr>
+                <a href="#" class="flex justify-between items-center theme-link-l py-2">
+                    <span class="inline-block">Refund Policy</span>
+                    <i class="fal fa-angle-right"></i>
+                </a>
             </div>
+
         </div>
     </div>
 </main>

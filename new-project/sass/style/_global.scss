@@ -62,7 +62,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
 
   & .search {
     & .form-control {
@@ -435,19 +435,14 @@ footer {
       display: none;
     }
   }
-}
-
-@media (max-width: 991px) {
-  //Large devices (desktops, 768px and 992px)
-  .container-main {
-    margin: 0;
-    padding: 0;
-  }
 
   .card-box {
     padding: 1rem;
   }
+}
 
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
   header {
     //position: relative;
     //top: inherit;
@@ -487,6 +482,49 @@ footer {
 
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
+  .container-main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fixed-box {
+    right: 10px;
+    bottom: 40px;
+
+    & .item {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      text-align: center;
+      line-height: 35px;
+      opacity: .8;
+
+      & svg {
+        width: 20px;
+        height: 20px;
+        fill: $color-f;
+      }
+    }
+
+    & .email {
+      right: 0;
+      bottom: 100px;
+      background: #62bfe7;
+    }
+
+    & .comment {
+      right: 0;
+      bottom: 50px;
+      background: #333;
+    }
+
+    & .back-to-top {
+      right: 0;
+      bottom: 0;
+      background: #e13887;
+    }
+  }
 }
 
 @media (max-width: 575px) {
