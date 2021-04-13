@@ -1,0 +1,23 @@
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a { color: #333333; transition: all .3s ease; }
+a:hover { color: #333333; text-decoration: none; }
+a:focus { outline: none; outline-offset: 0; color: #333333; text-decoration: none; }
+
+.login-body { background: #222222; }
+.login-body .container { min-height: 100vh; display: flex; align-items: center; }
+.login-body .login-box { width: 100%; justify-content: center; }
+.login-body .login-box form .form-control { padding-left: 35px; border-radius: 0; border: none; }
+.login-body .login-box form .form-control:focus, .login-body .login-box form .form-control:hover { outline: none; box-shadow: none; }
+.login-body .login-box form .name, .login-body .login-box form .password { position: relative; border-bottom: 1px solid #cccccc; }
+.login-body .login-box form .name:hover, .login-body .login-box form .password:hover { border-bottom: 1px solid #e53935; }
+.login-body .login-box form .name:before { position: absolute; top: 50%; transform: translateY(-50%); left: 10px; content: "\f007"; font-weight: 400; font-family: "Font Awesome 5 Pro"; }
+.login-body .login-box form .password:before { position: absolute; top: 50%; transform: translateY(-50%); left: 10px; content: "\f30d"; font-weight: 400; font-family: "Font Awesome 5 Pro"; }
+
+.admin-body .sidebar [class*="fa"] { width: 20px; height: 16px; margin-right: 4px; text-align: center; vertical-align: text-bottom; }
+.admin-body .search-box > table > thead > tr > th { white-space: nowrap; }
+.admin-body .order-list-table > thead > tr > th { white-space: nowrap; }
+.admin-body .order-list-table > tbody > tr > td { white-space: nowrap; }
+.admin-body .order-list-table > tbody > tr > td:nth-of-type(3) { white-space: normal; min-width: 150px; }
+.admin-body .order-detail-table > tbody > tr > th { white-space: nowrap; }

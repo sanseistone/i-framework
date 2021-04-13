@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+//sub-page
+.accordion {
+  & [id*="heading-"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    cursor: pointer;
+
+    &:hover {
+      //color: $red-6;
+    }
+
+    &:not(.collapsed) {
+      > [class*="fa"] {
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  & .card-body {
+    padding: .25rem 1.25rem;
+    //border-top: 1px solid $color-d;
+
+    & .navbar-nav {
+      width: 100%;
+
+      > li + li {
+        border-top: 1px dotted $color-d;
+      }
+
+      > li {
+        & .nav-link {
+          //display: flex;
+          //justify-content: space-between;
+          //align-items: center;
+          //cursor: pointer;
+          display: block;
+
+          &:before {
+            content: "\f105";
+            display: inline-block;
+            padding-right: .5rem;
+            color: $red-3;
+            font-family: 'Font Awesome 5 Pro';
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:focus, &:hover {
+            color: $red-6;
+          }
+        }
+      }
+    }
+  }
+}
+
+.aside {
+  & .title-box {
+    //position: relative;
+    //padding: .5rem 1.5rem;
+    //border-bottom: 4px solid #8d522c;
+    //border-radius: 3rem;
+    //background: #ffc519;
+    //overflow: hidden;
+
+    & .title {
+      //display: inline-block;
+      //color: $color-f !important;
+      //font-size: 1rem;
+    }
+  }
+
+  & .list {
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+
+      & + li {
+        border-top: 1px dotted $color-d;
+      }
+
+      > a {
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: .5rem 1rem .5rem 0;
+        margin-right: 1rem;
+
+        &:focus, &:hover {
+          color: $red-6;
+        }
+      }
+
+      &.active {
+        > a {
+          color: $red-5;
+        }
+      }
+    }
+  }
+
+  &.aside-box {
+    & .list {
+      > li {
+        &:before {
+          top: 1.35rem;
+        }
+
+        & .touch-button {
+          display: inline-block;
+          position: absolute;
+          top: 1rem;
+          right: 0;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+          text-indent: -9999px;
+          padding: 0;
+          border: medium none;
+          background: #868686 url("../img/plus-minus.png") no-repeat scroll left top;
+          overflow: hidden;
+
+          &.active, &:hover {
+            background-position: left bottom;
+            background-color: $red-5;
+          }
+        }
+
+        & .sub-menu {
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 1rem;
+
+          > li {
+            & + li {
+              border-top: 1px dashed $color-d;
+            }
+
+            > a {
+              display: inline-block;
+              padding: .35rem .5rem;
+              transition: all 0.3s ease-in-out;
+
+              &:hover, &:focus {
+                color: $red-5;
+              }
+            }
+
+            &:before {
+              content: "\f105";
+              display: inline-block;
+              font-family: 'Font Awesome 5 Pro';
+              transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+              &:before {
+                color: $red-5;
+                //transform: rotate(360deg);
+              }
+
+              > a {
+                color: $red-5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.reviews-wrapper {
+  & [id*="item-"] .title {
+    > a {
+      display: none;
+    }
+
+    &:hover {
+      > a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.scrollspy-nav {
+  padding: 0;
+
+  & .nav {
+    & .nav-item {
+      width: 100%;
+
+      & .nav-link {
+        display: inline-block;
+        padding: 0;
+      }
+
+      & .nav-link.active,
+      & .nav-link:focus,
+      & .nav-link:hover {
+        color: $red-9;
+      }
+    }
+  }
+}
+
+.shopping-cart-container {
+  min-height: calc(100vh - 608px);
+
+  .cart-section {
+    > ul > li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: .75rem;
+      border: 1px solid $color-d;
+
+      & + li {
+        margin-top: 1rem;
+      }
+
+      & .pic-box {
+        width: 120px;
+      }
+
+      & .info-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 120px);
+        padding-left: 20px;
+
+        & .title-box {
+          margin-right: 1rem;
+        }
+
+        & .option-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & .quantity {
+            position: relative;
+            padding: 1.5rem 2.5rem .5rem .5rem;
+            border: 1px solid $color-d;
+
+            & label {
+              position: absolute;
+              top: .25rem;
+              left: .5rem;
+              color: $color-6;
+              font-size: .875rem;
+            }
+
+            & .qty-input {
+              width: 60px;
+              border: none;
+            }
+
+            & .btn-box {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: .5rem;
+
+              & button {
+                display: block;
+                font-size: .75rem;
+                color: $color-6;
+                border: 1px solid $color-9;
+
+                & + button {
+                  margin-top: .25rem;
+                }
+
+                &:focus, &:hover {
+                  outline: none;
+                  color: $red-6;
+                  border: 1px solid $red-6;
+                }
+              }
+            }
+          }
+
+          & .price {
+            width: 160px;
+            min-width: 160px;
+            text-align: right;
+
+            & .total-price {}
+          }
+
+          & .remove {
+            width: 60px;
+            min-width: 60px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-totals {
+    & .table {
+      > thead, > tbody, > tfoot {
+        > tr > * ~ * {
+          white-space: nowrap;
+        }
+      }
+
+      & .thumbnail-pic {
+        width: 100%;
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+//responsive-pc
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .cart-breadcrumb {}
+
+  .shopping-cart-container {
+    .cart-section {
+      > ul > li {
+        align-items: start;
+
+        & .pic-box {
+          width: 80px;
+        }
+
+        & .info-box {
+          width: calc(100% - 80px);
+          padding-left: 20px;
+          display: block;
+
+          & .title-box {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+
+          & .option-box {
+            display: block;
+
+            & .quantity {
+              display: inline-block;
+              margin-bottom: 1rem;
+
+              & .qty-input {
+                width: 60px;
+              }
+            }
+
+            & .price {
+              width: calc(100% - 80px);
+              text-align: left;
+            }
+
+            & .remove {
+              position: absolute;
+              right: .5rem;
+              bottom: .25rem;
+              width: auto;
+              min-width: 60px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    .cart-totals {}
+  }
+}
+
+//responsive-mobile
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}
