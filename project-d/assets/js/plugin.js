@@ -28,7 +28,4 @@ $(document).ready(function () {
         moreLink: '<p class="mt-3"><span class="inline-block px-3 py-2 bd bd-color3 pointer">More <i class="fal fa-angle-down"></i></span></p>',
         lessLink: '<p class="mt-3"><span class="inline-block px-3 py-2 bd bd-color3 pointer">Close <i class="fal fa-angle-up"></i></span></p>'
     });
-
-    //Homepage Modal
-    $('#are-you-ready').modal('show');
 });
