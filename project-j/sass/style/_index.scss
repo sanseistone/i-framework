@@ -52,30 +52,12 @@
 
 .container-brands {
   & .layout {
-    border: 1px solid $color-d;
+    border-top: 1px solid $color-d;
+    border-left: 1px solid $color-d;
 
     & .average a {
       border-right: 1px solid $color-d;
       border-bottom: 1px solid $color-d;
-    }
-  }
-
-  & .layout.six .average {
-    &:nth-last-of-type(1),
-    &:nth-last-of-type(2),
-    &:nth-last-of-type(3),
-    &:nth-last-of-type(4),
-    &:nth-last-of-type(5),
-    &:nth-last-of-type(6) {
-      a {
-        border-bottom: none;
-      }
-    }
-
-    &:nth-of-type(6n+0) {
-      a {
-        border-right: none;
-      }
     }
   }
 }
@@ -96,35 +78,6 @@
       }
     }
   }
-
-  .container-brands {
-    & .layout.three-md .average {
-      &:nth-last-of-type(1),
-      &:nth-last-of-type(2),
-      &:nth-last-of-type(3),
-      &:nth-last-of-type(4),
-      &:nth-last-of-type(5),
-      &:nth-last-of-type(6) {
-        a {
-          border-bottom: 1px solid $color-d;
-        }
-      }
-
-      &:nth-last-of-type(1),
-      &:nth-last-of-type(2),
-      &:nth-last-of-type(3) {
-        a {
-          border-bottom: none;
-        }
-      }
-
-      &:nth-of-type(3n+0) {
-        a {
-          border-right: none;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 767px) {
@@ -141,37 +94,6 @@
 
       & .average:nth-of-type(2n+1) {
         border-left: none;
-      }
-    }
-  }
-
-  .container-brands {
-    & .layout.two-xs .average {
-      &:nth-last-of-type(1),
-      &:nth-last-of-type(2),
-      &:nth-last-of-type(3) {
-        a {
-          border-bottom: 1px solid $color-d;
-        }
-      }
-
-      &:nth-last-of-type(1),
-      &:nth-last-of-type(2) {
-        a {
-          border-bottom: none;
-        }
-      }
-
-      &:nth-of-type(3n+0) {
-        a {
-          border-right: 1px solid $color-d;
-        }
-      }
-
-      &:nth-of-type(2n+0) {
-        a {
-          border-right: none;
-        }
       }
     }
   }
