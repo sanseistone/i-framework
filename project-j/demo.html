@@ -20,8 +20,8 @@
 <body>
 
 <main class="container mb-5" role="main">
-    <form action="">
-        <div class="default-button mb-5">
+    <form action="" id="form">
+        <div class="default-button mb-5" id="top-btn">
             <a href="#" id="add-to-cart" class="btn btn-red6">Add to Cart</a>
         </div>
         <div class="attached-box mb-5">
@@ -44,11 +44,33 @@
                 </label>
             </div>
         </div>
-        <div class="attached-button mb-5">
-            <a href="#" class="btn btn-red3">Add to Cart</a>
+        <div class="attached-button mb-5" id="bot-btn" style="display:none">
+            <a href="#" id="add-to-cart-attached" class="btn btn-red3">Add to Cart</a>
         </div>
     </form>
 </main>
-
+<script>
+    /*
+    * 给form加了ID:form
+    * 给上面按钮加了ID:top-btn
+    * 给下面按钮加了ID:bot-btn
+    * ID名称可以自己改一下
+    *
+    * radio和checkbox都绑定了点击事件
+    * function里是查找radio和checkbox的选中值
+    * 只要判断一个种类的话就删掉另一个种类的
+    * */
+    function dis_but(){
+        if($('.attached-box input:radio:checked').val() || $('.attached-box input:checkbox:checked').val()){
+            $('#add-to-cart').hide();
+            $('.attached-button').show();
+        }else{
+            $('#add-to-cart').show();
+            $('.attached-button').hide();
+        }
+    }
+    $('.attached-box input:radio').on('click',dis_but);
+    $('.attached-box input:checkbox').on('click',dis_but);
+</script>
 </body>
 </html>

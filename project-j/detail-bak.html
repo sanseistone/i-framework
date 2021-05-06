@@ -15,21 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/jQuery-v3.4.1.min.js"></script>
     <script src="assets/frame/bootstrap-4/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function jumpThere(ID){
-            var jumpTop = $(ID).offset().top;
-            if($(window).width() <= 375){
-                jumpTop = jumpTop - 145;
-            }else if($(window).width() <= 425){
-                jumpTop = jumpTop - 125;
-            }else if($(window).width() <= 1024){
-                jumpTop = jumpTop - 110;
-            }else{
-                jumpTop = jumpTop - 185;
-            }
-            $('body,html').animate({scrollTop: jumpTop}, 500);
-        }
-    </script>
+
 </head>
 <body>
 
@@ -660,7 +646,7 @@
                         <i class="fal fa-star"></i>
                     </div>
                     <!--<a href="#reviews-list" class="inline-block ml-3 font-r0875 font-color6">5 reviews</a>-->
-                    <div class="reviews-total" onclick="jumpThere('#reviews-list');">5 reviews</div>
+                    <div class="reviews-total">5 reviews</div>
                 </div>
                 <hr>
                 <div class="flex justify-between items-baseline block-xs mb-3">
@@ -675,6 +661,16 @@
                         </div>
                     </div>
                     <div class="product-countdown">
+                        <!--<div class="countdown-box inline-block radius-30 mb-0 px-3 py-2 theme-bg-l theme-link-h font-r125">-->
+                        <!--    <i class="fas fa-clock pr-2 font-colorf"></i>-->
+                        <!--    <span class="days">00</span>-->
+                        <!--    <span class="seperator mx-2 font-colorf bold">Days</span>-->
+                        <!--    <span class="hours">00</span>-->
+                        <!--    <span class="seperator">:</span>-->
+                        <!--    <span class="minutes">00</span>-->
+                        <!--    <span class="seperator">:</span>-->
+                        <!--    <span class="seconds">00</span>-->
+                        <!--</div>-->
                         <div class="countdown-box mb-0 theme-link-h font-r125">
                             <i class="fas fa-clock pr-2"></i>
                             <span class="days">00</span>
@@ -698,21 +694,18 @@
                 </div>
                 <div class="product-option mb-4">
                     <div class="title mb-2">
-                        <!--<a href="#product-option" class="inline-block theme-link-h bold"><i class="fas fa-check-circle mr-2"></i> Product Option:</a>-->
-                        <div class="pointer-link theme-link-h hover" onclick="jumpThere('#product-option');">
-                            <i class="fas fa-check-circle mr-2"></i> Product Option:
-                        </div>
+                        <a href="#product-option" class="inline-block theme-link-h bold"><i class="fas fa-check-circle mr-2"></i> Product Option:</a>
                     </div>
                     <!--<a href="#product-option" class="arrow-link bold">Select <i class="fal fa-arrow-circle-down arrow ml-2"></i></a>-->
                     <div class="layout two gmb-5">
                         <div class="average">
-                            <div class="link-box"><span class="link" onclick="jumpThere('#product-option-01');">肌色オプション:</span><span class="total">ライトブラウンライトブラウンライトブラウンライトブラウンライトブラウン</span></div>
+                            <div class="link-box"><span class="link">肌色オプション:</span><span class="total">ライトブラウンライトブラウンライトブラウンライトブラウンライトブラウン</span></div>
                         </div>
                         <div class="average">
-                            <div class="link-box"><span class="link" onclick="jumpThere('#product-option-02');">眼球カラー:</span><span>ライトブラウン</span></div>
+                            <div class="link-box"><span class="link">眼球カラー:</span><span>ライトブラウン</span></div>
                         </div>
                         <div class="average">
-                            <div class="link-box"><span class="link" onclick="jumpThere('#product-option-03');">ウィッグ:</span><span class="total">ライトブラウン</span></div>
+                            <div class="link-box"><span class="link">ウィッグ:</span><span class="total">ライトブラウン</span></div>
                         </div>
                         <div class="average">
                             <div class="link-box"><span class="link">乳輪カラー:</span><span class="total">ライトブラウン</span></div>
@@ -767,10 +760,41 @@
                         </div>
                     </div>
                 </div>
+                <!--<div class="product-quantity flex items-center mb-4">-->
+                <!--    <div class="theme-link-h mr-3 mb-2">Quantity:</div>-->
+                <!--    <div class="flex">-->
+                <!--        <button class="btn btn-l-blue4-o btn-minus"><i class="fal fa-minus"></i></button>-->
+                <!--        <input type="number" title="Quantity" min="1" maxlength="12" value="1" class="qty-input form-control w-70 bd-l-blue4 mx-1">-->
+                <!--        <button class="btn btn-l-blue4-o btn-plus"><i class="fal fa-plus"></i></button>-->
+                <!--    </div>-->
+                <!--    <script>-->
+                <!--        $('.btn-plus').click(function () {-->
+                <!--            $('.qty-input').val(Number($('.qty-input').val()) + 1);-->
+                <!--        });-->
+                <!--        $('.btn-minus').click(function () {-->
+                <!--            var value = Number($('.qty-input').val()) - 1;-->
+                <!--            if (value > 0) {-->
+                <!--                $('.qty-input').val(value);-->
+                <!--            }-->
+                <!--        });-->
+                <!--    </script>-->
+                <!--</div>-->
                 <div class="product-button flex justify-between mb-4">
                     <a href="#" class="btn btn-add">Add to cart</a>
                     <a href="#" class="btn btn-buy">Buy it now</a>
                 </div>
+                <!--<div class="product-summary mb-4">-->
+                <!--    <ul class="list font-r075 gmb-5">-->
+                <!--        <li>※KUMA Dollで取り扱うSanhuidollは、以下のオプションを標準装備としております。必要がなく、何れを外してももその分の値引きをする事はできませんので予めご了承くださいませ。-->
+                <!--        </li>-->
+                <!--        <li>①Jiggly breast(おっぱいの柔らか仕上げ)</li>-->
+                <!--        <li>②Soft belly(おなかの柔らか仕上げ)</li>-->
+                <!--        <li>③Areolas and labia enhanced pigmentation(乳首や陰唇の脱色防止加工)</li>-->
+                <!--        <li>④Soft Vagina(膣の柔らか仕上げ)</li>-->
+                <!--        <li>⑤ドールの吊り用金具</li>-->
+                <!--        <li>※お口の開閉機能は現在#8、#22、#31、#32しか対応不可です。</li>-->
+                <!--    </ul>-->
+                <!--</div>-->
                 <div class="product-share flex">
                     <div class="theme-link-h mr-3">Share:</div>
                     <div class="share-icon gmr-5">

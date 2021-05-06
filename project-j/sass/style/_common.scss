@@ -101,6 +101,15 @@ a {
   padding: 0;
 }
 
+.pointer-link {
+  &.hover {
+    &:focus,&:hover {
+      cursor: pointer;
+      color: #00badb;
+    }
+  }
+}
+
 //responsive-pc
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
