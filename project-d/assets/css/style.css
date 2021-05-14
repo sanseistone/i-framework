@@ -8,7 +8,7 @@ a { color: #333333; transition: all .3s ease; }
 a:hover { color: #333333; text-decoration: none; }
 a:focus { outline: none; outline-offset: 0; color: #333333; text-decoration: none; }
 
-#scrollUp { background-image: url('../img/top.png?1618363650'); bottom: 20px; right: 20px; width: 38px; height: 38px; }
+#scrollUp { background-image: url('../img/top.png?1598889300'); bottom: 20px; right: 20px; width: 38px; height: 38px; }
 
 .bg-red6-alpha { background: rgba(229, 57, 53, 0.6); }
 
@@ -27,7 +27,18 @@ html, body { position: relative; font-family: 'Noto Serif JP', serif; }
 .pic-box-double:hover > img:first-child { opacity: 0; }
 .pic-box-double:hover > img:last-child { opacity: 1; }
 
-header { display: flex; align-items: center; justify-content: space-between; height: 80px; background: white; }
+header { background: white; padding: 1rem 0; }
+header .middle .form-control { border-radius: 0; height: 45px; box-shadow: none; outline: 0; }
+header .middle .form-control:hover, header .middle .form-control:focus { border-color: #e53935; box-shadow: none; }
+header .middle .btn { width: 45px; height: 45px; border-radius: 0; }
+header .right .navbar { padding: .15rem; }
+header .right .navbar .item { position: relative; display: flex; align-items: center; }
+header .right .navbar .item .nav-link:hover, header .right .navbar .item .nav-link:focus { color: #e53935; }
+header .right .navbar .item .dropdown-toggle:after { display: none; }
+header .right .navbar .item .dropdown-menu { right: 0; left: auto; }
+header .right .navbar .item .dropdown-menu .dropdown-item { cursor: pointer; }
+header .right .navbar .item .dropdown-menu .dropdown-item:hover, header .right .navbar .item .dropdown-menu .dropdown-item:focus, header .right .navbar .item .dropdown-menu .dropdown-item:active { color: #e53935; background: white; }
+header .right .navbar .item + .item { margin-left: 1rem; }
 
 .navbar.nav-main { width: 100%; display: flex; flex-basis: auto; flex-grow: 0; justify-content: space-between; padding: 0; background: white; }
 .navbar.nav-main .navbar-toggler { color: red; font-size: 1.25rem; background-color: transparent; }
