@@ -26,216 +26,215 @@
 <header>
     <div class="container">
         <div class="layout items-center">
-            <div class="w-25p left">
-                <a href="#" class="logo inline-block"><img src="http://placehold.it/220x80" alt=""></a>
+            <div class="w-25p w-50p-sm flex items-center left">
+                <button class="navbar-toggler text-c" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="block"><i class="fal fa-bars font-r125"></i></span>
+                    <span class="block font-r075">Menu</span>
+                </button>
+                <a href="#" class="logo inline-block"><img class="img-full-sm" src="http://placehold.it/220x60" alt=""></a>
             </div>
-            <div class="w-50p middle">
-                <form class="flex">
+            <div class="w-50p w-100p-sm order-3-sm middle">
+                <form class="flex mt-md-0 mt-2">
                     <input class="form-control" id="search_input" type="search" placeholder="Search...">
                     <button type="button" class="btn btn-red6" id="search_btn"><i class="fal fa-search"></i></button>
                 </form>
             </div>
-            <div class="w-25p right">
+            <div class="w-25p w-50p-sm order-2-sm right">
                 <div class="navbar justify-end">
-                    <div class="item">
-                        <a href="#" class="inline-block"><img class="img-wide" src="http://placehold.it/60" alt=""></a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="inline-block"><img class="img-wide" src="http://placehold.it/60" alt=""></a>
-                    </div>
+                    <!--<div class="item">-->
+                    <!--    <a href="#" class="inline-block"><img class="img-wide" src="http://placehold.it/60" alt=""></a>-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                    <!--    <a href="#" class="inline-block"><img class="img-wide" src="http://placehold.it/60" alt=""></a>-->
+                    <!--</div>-->
                     <div class="item shopping">
                         <div class="nav-link dropdown-toggle pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-box"></i>
+                            <span class="hide-xs">Cart</span>
                         </div>
                         <div class="dropdown-menu">
-                            <span class="dropdown-item"><i class="fas fa-phone"></i><span>+86-755-8888 8888</span></span>
-                            <a href="#" class="dropdown-item"><i class="fas fa-heart"></i> <span>ウイッシュリスト (0)</span></a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-shopping-cart"></i> <span>カートを見る</span></a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-share"></i> <span>レジへ進む</span></a>
+                            <span class="dropdown-item"><i class="fas fa-phone"></i><span>123456789</span></span>
+                            <a href="#" class="dropdown-item"><i class="fas fa-heart"></i> <span>Wish List</span></a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-shopping-cart"></i> <span>Shopping Cart</span></a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-share"></i> <span>Checkout</span></a>
                         </div>
                     </div>
                     <div class="item account">
                         <div class="nav-link dropdown-toggle pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i>
+                            <span class="hide-xs">My Account</span>
                         </div>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item"><i class="fas fa-user-plus"></i> <span>アカウント登録</span></a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-sign-in"></i> <span>ログイン</span></a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-user-plus"></i> <span>Register</span></a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-sign-in"></i> <span>Login</span></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <nav class="w-100p order-4-sm">
+                <div class="navbar navbar-expand-lg nav-main">
+                    <div class="collapse navbar-collapse" id="navbar-main">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown dropdown-large active">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Documentation</a>
+                                <div class="dropdown-menu dropdown-large-menu">
+                                    <div class="layout flex justify-center justify-start-lg gmb-15 four two-sm one-xs">
+                                        <div class="average">
+                                            <ul class="list list-reset">
+                                                <li class="list-header">
+                                                    <span class="bold">Getting started</span>
+                                                </li>
+                                                <li><a href="#">Introduction</a></li>
+                                                <li><a href="#">Download</a></li>
+                                                <li><a href="#">Contents</a></li>
+                                                <li><a href="#">Browsers & devices</a></li>
+                                                <li><a href="#">JavaScript</a></li>
+                                                <li><a href="#">Theming</a></li>
+                                                <li><a href="#">Build tools</a></li>
+                                                <li><a href="#">Webpack</a></li>
+                                                <li><a href="#">Accessibility</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <ul class="list list-reset">
+                                                <li class="list-header">
+                                                    <span class="bold">Layout</span>
+                                                </li>
+                                                <li><a href="#">Overview</a></li>
+                                                <li><a href="#">Grid</a></li>
+                                                <li><a href="#">Utilities for layout</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <ul class="list list-reset">
+                                                <li class="list-header">
+                                                    <span class="bold">Content</span>
+                                                </li>
+                                                <li><a href="#">Reboot</a></li>
+                                                <li><a href="#">Typography</a></li>
+                                                <li><a href="#">Code</a></li>
+                                                <li><a href="#">Images</a></li>
+                                                <li><a href="#">Tables</a></li>
+                                                <li><a href="#">Figures</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <ul class="list list-reset">
+                                                <li class="list-header">
+                                                    <span class="bold">Components</span>
+                                                </li>
+                                                <li><a href="#">Buttons</a></li>
+                                                <li><a href="#">Forms</a></li>
+                                                <li><a href="#">List</a></li>
+                                                <li><a href="#">Navs</a></li>
+                                                <li><a href="#">Pagination</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr class="hide-xs">
+                                    <div class="row flex justify-center justify-start-lg gmb-15 two one-xs">
+                                        <div class="average">
+                                            <p class="mb-2"><span class="bold">Utilities</span></p>
+                                            <ul class="list list-reset column two one-xs">
+                                                <li><a href="#">Borders</a></li>
+                                                <li><a href="#">Clearfix</a></li>
+                                                <li><a href="#">Display</a></li>
+                                                <li><a href="#">Flex</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <p class="mb-2"><span class="bold">Extend</span></p>
+                                            <ul class="list list-reset column two one-xs">
+                                                <li><a href="#">Approach</a></li>
+                                                <li><a href="#">Summary</a></li>
+                                                <li><a href="#">Responsive</a></li>
+                                                <li><a href="#">Classes</a></li>
+                                                <li><a href="#">z-index scales</a></li>
+                                                <li><a href="#">Icons</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <p class="mb-2"><span class="bold">Migration</span></p>
+                                            <ul class="list list-reset column two one-xs">
+                                                <li><a href="#">Stable changes</a></li>
+                                                <li><a href="#">Beta 3 changes</a></li>
+                                                <li><a href="#">Miscellaneous</a></li>
+                                                <li><a href="#">Forms</a></li>
+                                                <li><a href="#">Beta 2 changes</a></li>
+                                                <li><a href="#">Browser support</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="average">
+                                            <p class="mb-2"><span class="bold">About</span></p>
+                                            <ul class="list list-reset column two one-xs">
+                                                <li><a href="#">Team</a></li>
+                                                <li><a href="#">History</a></li>
+                                                <li><a href="#">Get involved</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-large">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Examples</a>
+                                <div class="dropdown-menu dropdown-large-menu">
+                                    <div class="layout flex justify-center justify-start-lg gmb-15 four two-sm">
+                                        <div class="average">
+                                            <a href="#" class="block hover red6">
+                                                <p><img src="http://placehold.it/800" alt=""></p>
+                                                <p class="text-c mb-0">Examples</p>
+                                            </a>
+                                        </div>
+                                        <div class="average">
+                                            <a href="#" class="block hover red6">
+                                                <p><img src="http://placehold.it/800" alt=""></p>
+                                                <p class="text-c mb-0">Examples</p>
+                                            </a>
+                                        </div>
+                                        <div class="average">
+                                            <a href="#" class="block hover red6">
+                                                <p><img src="http://placehold.it/800" alt=""></p>
+                                                <p class="text-c mb-0">Examples</p>
+                                            </a>
+                                        </div>
+                                        <div class="average">
+                                            <a href="#" class="block hover red6">
+                                                <p><img src="http://placehold.it/800" alt=""></p>
+                                                <p class="text-c mb-0">Examples</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Bootstrap Icons</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Icons</a>
+                                    <a class="dropdown-item" href="#">Install</a>
+                                    <a class="dropdown-item" href="#">Usage</a>
+                                    <a class="dropdown-item" href="#">Styling</a>
+                                    <a class="dropdown-item" href="#">Github repo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Expo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
 </header>
-<nav>
-    <div class="container">
-        <div class="navbar navbar-expand-lg nav-main">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="#fc0107">
-                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" fill="#fc0107"/>
-                </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-main">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown dropdown-large active">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Documentation</a>
-                        <div class="dropdown-menu dropdown-large-menu">
-                            <div class="layout flex justify-center justify-start-lg gmb-15 four two-sm one-xs">
-                                <div class="average">
-                                    <ul class="list list-reset">
-                                        <li class="list-header">
-                                            <span class="bold">Getting started</span>
-                                        </li>
-                                        <li><a href="#">Introduction</a></li>
-                                        <li><a href="#">Download</a></li>
-                                        <li><a href="#">Contents</a></li>
-                                        <li><a href="#">Browsers & devices</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                        <li><a href="#">Theming</a></li>
-                                        <li><a href="#">Build tools</a></li>
-                                        <li><a href="#">Webpack</a></li>
-                                        <li><a href="#">Accessibility</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <ul class="list list-reset">
-                                        <li class="list-header">
-                                            <span class="bold">Layout</span>
-                                        </li>
-                                        <li><a href="#">Overview</a></li>
-                                        <li><a href="#">Grid</a></li>
-                                        <li><a href="#">Utilities for layout</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <ul class="list list-reset">
-                                        <li class="list-header">
-                                            <span class="bold">Content</span>
-                                        </li>
-                                        <li><a href="#">Reboot</a></li>
-                                        <li><a href="#">Typography</a></li>
-                                        <li><a href="#">Code</a></li>
-                                        <li><a href="#">Images</a></li>
-                                        <li><a href="#">Tables</a></li>
-                                        <li><a href="#">Figures</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <ul class="list list-reset">
-                                        <li class="list-header">
-                                            <span class="bold">Components</span>
-                                        </li>
-                                        <li><a href="#">Buttons</a></li>
-                                        <li><a href="#">Forms</a></li>
-                                        <li><a href="#">List</a></li>
-                                        <li><a href="#">Navs</a></li>
-                                        <li><a href="#">Pagination</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr class="hide-xs">
-                            <div class="row flex justify-center justify-start-lg gmb-15 two one-xs">
-                                <div class="average">
-                                    <p class="mb-2"><span class="bold">Utilities</span></p>
-                                    <ul class="list list-reset column two one-xs">
-                                        <li><a href="#">Borders</a></li>
-                                        <li><a href="#">Clearfix</a></li>
-                                        <li><a href="#">Display</a></li>
-                                        <li><a href="#">Flex</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <p class="mb-2"><span class="bold">Extend</span></p>
-                                    <ul class="list list-reset column two one-xs">
-                                        <li><a href="#">Approach</a></li>
-                                        <li><a href="#">Summary</a></li>
-                                        <li><a href="#">Responsive</a></li>
-                                        <li><a href="#">Classes</a></li>
-                                        <li><a href="#">z-index scales</a></li>
-                                        <li><a href="#">Icons</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <p class="mb-2"><span class="bold">Migration</span></p>
-                                    <ul class="list list-reset column two one-xs">
-                                        <li><a href="#">Stable changes</a></li>
-                                        <li><a href="#">Beta 3 changes</a></li>
-                                        <li><a href="#">Miscellaneous</a></li>
-                                        <li><a href="#">Forms</a></li>
-                                        <li><a href="#">Beta 2 changes</a></li>
-                                        <li><a href="#">Browser support</a></li>
-                                    </ul>
-                                </div>
-                                <div class="average">
-                                    <p class="mb-2"><span class="bold">About</span></p>
-                                    <ul class="list list-reset column two one-xs">
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Get involved</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown dropdown-large">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Examples</a>
-                        <div class="dropdown-menu dropdown-large-menu">
-                            <div class="layout flex justify-center justify-start-lg gmb-15 four two-sm">
-                                <div class="average">
-                                    <a href="#" class="block hover red6">
-                                        <p><img src="http://placehold.it/800" alt=""></p>
-                                        <p class="text-c mb-0">Examples</p>
-                                    </a>
-                                </div>
-                                <div class="average">
-                                    <a href="#" class="block hover red6">
-                                        <p><img src="http://placehold.it/800" alt=""></p>
-                                        <p class="text-c mb-0">Examples</p>
-                                    </a>
-                                </div>
-                                <div class="average">
-                                    <a href="#" class="block hover red6">
-                                        <p><img src="http://placehold.it/800" alt=""></p>
-                                        <p class="text-c mb-0">Examples</p>
-                                    </a>
-                                </div>
-                                <div class="average">
-                                    <a href="#" class="block hover red6">
-                                        <p><img src="http://placehold.it/800" alt=""></p>
-                                        <p class="text-c mb-0">Examples</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Bootstrap Icons</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Icons</a>
-                            <a class="dropdown-item" href="#">Install</a>
-                            <a class="dropdown-item" href="#">Usage</a>
-                            <a class="dropdown-item" href="#">Styling</a>
-                            <a class="dropdown-item" href="#">Github repo</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Themes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Expo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
 <section id="carousel-main" class="carousel slide mb-5" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
@@ -264,7 +263,7 @@
 </section>
 <section class="container mb-3">
     <div class="bg-grey1 p-3">
-        <div class="layout four">
+        <div class="layout four two-xs">
             <div class="average">
                 <div class="flex items-center justify-center"><i class="fal fa-shopping-cart mr-2 font-r150"></i> <span class="font-r125 bold">Build fast</span></div>
             </div>

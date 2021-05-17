@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
-
 #scrollUp {
   background-image: image-url('top.png');
   bottom: 20px;
@@ -84,6 +80,12 @@ html, body {
 header {
   background: $color-f;
   padding: 1rem 0;
+
+  & .left {
+    > button {
+      display: none;
+    }
+  }
 
   & .middle {
     & .form-control {
@@ -358,7 +360,12 @@ footer {}
   }
 
   header {
-    height: 60px;
+    //height: 60px;
+    & .left {
+      > button {
+        display: block;
+      }
+    }
   }
 
   .navbar.nav-main {
@@ -387,12 +394,12 @@ footer {}
   }
 
   .navbar-collapse {
-    position: absolute;
-    top: 51px;
-    left: 0;
-    z-index: 1000;
-    width: calc(100% + 30px);
-    margin: 0px -15px;
+    //position: absolute;
+    //top: 51px;
+    //left: 0;
+    //z-index: 1000;
+    //width: calc(100% + 30px);
+    //margin: 0px -15px;
     background: $color-e;
 
     & .dropdown-menu {
@@ -411,8 +418,8 @@ footer {}
 
   .navbar.nav-main {
     .navbar-collapse {
-      top: 52px;
-      padding: .5rem 0;
+      //top: 52px;
+      //padding: .5rem 0;
     }
 
     & .navbar-nav {
